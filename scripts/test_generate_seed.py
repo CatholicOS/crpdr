@@ -174,9 +174,11 @@ class BuildPersons(unittest.TestCase):
         self.assertEqual(p["secular_name"], "Simon")
         self.assertIn("Mt 16:17", p["note"])
         self.assertIn("Christ's act", p["note"])
-        # the enrichment mechanism is Peter-only: nobody else carries a note
-        self.assertEqual([q["id"] for q in self.persons if "note" in q],
-                         ["rp:peter"])
+
+    def test_notes_only_on_documented_enrichments(self):
+        self.assertEqual(sorted(q["id"] for q in self.persons if "note" in q),
+                         ["rp:damasus-ii", "rp:formosus-i", "rp:peter",
+                          "rp:theodore-i"])
 
     def test_sole_holders_get_ordinal_i(self):
         for pid in ("rp:francis-i", "rp:lando-i", "rp:linus-i", "rp:mark-i"):
@@ -222,6 +224,64 @@ class BuildPersons(unittest.TestCase):
                          "cdcf:person/pope-john-paul-ii")
 
 
+class BirthCountry(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.persons = gs.build_persons(gs.extract_rows(HTML))
+        cls.by_id = {p["id"]: p for p in cls.persons}
+
+    def test_every_record_has_the_field(self):
+        for p in self.persons:
+            self.assertIn("birth_country", p)
+
+    def test_codes_are_alpha2_or_null(self):
+        for p in self.persons:
+            code = p["birth_country"]
+            if code is not None:
+                self.assertRegex(code, r"^[A-Z]{2}$")
+
+    def test_modern_birthplaces(self):
+        expected = {"rp:leo-xiv": "US", "rp:francis-i": "AR",
+                    "rp:john-paul-ii": "PL", "rp:benedict-xvi": "DE",
+                    "rp:adrian-vi": "NL", "rp:adrian-iv": "GB",
+                    "rp:john-xxi": "PT", "rp:alexander-vi": "ES",
+                    "rp:leo-xiii": "IT"}
+        for pid, code in expected.items():
+            self.assertEqual(self.by_id[pid]["birth_country"], code, pid)
+
+    def test_regional_and_interpreted_birthplaces(self):
+        expected = {"rp:victor-i": "TN",       # "Africa" -> Carthaginian heartland
+                    "rp:caius-i": "HR",        # Dalmatia
+                    "rp:gregory-iii": "SY",    # Syria
+                    "rp:hilarius-i": "IT",     # Sardinia
+                    "rp:liberius-i": "IT",     # "Romano"
+                    "rp:john-xii": "IT",       # "Counts of Tusculum"
+                    "rp:innocent-v": "FR",     # Savoy (Tarentaise)
+                    "rp:martin-iv": "FR"}      # table: "France"
+        for pid, code in expected.items():
+            self.assertEqual(self.by_id[pid]["birth_country"], code, pid)
+
+    def test_contested_or_nonplace_null_with_note(self):
+        peter = self.by_id["rp:peter"]
+        self.assertIsNone(peter["birth_country"])
+        self.assertIn("contested", peter["note"])
+        theodore = self.by_id["rp:theodore-i"]
+        self.assertIsNone(theodore["birth_country"])
+        self.assertIn("Jerusalem", theodore["note"])
+        formosus = self.by_id["rp:formosus-i"]
+        self.assertIsNone(formosus["birth_country"])
+        self.assertIn("Portus", formosus["note"])
+
+    def test_damasus_ii_bavaria_enrichment(self):
+        p = self.by_id["rp:damasus-ii"]
+        self.assertEqual(p["birth_country"], "DE")
+        self.assertIn("Pildenau", p["note"])
+        self.assertIn("natione Noricus", p["note"])
+
+    def test_blank_birthplace_yields_null(self):
+        self.assertIsNone(self.by_id["rp:benedict-ix"]["birth_country"])
+
+
 class RenderMarkdown(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -239,9 +299,12 @@ class RenderMarkdown(unittest.TestCase):
 
     def test_first_and_last_rows(self):
         self.assertIn("| 1 | `rp:peter` | Peter |  | 64 or 67 | Simon "
-                      "| Bethsaida of Galilee |", self.md)
+                      "| Bethsaida of Galilee |  |", self.md)
         self.assertIn("| 267 | `rp:leo-xiv` | Leo XIV | 8,18.V.2025 |  "
-                      "| Robert Francis Prevost | Chicago |", self.md)
+                      "| Robert Francis Prevost | Chicago | US |", self.md)
+
+    def test_intro_explains_country_column(self):
+        self.assertIn("ISO 3166-1 alpha-2", self.md)
 
     def test_intro_explains_secular_name_column(self):
         self.assertIn("reverence for the Apostle", self.md)

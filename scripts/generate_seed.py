@@ -51,9 +51,88 @@ ENRICHMENTS = {
                  "cell blank, presumably because Peter's renaming (Mt 16:17; "
                  "Jn 1:42) was Christ's act, not a regnal-name choice at "
                  "election — elsewhere the table fills the cell precisely "
-                 "when the pre-election name differs."),
+                 "when the pre-election name differs. birth_country is null: "
+                 "the site of Bethsaida, northeast of the Sea of Galilee, "
+                 "lies in territory whose modern attribution is contested."),
+    },
+    "rp:theodore-i": {
+        "note": ("birth_country is null: ISO 3166-1 assigns no code covering "
+                 "Jerusalem's internationally special status."),
+    },
+    "rp:formosus-i": {
+        "note": ("birth_country is null: the table's Birth cell records his "
+                 "episcopal see at election (Portus), not a birthplace."),
+    },
+    "rp:damasus-ii": {
+        "birth_country": "DE",
+        "note": ("birth_country is an enrichment: the table's 'Tyrol' "
+                 "reflects his see of Brixen; he was born Poppo at Pildenau "
+                 "in Bavaria — the Liber Pontificalis styles him 'natione "
+                 "Noricus, qui alio vocabulo Bayuuarius dicitur'."),
     },
 }
+
+# Modern ISO 3166-1 alpha-2 country of each birthplace string in the source
+# table, mapped by the string as printed (docs/schema-proposal.md, "Birth
+# country"): regions wholly within one modern country map to it; "Africa"
+# (the Roman province) maps to its Carthaginian heartland; strings that name
+# no mappable place, or places whose modern attribution is contested, map to
+# None (with a per-record note via ENRICHMENTS where the reason is not
+# self-evident). Every birthplace string that appears in the table MUST have
+# an entry here — validate() enforces completeness.
+_BIRTH_COUNTRY_GROUPS = (
+    ("IT", (
+        "Albano", "Albisola (Savona)", "Anagni", "Aquileia", "Ardea",
+        "Baggio (Milano)", "Belluno", "Benevento", "Bleda or Galeata",
+        "Blera, Tuscia", "Bologna", "Bosco (Alessandria)", "Campania",
+        "Canino (Viterbo)", "Capriglia (Avellino)", "Carpineto Romano",
+        "Celle (Savona)", "Cesena", "Cingoli", "Città di Castello", "Como",
+        "Concesio (Brescia)", "Corsignano (Siena)", "Counts of Tusculum",
+        "Desio (Milan)", "Fano", "Fiagnano (Imola)", "Florence", "Fondi",
+        "Forno di Canale (Belluno)", "Frosinone", "Gaeta", "Gallese",
+        "Gavignano (Rome)", "Genazzano", "Genoa", "Gravina",
+        "Grottammare (Ascoli Piceno)", "Jenne (Rome)", "Lavagna (Genoa)",
+        "Lisciano (Ascoli PIceno)", "Lucca", "Luni", "Marsican territory",
+        "Milan", "Molise", "Montefano", "Monticelli di Genga (Fabriano)",
+        "Naples", "Pavia", "Piacenza", "Pisa", "Pistoia", "Poli",
+        "Riese (Treviso)", "Romano", "Rome", "Sabina", "Samnium",
+        "Sant'Arcangelo di Romagna", "Sardinia", "Sarzana", "Segni",
+        "Senigallia", "Sicily", "Siena", "Somma Lombarda",
+        "Sotto il Monte (Bergamo)", "Spinazzola", "Sulmona", "Tivoli",
+        "Todi", "Tossignano (Imola)", "Treviso", "Tuscia", "Urbino",
+        "Venice",
+    )),
+    ("FR", (
+        "Alsace", "Aquitaine", "Bourgogne", "Cahors",
+        "Châtillon-sur-Marne", "France", "Grizac (Southern France)",
+        "Maumont (Limousin)", "Monts (Limousin)",
+        "Rosiers d'Egletons (Limousin)", "Saint-Gilles (Southern French)",
+        "Saverdun (Southern France)", "Savoy", "Troyes",
+        "Villandraut (Gironde)",
+    )),
+    ("DE", ("Marktl am Inn (Bavaria)", "Saxony", "Swabia")),
+    ("GR", ("Greece", "Nicopolis (Epirus)")),
+    ("SY", ("Syria", "Emesa (Syria)")),
+    ("ES", ("Játiva (Valencia)", "Torre de Canals, Játiva (Valencia)")),
+    ("HR", ("Dalmatia",)),
+    ("PT", ("Lisbon",)),
+    ("NL", ("Utrecht",)),
+    ("GB", ("Abbot's Lagnley (Hertfordshire)",)),
+    ("PL", ("Wadowice (Kraków)",)),
+    ("US", ("Chicago",)),
+    ("AR", ("Buenos Aires (Argentina)",)),
+    ("TN", ("Africa",)),
+    (None, (
+        "Bethsaida of Galilee",   # contested modern attribution (note)
+        "Jerusalem",              # no ISO code for its special status (note)
+        "Bishop of Portus",       # an office, not a birthplace (note)
+        "Tyrol",                  # superseded by the rp:damasus-ii enrichment
+        "Unknown",
+    )),
+)
+BIRTH_COUNTRIES = {place: code
+                   for code, places in _BIRTH_COUNTRY_GROUPS
+                   for place in places}
 
 
 def roman_to_int(s):
@@ -179,6 +258,8 @@ def build_persons(rows):
                 "aliases": aliases,
                 "secular_name": cells[4] or None,
                 "birthplace": cells[5] or None,
+                "birth_country": BIRTH_COUNTRIES.get(cells[5]) if cells[5]
+                                 else None,
                 "century": int(cells[6]) if cells[6] else None,
                 "pontificates": [pont],
                 # provisional for Peter: cdcf-uri-scheme §3.6.1 mandates the
@@ -200,6 +281,9 @@ def validate(persons, rows):
     assert not bad, f"IDs failing grammar: {bad}"
     total = sum(len(p["pontificates"]) for p in persons)
     assert total == len(rows), f"pontificate count {total} != row count {len(rows)}"
+    unmapped = {p["birthplace"] for p in persons
+                if p["birthplace"] and p["birthplace"] not in BIRTH_COUNTRIES}
+    assert not unmapped, f"birthplaces missing from BIRTH_COUNTRIES: {unmapped}"
 
 
 def render_markdown(persons):
@@ -239,19 +323,25 @@ def render_markdown(persons):
         "popes born Pietro — John XIV (n. 136) and Sergius IV (n. 142) — "
         "changed their names out of reverence for the Apostle; no pope has "
         "ever taken the name Peter. Peter's own secular name, Simon "
-        "(Mt 16:17; Jn 1:42), is the registry's one enrichment beyond the "
-        "table, which leaves that cell blank — presumably because his "
-        "renaming was Christ's act, not a regnal-name choice at election.",
+        "(Mt 16:17; Jn 1:42), is an enrichment beyond the table, which "
+        "leaves that cell blank — presumably because his renaming was "
+        "Christ's act, not a regnal-name choice at election. `Country` is "
+        "the ISO 3166-1 alpha-2 code of the modern country of the place of "
+        "birth, mapped by the registry from the `Birth` string (blank where "
+        "the cell names no mappable place or the modern attribution is "
+        "contested — the mapping policy and per-record notes are in the "
+        "schema proposal and in `data/pontiffs.json`).",
         "",
         "| N | ID | Papal name | Beginning of pontificate "
-        "| End of pontificate | Secular name | Birth |",
-        "| --- | --- | --- | --- | --- | --- | --- |",
+        "| End of pontificate | Secular name | Birth | Country |",
+        "| --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
     for number, p, pont in rows:
-        lines.append("| {} | `{}` | {} | {} | {} | {} | {} |".format(
+        lines.append("| {} | `{}` | {} | {} | {} | {} | {} | {} |".format(
             number, p["id"], p["label_en"],
             pont["start_raw"] or "", pont["end_raw"] or "",
-            p["secular_name"] or "", p["birthplace"] or ""))
+            p["secular_name"] or "", p["birthplace"] or "",
+            p["birth_country"] or ""))
     return "\n".join(lines) + "\n"
 
 

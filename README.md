@@ -50,9 +50,10 @@ pending committee review.**
 
 - [`data/pontiffs.json`](data/pontiffs.json) — the seed registry: 265 person
   records covering all 267 pontificates, each with its draft canonical ID,
-  regnal name and ordinal, aliases, secular name, birthplace, dated
-  pontificates (source strings verbatim plus parsed dates where unambiguous),
-  and its `cdcf:person/` cross-reference.
+  regnal name and ordinal, aliases, secular name, birthplace with the ISO
+  3166-1 alpha-2 code of its modern country, dated pontificates (source
+  strings verbatim plus parsed dates where unambiguous), and its
+  `cdcf:person/` cross-reference.
 - [`registry/pontiffs.md`](registry/pontiffs.md) — the same registry as a
   human-readable table, one row per pontificate in succession order.
 - [`docs/schema-proposal.md`](docs/schema-proposal.md) — the proposed schema

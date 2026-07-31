@@ -95,6 +95,10 @@ registry therefore holds 265 person records covering 267 pontificates.
   "aliases": [],                   // alternate names the table gives ("Cletus")
   "secular_name": "Theophylactus of Tusculum",  // null when the table is silent
   "birthplace": null,              // as given by the table
+  "birth_country": null,           // ISO 3166-1 alpha-2 of the modern country
+                                   // of the birthplace; null when the cell is
+                                   // blank, names no mappable place, or the
+                                   // modern attribution is contested
   "century": 11,                   // century of first accession, per the table
   "pontificates": [
     { "number": 145, "start_raw": "...VIII or IX.1032",
@@ -127,6 +131,28 @@ The source table's dates are irregular and are never silently normalized:
 - Everything else (Italian "o" alternates, month ranges, triple dates) stays
   raw-only, pending open question n. 3 below.
 - The reigning pope has `end_raw: null`.
+
+### Birth country
+
+`birth_country` is the ISO 3166-1 alpha-2 code of the modern country of the
+pope's place of birth, mapped **by the table's Birth string as printed**
+(the generator's `BIRTH_COUNTRIES` table, whose completeness against the
+source is enforced at generation time):
+
+- Places and regions lying wholly within one modern country map to it —
+  Rome, Tuscia, Sicily and Sardinia → `IT`; Aquitaine, the Limousin cluster
+  and Savoy (Tarentaise) → `FR`; Saxony, Swabia and Bavaria → `DE`;
+  Dalmatia → `HR`; Nicopolis (Epirus) → `GR`.
+- The string is mapped as printed, not re-researched per person: "Syria"
+  → `SY` even though the ancient province also covered Antioch (today in
+  Türkiye).
+- "Africa" (the Roman province) → `TN`, its Carthaginian heartland.
+- Strings that name no mappable place ("Unknown"; Formosus's "Bishop of
+  Portus", an office) and places whose modern attribution is contested
+  (Bethsaida; Jerusalem, for which ISO 3166-1 assigns no covering code) map
+  to `null`, with a per-record `note` where the reason is not self-evident.
+- One per-record enrichment overrides the string mapping: Damasus II
+  (table: "Tyrol") carries `birth_country: "DE"` — see open question n. 5.
 
 ## Relation to the cdcf-uri-scheme
 
@@ -165,13 +191,28 @@ exception proposed upstream is resolved.
    (the proposed Peter exception; see also
    [#4](https://github.com/xudonglab/cdcf-uri-scheme/issues/4), which proposes
    CRPDR as the maintained registry behind the spec's papal slugs).
-5. **Enrichments beyond the table.** The seed carries one:
-   `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42), applied through the
-   generator's explicit `ENRICHMENTS` override and flagged in the record's
-   `note` field. The source table leaves that cell blank — presumably because
-   Peter's renaming was Christ's act, not a regnal-name choice at election —
-   even though its own convention elsewhere fills the cell precisely when the
-   pre-election name differs (first at John II, born Mercurio, 533; and
-   notably John XIV and Sergius IV, both born Pietro, who changed their names
-   out of reverence for the Apostle). Committee to confirm both the enrichment
-   and the mechanism.
+5. **Enrichments beyond the table.** Applied through the generator's explicit
+   `ENRICHMENTS` override and always flagged in the record's `note` field;
+   records without a `note` are pure transcriptions. The seed carries two
+   value enrichments and two explanatory notes:
+   - `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42). The source table
+     leaves that cell blank — presumably because Peter's renaming was
+     Christ's act, not a regnal-name choice at election — even though its own
+     convention elsewhere fills the cell precisely when the pre-election name
+     differs (first at John II, born Mercurio, 533; and notably John XIV and
+     Sergius IV, both born Pietro, who changed their names out of reverence
+     for the Apostle).
+   - `rp:damasus-ii.birth_country = "DE"`: the table's "Tyrol" reflects his
+     see of Brixen, but he was born Poppo at Pildenau in Bavaria — the Liber
+     Pontificalis styles him "natione Noricus, qui alio vocabulo Bayuuarius
+     dicitur".
+   - Notes without a value change on `rp:theodore-i` (Jerusalem: no covering
+     ISO code) and `rp:formosus-i` ("Bishop of Portus" is an office, not a
+     birthplace); `rp:peter`'s note also covers his null `birth_country`
+     (Bethsaida's modern attribution is contested).
+   Committee to confirm the enrichments and the mechanism.
+6. **The `birth_country` mapping.** The string-level mapping policy above —
+   in particular `TN` for the Roman province of Africa, `SY` for "Syria" as
+   printed, and the null-with-note treatment of Bethsaida and Jerusalem — is
+   an interpretive layer over the table. Committee to review the
+   `BIRTH_COUNTRIES` table as a whole.
