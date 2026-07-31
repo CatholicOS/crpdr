@@ -64,6 +64,16 @@ ENRICHMENTS = {
                  "life unfolds there, where he had been a slave (of "
                  "Carpophorus) before his ordination."),
     },
+    "rp:dionysius-i": {
+        "birthplace": "Terranova da Sibari (Cosenza)?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table records 'Unknown'. Terranova da Sibari (province of "
+                 "Cosenza) is a conjecture — marked '?' as presumption, not "
+                 "attestation — resting on local tradition; the town lies in "
+                 "the old Sybaris territory of Magna Graecia, consistent "
+                 "with his Greek origins."),
+    },
     "rp:theodore-i": {
         "note": ("birth_country is null: ISO 3166-1 assigns no code covering "
                  "Jerusalem's internationally special status."),

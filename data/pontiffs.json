@@ -605,8 +605,8 @@
       "label_en": "Dionysius",
       "aliases": [],
       "secular_name": null,
-      "birthplace": "Unknown",
-      "birth_country": null,
+      "birthplace": "Terranova da Sibari (Cosenza)?",
+      "birth_country": "IT",
       "century": 3,
       "pontificates": [
         {
@@ -617,7 +617,8 @@
           "end": "0268-12-26"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-dionysius-i"
+      "cdcf_person": "cdcf:person/pope-dionysius-i",
+      "note": "birthplace and birth_country are an enrichment: the source table records 'Unknown'. Terranova da Sibari (province of Cosenza) is a conjecture — marked '?' as presumption, not attestation — resting on local tradition; the town lies in the old Sybaris territory of Magna Graecia, consistent with his Greek origins."
     },
     {
       "id": "rp:felix-i",

@@ -30,7 +30,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 22 | `rp:lucius-i` | Lucius I | ... VI or VII.253 | 5.III.254 |  | Rome | IT |
 | 23 | `rp:stephen-i` | Stephen I | 12.III.254 | 2.VIII.257 |  | Rome | IT |
 | 24 | `rp:sixtus-ii` | Sixtus II | 30.VIII.257 | 6.VIII.258 |  | Greece | GR |
-| 25 | `rp:dionysius-i` | Dionysius | 22.VII.259 | 26.XII.268 |  | Unknown |  |
+| 25 | `rp:dionysius-i` | Dionysius | 22.VII.259 | 26.XII.268 |  | Terranova da Sibari (Cosenza)? | IT |
 | 26 | `rp:felix-i` | Felix I | 5.I.269 | 30.XII.274 |  | Rome | IT |
 | 27 | `rp:eutichianus-i` | Eutichianus | 4.I.275 | 7.XII.283 |  | Luni | IT |
 | 28 | `rp:caius-i` | Caius | 17.XII.283 | 22.IV.296 |  | Dalmatia | HR |
