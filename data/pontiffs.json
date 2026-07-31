@@ -1201,8 +1201,8 @@
       "label_en": "Hormisdas",
       "aliases": [],
       "secular_name": null,
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Frosinone",
+      "birth_country": "IT",
       "century": 6,
       "pontificates": [
         {
@@ -1213,7 +1213,8 @@
           "end": "0523-08-06"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-hormisdas-i"
+      "cdcf_person": "cdcf:person/pope-hormisdas-i",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank, but the Liber Pontificalis attests 'Hormisda, natione Campanus, ex patre Iusto, de civitate Frusinone' — Frusino (modern Frosinone) then lay in the late-antique province of Campania. No '?': attested, not conjectured. The table itself gives Frosinone as the birthplace of his son Silverius (n. 58)."
     },
     {
       "id": "rp:john-i",

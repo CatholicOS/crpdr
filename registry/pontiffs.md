@@ -57,7 +57,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 49 | `rp:gelasius-i` | Gelasius I | 1.III.492 | 21.XI.496 |  | Africa | TN |
 | 50 | `rp:anastasius-ii` | Anastasius II | 24.XI.496 | 19.XI.498 |  | Rome | IT |
 | 51 | `rp:symmachus-i` | Symmachus | 22.XI.498 | 19.VII.514 |  | Sardinia | IT |
-| 52 | `rp:hormisdas-i` | Hormisdas | 20.VII.514 | 6.VIII.523 |  |  |  |
+| 52 | `rp:hormisdas-i` | Hormisdas | 20.VII.514 | 6.VIII.523 |  | Frosinone | IT |
 | 53 | `rp:john-i` | John I | 13.VIII.523 | 18.V.526 |  | Tuscia | IT |
 | 54 | `rp:felix-iv` | Felix IV | 12.VII.526 | 20 or 22.IX.530 |  | Samnium | IT |
 | 55 | `rp:boniface-ii` | Boniface II | 20 o 22.IX.530 | 17.X.532 |  | Rome | IT |

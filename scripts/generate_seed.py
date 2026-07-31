@@ -64,6 +64,17 @@ ENRICHMENTS = {
                  "life unfolds there, where he had been a slave (of "
                  "Carpophorus) before his ordination."),
     },
+    "rp:hormisdas-i": {
+        "birthplace": "Frosinone",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank, but the Liber Pontificalis "
+                 "attests 'Hormisda, natione Campanus, ex patre Iusto, de "
+                 "civitate Frusinone' — Frusino (modern Frosinone) then lay "
+                 "in the late-antique province of Campania. No '?': attested, "
+                 "not conjectured. The table itself gives Frosinone as the "
+                 "birthplace of his son Silverius (n. 58)."),
+    },
     "rp:dionysius-i": {
         "birthplace": "Terranova da Sibari (Cosenza)?",
         "birth_country": "IT",

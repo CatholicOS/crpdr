@@ -178,7 +178,16 @@ class BuildPersons(unittest.TestCase):
     def test_notes_only_on_documented_enrichments(self):
         self.assertEqual(sorted(q["id"] for q in self.persons if "note" in q),
                          ["rp:callistus-i", "rp:damasus-ii", "rp:dionysius-i",
-                          "rp:formosus-i", "rp:peter", "rp:theodore-i"])
+                          "rp:formosus-i", "rp:hormisdas-i", "rp:peter",
+                          "rp:theodore-i"])
+
+    def test_hormisdas_attested_birthplace_enrichment(self):
+        p = self.by_id["rp:hormisdas-i"]
+        self.assertEqual(p["birthplace"], "Frosinone")  # attested: no '?'
+        self.assertEqual(p["birth_country"], "IT")
+        self.assertIn("Liber Pontificalis", p["note"])
+        self.assertIn("natione Campanus", p["note"])
+        self.assertIn("Silverius", p["note"])
 
     def test_callistus_i_conjectural_birthplace_enrichment(self):
         p = self.by_id["rp:callistus-i"]

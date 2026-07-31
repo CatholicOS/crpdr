@@ -193,7 +193,7 @@ exception proposed upstream is resolved.
    CRPDR as the maintained registry behind the spec's papal slugs).
 5. **Enrichments beyond the table.** Applied through the generator's explicit
    `ENRICHMENTS` override and always flagged in the record's `note` field;
-   records without a `note` are pure transcriptions. The seed carries four
+   records without a `note` are pure transcriptions. The seed carries five
    value enrichments and two explanatory notes:
    - `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42). The source table
      leaves that cell blank — presumably because Peter's renaming was
@@ -215,6 +215,12 @@ exception proposed upstream is resolved.
      `birth_country = "IT"`: the table records "Unknown"; the conjecture
      rests on local tradition, and the town lies in the old Sybaris
      territory of Magna Graecia, consistent with his Greek origins.
+   - `rp:hormisdas-i.birthplace = "Frosinone"` with `birth_country = "IT"`:
+     the table leaves the cell blank, but the Liber Pontificalis attests
+     "Hormisda, natione Campanus, ex patre Iusto, de civitate Frusinone" —
+     Frusino (modern Frosinone) then lay in the late-antique province of
+     Campania. Attested rather than conjectured, hence no "?"; the table
+     itself gives Frosinone as the birthplace of his son Silverius (n. 58).
    - Notes without a value change on `rp:theodore-i` (Jerusalem: no covering
      ISO code) and `rp:formosus-i` ("Bishop of Portus" is an office, not a
      birthplace); `rp:peter`'s note also covers his null `birth_country`
