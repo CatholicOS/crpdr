@@ -213,5 +213,39 @@ class BuildPersons(unittest.TestCase):
                          "cdcf:person/pope-john-paul-ii")
 
 
+class RenderMarkdown(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.persons = gs.build_persons(gs.extract_rows(HTML))
+        cls.md = gs.render_markdown(cls.persons)
+        cls.lines = cls.md.splitlines()
+
+    def test_one_row_per_pontificate_in_succession_order(self):
+        data_rows = [l for l in self.lines
+                     if l.startswith("| ") and not l.startswith("| N ")
+                     and not l.startswith("| ---")]
+        self.assertEqual(len(data_rows), 267)
+        numbers = [int(r.split("|")[1]) for r in data_rows]
+        self.assertEqual(numbers, list(range(1, 268)))
+
+    def test_first_and_last_rows(self):
+        self.assertIn("| 1 | `rp:peter` | Peter |  | 64 or 67 |  "
+                      "| Bethsaida of Galilee |", self.md)
+        self.assertIn("| 267 | `rp:leo-xiv` | Leo XIV | 8,18.V.2025 |  "
+                      "| Robert Francis Prevost | Chicago |", self.md)
+
+    def test_benedict_ix_id_repeats_per_pontificate(self):
+        self.assertEqual(self.md.count("`rp:benedict-ix`"), 3)
+
+    def test_dates_are_verbatim_raw_strings(self):
+        self.assertIn("| 266 | `rp:francis-i` | Francis | 13,19.III.2013 "
+                      "| 21.IV.2025 |", self.md)
+
+    def test_intro_states_counts_and_draft_status(self):
+        self.assertIn("265 canonical IDs", self.md)
+        self.assertIn("267 pontificates", self.md)
+        self.assertIn("drafts pending committee review", self.md)
+
+
 if __name__ == "__main__":
     unittest.main()

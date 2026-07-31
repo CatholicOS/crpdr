@@ -186,6 +186,40 @@ def validate(persons, rows):
     assert total == len(rows), f"pontificate count {total} != row count {len(rows)}"
 
 
+def render_markdown(persons):
+    """Render the registry as a human-readable markdown table, one row per
+    pontificate in succession order (so a pope with multiple pontificates
+    repeats his ID). Dates are the source table's strings verbatim; the
+    parsed forms live in data/pontiffs.json."""
+    total = sum(len(p["pontificates"]) for p in persons)
+    rows = sorted(((pont["number"], p, pont)
+                   for p in persons for pont in p["pontificates"]),
+                  key=lambda row: row[0])
+    lines = [
+        "# Roman Pontiffs",
+        "",
+        f"{len(persons)} canonical IDs covering the {total} pontificates of "
+        "the Holy See's [reference table of Roman Pontiffs]"
+        f"({SOURCE_URL}), from Peter to the reigning pope. One row per "
+        "pontificate, in succession order: `N` is the succession number in "
+        "the source table, so a pope with multiple pontificates (Benedict IX) "
+        "repeats his ID. Dates are the source table's strings verbatim — the "
+        "parsed forms are in [`data/pontiffs.json`](../data/pontiffs.json). "
+        "All IDs are drafts pending committee review "
+        "([schema proposal](../docs/schema-proposal.md)).",
+        "",
+        "| N | ID | Papal name | Beginning of pontificate "
+        "| End of pontificate | Secular name | Birth |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
+    ]
+    for number, p, pont in rows:
+        lines.append("| {} | `{}` | {} | {} | {} | {} | {} |".format(
+            number, p["id"], p["label_en"],
+            pont["start_raw"] or "", pont["end_raw"] or "",
+            p["secular_name"] or "", p["birthplace"] or ""))
+    return "\n".join(lines) + "\n"
+
+
 def main():
     repo_root = (Path(sys.argv[1]) if len(sys.argv) > 1
                  else Path(__file__).resolve().parent.parent)
@@ -216,8 +250,11 @@ def main():
     dest = repo_root / "data" / "pontiffs.json"
     dest.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8")
-    print(f"wrote {dest}: {len(persons)} persons, {len(rows)} pontificates; "
-          f"{raw_only} date strings kept raw-only")
+    md_dest = repo_root / "registry" / "pontiffs.md"
+    md_dest.parent.mkdir(exist_ok=True)
+    md_dest.write_text(render_markdown(persons), encoding="utf-8")
+    print(f"wrote {dest} and {md_dest}: {len(persons)} persons, "
+          f"{len(rows)} pontificates; {raw_only} date strings kept raw-only")
 
 
 if __name__ == "__main__":

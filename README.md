@@ -53,6 +53,8 @@ pending committee review.**
   regnal name and ordinal, aliases, secular name, birthplace, dated
   pontificates (source strings verbatim plus parsed dates where unambiguous),
   and its `cdcf:person/` cross-reference.
+- [`registry/pontiffs.md`](registry/pontiffs.md) — the same registry as a
+  human-readable table, one row per pontificate in succession order.
 - [`docs/schema-proposal.md`](docs/schema-proposal.md) — the proposed schema
   and the open questions for the committee.
 - [`data/source/`](data/source/) — the committed snapshot of the Holy See's
