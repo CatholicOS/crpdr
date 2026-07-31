@@ -147,12 +147,15 @@ source is enforced at generation time):
   → `SY` even though the ancient province also covered Antioch (today in
   Türkiye).
 - "Africa" (the Roman province) → `TN`, its Carthaginian heartland.
-- Strings that name no mappable place ("Unknown"; Formosus's "Bishop of
-  Portus", an office) and places whose modern attribution is contested
-  (Bethsaida; Jerusalem, for which ISO 3166-1 assigns no covering code) map
-  to `null`, with a per-record `note` where the reason is not self-evident.
-- One per-record enrichment overrides the string mapping: Damasus II
-  (table: "Tyrol") carries `birth_country: "DE"` — see open question n. 5.
+- Strings that name no mappable place ("Unknown") and places whose modern
+  attribution is contested (Bethsaida; Jerusalem, for which ISO 3166-1
+  assigns no covering code) map to `null`, with a per-record `note` where
+  the reason is not self-evident.
+- Per-record enrichments override the string mapping: Damasus II (table:
+  "Tyrol") carries `birth_country: "DE"`, and blank, "Unknown" or
+  office-only Birth cells may be filled with attested or "?"-marked
+  conjectural birthplaces (Callistus I, Dionysius, Hormisdas, Formosus) —
+  see open question n. 5.
 
 ## Relation to the cdcf-uri-scheme
 
@@ -193,8 +196,8 @@ exception proposed upstream is resolved.
    CRPDR as the maintained registry behind the spec's papal slugs).
 5. **Enrichments beyond the table.** Applied through the generator's explicit
    `ENRICHMENTS` override and always flagged in the record's `note` field;
-   records without a `note` are pure transcriptions. The seed carries five
-   value enrichments and two explanatory notes:
+   records without a `note` are pure transcriptions. The seed carries six
+   value enrichments and one explanatory note:
    - `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42). The source table
      leaves that cell blank — presumably because Peter's renaming was
      Christ's act, not a regnal-name choice at election — even though its own
@@ -221,9 +224,12 @@ exception proposed upstream is resolved.
      Frusino (modern Frosinone) then lay in the late-antique province of
      Campania. Attested rather than conjectured, hence no "?"; the table
      itself gives Frosinone as the birthplace of his son Silverius (n. 58).
-   - Notes without a value change on `rp:theodore-i` (Jerusalem: no covering
-     ISO code) and `rp:formosus-i` ("Bishop of Portus" is an office, not a
-     birthplace); `rp:peter`'s note also covers his null `birth_country`
+   - `rp:formosus-i.birthplace = "Rome?"` with `birth_country = "IT"`: the
+     table's Birth cell records his episcopal see at election ("Bishop of
+     Portus"), not a birthplace; Rome is a conjecture — "probably a native
+     of Rome, and must have been born about 816" (Catholic Encyclopedia).
+   - A note without a value change on `rp:theodore-i` (Jerusalem: no covering
+     ISO code); `rp:peter`'s note also covers his null `birth_country`
      (Bethsaida's modern attribution is contested).
    Committee to confirm the enrichments and the mechanism.
 6. **The `birth_country` mapping.** The string-level mapping policy above —

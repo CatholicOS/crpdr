@@ -90,8 +90,14 @@ ENRICHMENTS = {
                  "Jerusalem's internationally special status."),
     },
     "rp:formosus-i": {
-        "note": ("birth_country is null: the table's Birth cell records his "
-                 "episcopal see at election (Portus), not a birthplace."),
+        "birthplace": "Rome?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the "
+                 "table's Birth cell records his episcopal see at election "
+                 "('Bishop of Portus'), not a birthplace. Rome is a "
+                 "conjecture — marked '?' as presumption, not attestation — "
+                 "'probably a native of Rome, and must have been born about "
+                 "816' (Catholic Encyclopedia)."),
     },
     "rp:damasus-ii": {
         "birth_country": "DE",
@@ -155,7 +161,8 @@ _BIRTH_COUNTRY_GROUPS = (
     (None, (
         "Bethsaida of Galilee",   # contested modern attribution (note)
         "Jerusalem",              # no ISO code for its special status (note)
-        "Bishop of Portus",       # an office, not a birthplace (note)
+        "Bishop of Portus",       # an office; superseded by the
+                                  # rp:formosus-i enrichment
         "Tyrol",                  # superseded by the rp:damasus-ii enrichment
         "Unknown",
     )),

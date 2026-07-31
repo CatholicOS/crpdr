@@ -292,9 +292,13 @@ class BirthCountry(unittest.TestCase):
         theodore = self.by_id["rp:theodore-i"]
         self.assertIsNone(theodore["birth_country"])
         self.assertIn("Jerusalem", theodore["note"])
-        formosus = self.by_id["rp:formosus-i"]
-        self.assertIsNone(formosus["birth_country"])
-        self.assertIn("Portus", formosus["note"])
+
+    def test_formosus_conjectural_birthplace_enrichment(self):
+        p = self.by_id["rp:formosus-i"]
+        self.assertEqual(p["birthplace"], "Rome?")
+        self.assertEqual(p["birth_country"], "IT")
+        self.assertIn("Bishop of Portus", p["note"])  # table cell preserved
+        self.assertIn("conjecture", p["note"])
 
     def test_damasus_ii_bavaria_enrichment(self):
         p = self.by_id["rp:damasus-ii"]

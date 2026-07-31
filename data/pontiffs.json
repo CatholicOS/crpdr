@@ -2494,8 +2494,8 @@
       "label_en": "Formosus",
       "aliases": [],
       "secular_name": null,
-      "birthplace": "Bishop of Portus",
-      "birth_country": null,
+      "birthplace": "Rome?",
+      "birth_country": "IT",
       "century": 9,
       "pontificates": [
         {
@@ -2507,7 +2507,7 @@
         }
       ],
       "cdcf_person": "cdcf:person/pope-formosus-i",
-      "note": "birth_country is null: the table's Birth cell records his episcopal see at election (Portus), not a birthplace."
+      "note": "birthplace and birth_country are an enrichment: the table's Birth cell records his episcopal see at election ('Bishop of Portus'), not a birthplace. Rome is a conjecture — marked '?' as presumption, not attestation — 'probably a native of Rome, and must have been born about 816' (Catholic Encyclopedia)."
     },
     {
       "id": "rp:boniface-vi",

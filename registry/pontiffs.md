@@ -116,7 +116,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 108 | `rp:marinus-i` | Marinus I | ... XII.882 | 15.V.884 |  | Gallese | IT |
 | 109 | `rp:adrian-iii` | Adrian III | 17.V.884 | ...VIII or IX.885 |  | Rome | IT |
 | 110 | `rp:stephen-v` | Stephen V | ...IX.885 | 14.IX.891 |  | Rome | IT |
-| 111 | `rp:formosus-i` | Formosus | 6.X.891 | 4.IV.896 |  | Bishop of Portus |  |
+| 111 | `rp:formosus-i` | Formosus | 6.X.891 | 4.IV.896 |  | Rome? | IT |
 | 112 | `rp:boniface-vi` | Boniface VI | 11.IV.896 | 26.IV.896 |  | Rome | IT |
 | 113 | `rp:stephen-vi` | Stephen VI | ...V or VI.896 | ...VII or VIII.897 |  | Rome | IT |
 | 114 | `rp:romanus-i` | Romanus | ...VII or VIII.897 | ...XI.897 |  | Gallese | IT |
