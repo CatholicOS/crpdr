@@ -401,12 +401,14 @@
       "cdcf_person": "cdcf:person/pope-zephyrinus-i"
     },
     {
-      "id": "rp:callistus-i",
-      "name": "Callistus",
+      "id": "rp:callixtus-i",
+      "name": "Callixtus",
       "ordinal": 1,
       "roman": "i",
       "label_en": "Callistus I",
-      "aliases": [],
+      "aliases": [
+        "Callistus"
+      ],
       "secular_name": null,
       "birthplace": "Rome?",
       "birth_country": "IT",
@@ -420,8 +422,8 @@
           "end": "0222"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-callistus-i",
-      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. Rome is a conjecture — marked '?' as presumption, not attestation — since his recorded life unfolds there, where he had been a slave (of Carpophorus) before his ordination."
+      "cdcf_person": "cdcf:person/pope-callixtus-i",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. Rome is a conjecture — marked '?' as presumption, not attestation — since his recorded life unfolds there, where he had been a slave (of Carpophorus) before his ordination. The ID's 'Callixtus' spelling is a normalization for consistency with Callixtus II and III: the table prints 'Callistus I' (kept verbatim as label_en) but 'Callixtus' for his successors; the spellings are interchangeable, and 'Callistus' is kept as an alias."
     },
     {
       "id": "rp:urban-i",

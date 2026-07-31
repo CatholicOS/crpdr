@@ -21,7 +21,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 13 | `rp:eleutherius-i` | Eleutherius | 171 or 177 | 185 or 193 |  | Nicopolis (Epirus) | GR |
 | 14 | `rp:victor-i` | Victor I | 186 or 189 | 197 or 201 |  | Africa | TN |
 | 15 | `rp:zephyrinus-i` | Zephyrinus | 198 | 217 or 218 |  | Rome | IT |
-| 16 | `rp:callistus-i` | Callistus I | 218 | 222 |  | Rome? | IT |
+| 16 | `rp:callixtus-i` | Callistus I | 218 | 222 |  | Rome? | IT |
 | 17 | `rp:urban-i` | Urban I | 222 | 230 |  | Rome | IT |
 | 18 | `rp:pontianus-i` | Pontianus | 21.VII.230 | 28.IX.235 |  | Rome | IT |
 | 19 | `rp:anterus-i` | Anterus | 21.XI.235 | 3.I.236 |  | Greece | GR |
@@ -273,3 +273,5 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 265 | `rp:benedict-xvi` | Benedict XVI | 19,24.IV.2005 | 28.II.2013 | Joseph Ratzinger | Marktl am Inn (Bavaria) | DE |
 | 266 | `rp:francis-i` | Francis | 13,19.III.2013 | 21.IV.2025 | Jorge Mario Bergoglio | Buenos Aires (Argentina) | AR |
 | 267 | `rp:leo-xiv` | Leo XIV | 8,18.V.2025 |  | Robert Francis Prevost | Chicago | US |
+
+**Orthography.** The source table prints "Callistus I" but "Callixtus II" and "Callixtus III". The two spellings are interchangeable in natural language and may both serve as labels, but identifiers require one consistent form: the registry therefore mints `rp:callixtus-i` alongside `rp:callixtus-ii` and `rp:callixtus-iii`, keeping "Callistus" as an alias. The `Papal name` column remains the table's verbatim text.

@@ -31,14 +31,18 @@ ROMAN_VALUES = {"i": 1, "v": 5, "x": 10, "l": 50, "c": 100, "d": 500, "m": 1000}
 # The ID grammar (docs/schema-proposal.md §grammar): every minted ID must match.
 ID_RE = re.compile(r"^rp:(peter|[a-z]+(-[a-z]+)*-[ivxlcdm]+)$")
 
-# Popes the source table lists under two names. Canonical name first (the
+# Popes the source table lists under two names, plus spelling
+# normalizations required for ID consistency. Canonical name first (the
 # committee lean recorded in docs/schema-proposal.md), alternate kept as an
 # alias attribute. Adeodatus is canonical because the table itself numbers
-# "Adeodatus II" (row 77) against this pope's "I".
+# "Adeodatus II" (row 77) against this pope's "I"; Callixtus is canonical
+# because the table prints "Callistus I" but "Callixtus II/III", and
+# identifiers require one spelling.
 ALIASES = {
     "Anacletus or Cletus": ("Anacletus", ["Cletus"]),
     "Miltiades or Melchiades": ("Miltiades", ["Melchiades"]),
     "Deusdedit or Adeodatus I": ("Adeodatus I", ["Deusdedit"]),
+    "Callistus I": ("Callixtus I", ["Callistus"]),
 }
 
 # Enrichments beyond the source table, applied after transcription and
@@ -55,14 +59,19 @@ ENRICHMENTS = {
                  "the site of Bethsaida, northeast of the Sea of Galilee, "
                  "lies in territory whose modern attribution is contested."),
     },
-    "rp:callistus-i": {
+    "rp:callixtus-i": {
         "birthplace": "Rome?",
         "birth_country": "IT",
         "note": ("birthplace and birth_country are an enrichment: the source "
                  "table leaves the cell blank. Rome is a conjecture — marked "
                  "'?' as presumption, not attestation — since his recorded "
                  "life unfolds there, where he had been a slave (of "
-                 "Carpophorus) before his ordination."),
+                 "Carpophorus) before his ordination. The ID's 'Callixtus' "
+                 "spelling is a normalization for consistency with Callixtus "
+                 "II and III: the table prints 'Callistus I' (kept verbatim "
+                 "as label_en) but 'Callixtus' for his successors; the "
+                 "spellings are interchangeable, and 'Callistus' is kept as "
+                 "an alias."),
     },
     "rp:hormisdas-i": {
         "birthplace": "Frosinone",
@@ -445,6 +454,16 @@ def render_markdown(persons):
             pont["start_raw"] or "", pont["end_raw"] or "",
             p["secular_name"] or "", p["birthplace"] or "",
             p["birth_country"] or ""))
+    lines += [
+        "",
+        "**Orthography.** The source table prints \"Callistus I\" but "
+        "\"Callixtus II\" and \"Callixtus III\". The two spellings are "
+        "interchangeable in natural language and may both serve as labels, "
+        "but identifiers require one consistent form: the registry "
+        "therefore mints `rp:callixtus-i` alongside `rp:callixtus-ii` and "
+        "`rp:callixtus-iii`, keeping \"Callistus\" as an alias. The "
+        "`Papal name` column remains the table's verbatim text.",
+    ]
     return "\n".join(lines) + "\n"
 
 

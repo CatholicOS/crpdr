@@ -180,11 +180,18 @@ exception proposed upstream is resolved.
    `rp:antipope-<name>-<roman>`) is sketched; numbering collisions with
    legitimate popes (Clement VII, Benedict XIII) make the discriminator
    mandatory.
-2. **Double-named popes.** The table gives three: "Anacletus or Cletus",
-   "Miltiades or Melchiades", "Deusdedit or Adeodatus I". The seed leans
-   `rp:anacletus-i`, `rp:miltiades-i`, `rp:adeodatus-i` (the last forced by
-   the table's own "Adeodatus II"), with the alternate name as an alias
-   attribute. Committee to confirm.
+2. **Double-named popes and orthography.** The table gives three double
+   names: "Anacletus or Cletus", "Miltiades or Melchiades", "Deusdedit or
+   Adeodatus I". The seed leans `rp:anacletus-i`, `rp:miltiades-i`,
+   `rp:adeodatus-i` (the last forced by the table's own "Adeodatus II"),
+   with the alternate name as an alias attribute. The table is also
+   internally inconsistent in spelling: it prints "Callistus I" but
+   "Callixtus II" and "Callixtus III". The spellings are interchangeable
+   and may both serve as natural-language labels, but identifiers require
+   one consistent form, so the seed normalizes to `rp:callixtus-i`
+   (aligning with his successors), keeps the table's "Callistus I" verbatim
+   as `label_en`, and records "Callistus" as an alias. Committee to
+   confirm.
 3. **Date-uncertainty representation.** Is raw-plus-parsed sufficient, or is
    a structured uncertainty type
    ([EDTF](https://www.loc.gov/standards/datetime/)) warranted for the 49
@@ -205,7 +212,7 @@ exception proposed upstream is resolved.
    | Record | Enrichment | Grade | Basis |
    |---|---|---|---|
    | `rp:peter` | `secular_name: "Simon"` | attested | Mt 16:17; Jn 1:42 — renamed by Christ, not at election; the table elsewhere fills the cell precisely when the pre-election name differs (first at John II/Mercurio, 533; John XIV and Sergius IV, both born Pietro, renamed out of reverence for the Apostle) |
-   | `rp:callistus-i` | `birthplace: "Rome?"`, `IT` | conjectured | his recorded life unfolds in Rome, where he had been a slave |
+   | `rp:callixtus-i` | `birthplace: "Rome?"`, `IT` | conjectured | his recorded life unfolds in Rome, where he had been a slave; ID spelling normalized per open question n. 2 |
    | `rp:dionysius-i` | `birthplace: "Terranova da Sibari (Cosenza)?"`, `IT` | conjectured | local tradition; the town lies in the old Sybaris territory of Magna Graecia, consistent with his Greek origins (table: "Unknown") |
    | `rp:hormisdas-i` | `birthplace: "Frosinone"`, `IT` | attested | Liber Pontificalis: "natione Campanus, ex patre Iusto, de civitate Frusinone"; the table gives Frosinone for his son Silverius (n. 58) |
    | `rp:formosus-i` | `birthplace: "Rome?"`, `IT` | conjectured | table cell records his see at election ("Bishop of Portus"); "probably a native of Rome" (Catholic Encyclopedia) |

@@ -65,6 +65,10 @@ class SplitName(unittest.TestCase):
         self.assertEqual(gs.split_name("Deusdedit or Adeodatus I"),
                          ("Adeodatus", "i", ["Deusdedit"]))
 
+    def test_spelling_normalization(self):
+        self.assertEqual(gs.split_name("Callistus I"),
+                         ("Callixtus", "i", ["Callistus"]))
+
 
 class MakeId(unittest.TestCase):
     def test_ordinary(self):
@@ -178,7 +182,7 @@ class BuildPersons(unittest.TestCase):
     def test_notes_only_on_documented_enrichments(self):
         self.assertEqual(sorted(q["id"] for q in self.persons if "note" in q),
                          ["rp:benedict-ix", "rp:benedict-viii",
-                          "rp:benedict-xv", "rp:callistus-i",
+                          "rp:benedict-xv", "rp:callixtus-i",
                           "rp:callixtus-ii", "rp:damasus-ii",
                           "rp:dionysius-i", "rp:formosus-i", "rp:hormisdas-i",
                           "rp:john-xix", "rp:peter", "rp:stephen-ix",
@@ -218,12 +222,23 @@ class BuildPersons(unittest.TestCase):
         self.assertIn("natione Campanus", p["note"])
         self.assertIn("Silverius", p["note"])
 
-    def test_callistus_i_conjectural_birthplace_enrichment(self):
-        p = self.by_id["rp:callistus-i"]
+    def test_callixtus_i_conjectural_birthplace_enrichment(self):
+        p = self.by_id["rp:callixtus-i"]
         self.assertEqual(p["birthplace"], "Rome?")
         self.assertEqual(p["birth_country"], "IT")
         self.assertIn("slave", p["note"])
         self.assertIn("conjecture", p["note"])
+
+    def test_callixtus_spelling_normalized_in_id(self):
+        # the table prints "Callistus I" but "Callixtus II/III"; IDs need
+        # one spelling, so rp:callixtus-i aligns with its successors
+        self.assertNotIn("rp:callistus-i", self.by_id)
+        p = self.by_id["rp:callixtus-i"]
+        self.assertEqual(p["name"], "Callixtus")
+        self.assertEqual(p["label_en"], "Callistus I")   # table verbatim
+        self.assertEqual(p["aliases"], ["Callistus"])
+        self.assertEqual(p["cdcf_person"], "cdcf:person/pope-callixtus-i")
+        self.assertIn("consistency", p["note"])
 
     def test_dionysius_i_conjectural_birthplace_enrichment(self):
         p = self.by_id["rp:dionysius-i"]
@@ -383,8 +398,13 @@ class RenderMarkdown(unittest.TestCase):
         self.assertEqual(self.md.count("`rp:benedict-ix`"), 3)
 
     def test_conjectural_rome_rows(self):
-        # Callistus I, Formosus, Benedict VIII, John XIX, Benedict IX x3
+        # Callixtus I, Formosus, Benedict VIII, John XIX, Benedict IX x3
         self.assertEqual(self.md.count("| Rome? | IT |"), 7)
+
+    def test_orthography_footnote(self):
+        self.assertIn("rp:callixtus-i", self.md)
+        self.assertIn("Orthography", self.md)
+        self.assertIn("Callistus I", self.md)  # label stays table-verbatim
 
     def test_dates_are_verbatim_raw_strings(self):
         self.assertIn("| 266 | `rp:francis-i` | Francis | 13,19.III.2013 "
