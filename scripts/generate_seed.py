@@ -221,8 +221,13 @@ def render_markdown(persons):
         "the source table, so a pope with multiple pontificates (Benedict IX) "
         "repeats his ID. Dates are the source table's strings verbatim — the "
         "parsed forms are in [`data/pontiffs.json`](../data/pontiffs.json). "
-        "All IDs are drafts pending committee review "
-        "([schema proposal](../docs/schema-proposal.md)).",
+        "Identifiers carry their Roman-numeral ordinal even where the "
+        "`Papal name` label is bare (`rp:francis-i` — \"Francis\"): usage "
+        "attaches \"I\" to a regnal name only once a later pope takes the "
+        "same name, and identifiers, unlike labels, must not change when "
+        "that happens — so the ordinal is minted from the start, `rp:peter` "
+        "being the sole exception. All IDs are drafts pending committee "
+        "review ([schema proposal](../docs/schema-proposal.md)).",
         "",
         "The `Secular name` column follows the source table's own logic: it "
         "is filled only when the pre-election name differs from the papal "

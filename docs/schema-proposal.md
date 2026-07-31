@@ -22,9 +22,26 @@ Examples: `rp:linus-i`, `rp:gregory-i`, `rp:john-paul-ii`, `rp:benedict-xvi`,
    Latin and other-language labels belong in the data as attributes, not in
    the ID.
 2. **Ordinal always present**, including names held by only one pope
-   (`rp:francis-i`, `rp:lando-i`). Canonical IDs must be stable over time: if
-   a future pope takes the name Francis, the label "Pope Francis" may become
-   "Pope Francis I", but `rp:francis-i` never changes.
+   (`rp:francis-i`, `rp:lando-i`). In actual usage a regnal name carries no
+   numeral until a later pope chooses the same name: Francis was never styled
+   "Francis I" during his pontificate, just as Leo the Great was simply "Leo"
+   until Leo II (682) retroactively made him "Leo I". A canonical identifier,
+   however, must be stable, so it cannot migrate from a bare slug to a
+   numbered one the day a namesake is elected — that shift belongs to
+   *labels*, never to identifiers. This leaves exactly two stable
+   conventions: mint the ordinal for every first-of-name from day one, or
+   never mint it for a first-of-name at all. CRPDR settles on the first, for
+   three reasons: (a) history has already decided the labels for reused
+   names — 37 of the 82 regnal names have been borne by two or more popes
+   (John by 21) — so bare first-of-name slugs would permanently diverge from
+   universal usage for all of them (`rp:leo` for Leo the Great) and for any
+   name reused in the future; (b) a mandatory ordinal gives the grammar its
+   parsing property that the final hyphen-separated segment is always the
+   ordinal; (c) it conforms to cdcf-uri-scheme §3.6.1, which mandates the
+   ordinal "even for names held by only one pope, to guarantee forward
+   stability". Labels remain free to track usage: `label_en` keeps the
+   table's styling ("Francis"), and may one day become "Francis I" without
+   `rp:francis-i` moving.
 3. **The Peter exception.** `rp:peter` carries no ordinal: Peter is never
    styled "Pope Peter" nor "Peter I" in any usage, ecclesial or common. The ID
    remains stable regardless — a future Peter would be `rp:peter-ii`.

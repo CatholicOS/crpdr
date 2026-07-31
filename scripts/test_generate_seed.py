@@ -248,6 +248,10 @@ class RenderMarkdown(unittest.TestCase):
         self.assertIn("John II", self.md)
         self.assertIn("Christ's act", self.md)
 
+    def test_intro_explains_ordinal_convention(self):
+        self.assertIn("only once a later pope takes the same name", self.md)
+        self.assertIn("unlike labels", self.md)
+
     def test_benedict_ix_id_repeats_per_pontificate(self):
         self.assertEqual(self.md.count("`rp:benedict-ix`"), 3)
 
