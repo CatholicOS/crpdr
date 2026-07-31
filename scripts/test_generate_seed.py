@@ -169,6 +169,15 @@ class BuildPersons(unittest.TestCase):
         self.assertIsNone(p["pontificates"][0]["start_raw"])
         self.assertEqual(p["pontificates"][0]["end_alternates"], ["0064", "0067"])
 
+    def test_peter_secular_name_enrichment(self):
+        p = self.by_id["rp:peter"]
+        self.assertEqual(p["secular_name"], "Simon")
+        self.assertIn("Mt 16:17", p["note"])
+        self.assertIn("Christ's act", p["note"])
+        # the enrichment mechanism is Peter-only: nobody else carries a note
+        self.assertEqual([q["id"] for q in self.persons if "note" in q],
+                         ["rp:peter"])
+
     def test_sole_holders_get_ordinal_i(self):
         for pid in ("rp:francis-i", "rp:lando-i", "rp:linus-i", "rp:mark-i"):
             self.assertIn(pid, self.by_id)
@@ -229,10 +238,15 @@ class RenderMarkdown(unittest.TestCase):
         self.assertEqual(numbers, list(range(1, 268)))
 
     def test_first_and_last_rows(self):
-        self.assertIn("| 1 | `rp:peter` | Peter |  | 64 or 67 |  "
+        self.assertIn("| 1 | `rp:peter` | Peter |  | 64 or 67 | Simon "
                       "| Bethsaida of Galilee |", self.md)
         self.assertIn("| 267 | `rp:leo-xiv` | Leo XIV | 8,18.V.2025 |  "
                       "| Robert Francis Prevost | Chicago |", self.md)
+
+    def test_intro_explains_secular_name_column(self):
+        self.assertIn("reverence for the Apostle", self.md)
+        self.assertIn("John II", self.md)
+        self.assertIn("Christ's act", self.md)
 
     def test_benedict_ix_id_repeats_per_pontificate(self):
         self.assertEqual(self.md.count("`rp:benedict-ix`"), 3)

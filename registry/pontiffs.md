@@ -2,9 +2,11 @@
 
 265 canonical IDs covering the 267 pontificates of the Holy See's [reference table of Roman Pontiffs](https://www.vatican.va/content/vatican/en/holy-father.html), from Peter to the reigning pope. One row per pontificate, in succession order: `N` is the succession number in the source table, so a pope with multiple pontificates (Benedict IX) repeats his ID. Dates are the source table's strings verbatim — the parsed forms are in [`data/pontiffs.json`](../data/pontiffs.json). All IDs are drafts pending committee review ([schema proposal](../docs/schema-proposal.md)).
 
+The `Secular name` column follows the source table's own logic: it is filled only when the pre-election name differs from the papal name — first at n. 56 (John II, born Mercurio, 533, the first pope to change his name) — and for every pope from the eleventh century onward, once taking a regnal name had become the custom and the column also records the family name. A blank therefore means the pope reigned under his own name, not that the name is unknown. Two popes born Pietro — John XIV (n. 136) and Sergius IV (n. 142) — changed their names out of reverence for the Apostle; no pope has ever taken the name Peter. Peter's own secular name, Simon (Mt 16:17; Jn 1:42), is the registry's one enrichment beyond the table, which leaves that cell blank — presumably because his renaming was Christ's act, not a regnal-name choice at election.
+
 | N | ID | Papal name | Beginning of pontificate | End of pontificate | Secular name | Birth |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `rp:peter` | Peter |  | 64 or 67 |  | Bethsaida of Galilee |
+| 1 | `rp:peter` | Peter |  | 64 or 67 | Simon | Bethsaida of Galilee |
 | 2 | `rp:linus-i` | Linus | 68 | 79 |  | Tuscia |
 | 3 | `rp:anacletus-i` | Anacletus or Cletus | 80 | 92 |  | Rome |
 | 4 | `rp:clement-i` | Clement | 92 | 99 |  | Rome |

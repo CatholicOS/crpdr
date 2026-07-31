@@ -91,6 +91,10 @@ registry therefore holds 265 person records covering 267 pontificates.
 }
 ```
 
+A record may additionally carry a `note` field flagging any enrichment beyond
+the source table (see open question n. 5); records without a `note` are pure
+transcriptions.
+
 ### Date handling
 
 The source table's dates are irregular and are never silently normalized:
@@ -144,3 +148,13 @@ exception proposed upstream is resolved.
    (the proposed Peter exception; see also
    [#4](https://github.com/xudonglab/cdcf-uri-scheme/issues/4), which proposes
    CRPDR as the maintained registry behind the spec's papal slugs).
+5. **Enrichments beyond the table.** The seed carries one:
+   `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42), applied through the
+   generator's explicit `ENRICHMENTS` override and flagged in the record's
+   `note` field. The source table leaves that cell blank — presumably because
+   Peter's renaming was Christ's act, not a regnal-name choice at election —
+   even though its own convention elsewhere fills the cell precisely when the
+   pre-election name differs (first at John II, born Mercurio, 533; and
+   notably John XIV and Sergius IV, both born Pietro, who changed their names
+   out of reverence for the Apostle). Committee to confirm both the enrichment
+   and the mechanism.

@@ -41,6 +41,20 @@ ALIASES = {
     "Deusdedit or Adeodatus I": ("Adeodatus I", ["Deusdedit"]),
 }
 
+# Enrichments beyond the source table, applied after transcription and
+# flagged in the emitted record's `note` field (docs/schema-proposal.md,
+# open questions). The seed otherwise transcribes the table verbatim.
+ENRICHMENTS = {
+    "rp:peter": {
+        "secular_name": "Simon",
+        "note": ("secular_name is an enrichment: the source table leaves the "
+                 "cell blank, presumably because Peter's renaming (Mt 16:17; "
+                 "Jn 1:42) was Christ's act, not a regnal-name choice at "
+                 "election — elsewhere the table fills the cell precisely "
+                 "when the pre-election name differs."),
+    },
+}
+
 
 def roman_to_int(s):
     total = 0
@@ -173,6 +187,8 @@ def build_persons(rows):
                                 else "cdcf:person/pope-" + pid[len("rp:"):]),
             }
             order.append(pid)
+    for pid, extra in ENRICHMENTS.items():
+        persons[pid].update(extra)
     return [persons[p] for p in order]
 
 
@@ -207,6 +223,20 @@ def render_markdown(persons):
         "parsed forms are in [`data/pontiffs.json`](../data/pontiffs.json). "
         "All IDs are drafts pending committee review "
         "([schema proposal](../docs/schema-proposal.md)).",
+        "",
+        "The `Secular name` column follows the source table's own logic: it "
+        "is filled only when the pre-election name differs from the papal "
+        "name — first at n. 56 (John II, born Mercurio, 533, the first pope "
+        "to change his name) — and for every pope from the eleventh century "
+        "onward, once taking a regnal name had become the custom and the "
+        "column also records the family name. A blank therefore means the "
+        "pope reigned under his own name, not that the name is unknown. Two "
+        "popes born Pietro — John XIV (n. 136) and Sergius IV (n. 142) — "
+        "changed their names out of reverence for the Apostle; no pope has "
+        "ever taken the name Peter. Peter's own secular name, Simon "
+        "(Mt 16:17; Jn 1:42), is the registry's one enrichment beyond the "
+        "table, which leaves that cell blank — presumably because his "
+        "renaming was Christ's act, not a regnal-name choice at election.",
         "",
         "| N | ID | Papal name | Beginning of pontificate "
         "| End of pontificate | Secular name | Birth |",

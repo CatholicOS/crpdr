@@ -15,7 +15,7 @@
       "roman": null,
       "label_en": "Peter",
       "aliases": [],
-      "secular_name": null,
+      "secular_name": "Simon",
       "birthplace": "Bethsaida of Galilee",
       "century": 1,
       "pontificates": [
@@ -29,7 +29,8 @@
           ]
         }
       ],
-      "cdcf_person": "cdcf:person/pope-peter-i"
+      "cdcf_person": "cdcf:person/pope-peter-i",
+      "note": "secular_name is an enrichment: the source table leaves the cell blank, presumably because Peter's renaming (Mt 16:17; Jn 1:42) was Christ's act, not a regnal-name choice at election — elsewhere the table fills the cell precisely when the pre-election name differs."
     },
     {
       "id": "rp:linus-i",
