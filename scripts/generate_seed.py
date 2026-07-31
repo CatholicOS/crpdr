@@ -89,6 +89,69 @@ ENRICHMENTS = {
         "note": ("birth_country is null: ISO 3166-1 assigns no code covering "
                  "Jerusalem's internationally special status."),
     },
+    "rp:benedict-viii": {
+        "birthplace": "Rome?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank. His 'of Tusculum' is a "
+                 "dynastic designation (the Counts of Tusculum were Roman "
+                 "aristocrats), not a birthplace; Rome is a conjecture — "
+                 "marked '?' — with Tusculum a less securely attested "
+                 "alternative."),
+    },
+    "rp:john-xix": {
+        "birthplace": "Rome?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank. The 'dei conti di Tuscolo' of "
+                 "his secular name is a dynastic designation, not a "
+                 "birthplace; Rome is a conjecture — marked '?' — he was "
+                 "brother of Benedict VIII, of the Roman-based Tusculan "
+                 "dynasty."),
+    },
+    "rp:benedict-ix": {
+        "birthplace": "Rome?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment covering "
+                 "all three of his pontificates: the source table leaves the "
+                 "cells blank. His 'of Tusculum' is a dynastic designation; "
+                 "Rome is a conjecture — marked '?' — a reconstruction from "
+                 "the family's Roman aristocratic position (son of Alberic "
+                 "III, nephew of Benedict VIII and John XIX), not a "
+                 "contemporary record."),
+    },
+    "rp:stephen-ix": {
+        "birthplace": "Lorraine?",
+        "birth_country": "FR",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank. Lorraine is a regional "
+                 "conjecture — marked '?' — no town is securely documented; "
+                 "born Frederick, son of Gozelo I, Duke of Lower Lorraine, "
+                 "of the Ardennes-Verdun dynasty. birth_country FR: the "
+                 "core of historical Lorraine lies in modern France (Grand "
+                 "Est), though Lotharingia at large spanned several modern "
+                 "countries."),
+    },
+    "rp:callixtus-ii": {
+        "birthplace": "Quingey",
+        "birth_country": "FR",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank. Quingey is his traditionally "
+                 "accepted birthplace — no '?': specific and consistently "
+                 "recorded. His 'Guy of Burgundy' refers to the County of "
+                 "Burgundy (Franche-Comté), not the Duchy; Quingey is today "
+                 "in the Doubs, France."),
+    },
+    "rp:benedict-xv": {
+        "birthplace": "Genoa",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank, evidently an oversight — the "
+                 "Holy See's own biography gives Genoa (vatican.va, "
+                 "holy-father/benedetto-xv). No '?': attested. Local "
+                 "accounts specify the family villa at Pegli, today within "
+                 "Genoa."),
+    },
     "rp:formosus-i": {
         "birthplace": "Rome?",
         "birth_country": "IT",

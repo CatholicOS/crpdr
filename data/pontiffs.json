@@ -3180,8 +3180,8 @@
       "label_en": "Benedict VIII",
       "aliases": [],
       "secular_name": "Teofilatto dei conti di Tuscolo",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Rome?",
+      "birth_country": "IT",
       "century": 11,
       "pontificates": [
         {
@@ -3192,7 +3192,8 @@
           "end": "1024-04-09"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-benedict-viii"
+      "cdcf_person": "cdcf:person/pope-benedict-viii",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. His 'of Tusculum' is a dynastic designation (the Counts of Tusculum were Roman aristocrats), not a birthplace; Rome is a conjecture — marked '?' — with Tusculum a less securely attested alternative."
     },
     {
       "id": "rp:john-xix",
@@ -3202,8 +3203,8 @@
       "label_en": "John XIX",
       "aliases": [],
       "secular_name": "Romano dei conti di Tuscolo",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Rome?",
+      "birth_country": "IT",
       "century": 11,
       "pontificates": [
         {
@@ -3214,7 +3215,8 @@
           "end": "1032"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-john-xix"
+      "cdcf_person": "cdcf:person/pope-john-xix",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. The 'dei conti di Tuscolo' of his secular name is a dynastic designation, not a birthplace; Rome is a conjecture — marked '?' — he was brother of Benedict VIII, of the Roman-based Tusculan dynasty."
     },
     {
       "id": "rp:benedict-ix",
@@ -3224,8 +3226,8 @@
       "label_en": "Benedict IX",
       "aliases": [],
       "secular_name": "Theophylactus of Tusculum",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Rome?",
+      "birth_country": "IT",
       "century": 11,
       "pontificates": [
         {
@@ -3249,7 +3251,8 @@
           "end": "1048-08"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-benedict-ix"
+      "cdcf_person": "cdcf:person/pope-benedict-ix",
+      "note": "birthplace and birth_country are an enrichment covering all three of his pontificates: the source table leaves the cells blank. His 'of Tusculum' is a dynastic designation; Rome is a conjecture — marked '?' — a reconstruction from the family's Roman aristocratic position (son of Alberic III, nephew of Benedict VIII and John XIX), not a contemporary record."
     },
     {
       "id": "rp:sylvester-iii",
@@ -3392,8 +3395,8 @@
       "label_en": "Stephen IX",
       "aliases": [],
       "secular_name": "Frédéric de Lorraine",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Lorraine?",
+      "birth_country": "FR",
       "century": 11,
       "pontificates": [
         {
@@ -3405,7 +3408,8 @@
           "end": "1058-03-29"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-stephen-ix"
+      "cdcf_person": "cdcf:person/pope-stephen-ix",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. Lorraine is a regional conjecture — marked '?' — no town is securely documented; born Frederick, son of Gozelo I, Duke of Lower Lorraine, of the Ardennes-Verdun dynasty. birth_country FR: the core of historical Lorraine lies in modern France (Grand Est), though Lotharingia at large spanned several modern countries."
     },
     {
       "id": "rp:nicholas-ii",
@@ -3573,8 +3577,8 @@
       "label_en": "Callixtus II",
       "aliases": [],
       "secular_name": "Guy of Burgundy",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Quingey",
+      "birth_country": "FR",
       "century": 12,
       "pontificates": [
         {
@@ -3585,7 +3589,8 @@
           "start_inaugurated": "1119-02-09"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-callixtus-ii"
+      "cdcf_person": "cdcf:person/pope-callixtus-ii",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. Quingey is his traditionally accepted birthplace — no '?': specific and consistently recorded. His 'Guy of Burgundy' refers to the County of Burgundy (Franche-Comté), not the Duchy; Quingey is today in the Doubs, France."
     },
     {
       "id": "rp:honorius-ii",
@@ -5762,8 +5767,8 @@
       "label_en": "Benedict XV",
       "aliases": [],
       "secular_name": "Giacomo della Chiesa",
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Genoa",
+      "birth_country": "IT",
       "century": 20,
       "pontificates": [
         {
@@ -5775,7 +5780,8 @@
           "end": "1922-01-22"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-benedict-xv"
+      "cdcf_person": "cdcf:person/pope-benedict-xv",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank, evidently an oversight — the Holy See's own biography gives Genoa (vatican.va, holy-father/benedetto-xv). No '?': attested. Local accounts specify the family villa at Pegli, today within Genoa."
     },
     {
       "id": "rp:pius-xi",

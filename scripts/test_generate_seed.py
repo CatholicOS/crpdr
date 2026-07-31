@@ -177,9 +177,38 @@ class BuildPersons(unittest.TestCase):
 
     def test_notes_only_on_documented_enrichments(self):
         self.assertEqual(sorted(q["id"] for q in self.persons if "note" in q),
-                         ["rp:callistus-i", "rp:damasus-ii", "rp:dionysius-i",
-                          "rp:formosus-i", "rp:hormisdas-i", "rp:peter",
+                         ["rp:benedict-ix", "rp:benedict-viii",
+                          "rp:benedict-xv", "rp:callistus-i",
+                          "rp:callixtus-ii", "rp:damasus-ii",
+                          "rp:dionysius-i", "rp:formosus-i", "rp:hormisdas-i",
+                          "rp:john-xix", "rp:peter", "rp:stephen-ix",
                           "rp:theodore-i"])
+
+    def test_tusculan_popes_conjectural_rome(self):
+        for pid in ("rp:benedict-viii", "rp:john-xix", "rp:benedict-ix"):
+            p = self.by_id[pid]
+            self.assertEqual(p["birthplace"], "Rome?", pid)
+            self.assertEqual(p["birth_country"], "IT", pid)
+            self.assertIn("dynastic", p["note"], pid)
+
+    def test_stephen_ix_regional_conjecture(self):
+        p = self.by_id["rp:stephen-ix"]
+        self.assertEqual(p["birthplace"], "Lorraine?")
+        self.assertEqual(p["birth_country"], "FR")
+        self.assertIn("conjecture", p["note"])
+
+    def test_callixtus_ii_traditional_birthplace(self):
+        p = self.by_id["rp:callixtus-ii"]
+        self.assertEqual(p["birthplace"], "Quingey")  # traditional: no '?'
+        self.assertEqual(p["birth_country"], "FR")
+        self.assertIn("County of Burgundy", p["note"])
+
+    def test_benedict_xv_attested_birthplace(self):
+        p = self.by_id["rp:benedict-xv"]
+        self.assertEqual(p["birthplace"], "Genoa")  # attested: no '?'
+        self.assertEqual(p["birth_country"], "IT")
+        self.assertIn("oversight", p["note"])
+        self.assertIn("vatican.va", p["note"])
 
     def test_hormisdas_attested_birthplace_enrichment(self):
         p = self.by_id["rp:hormisdas-i"]
@@ -306,8 +335,15 @@ class BirthCountry(unittest.TestCase):
         self.assertIn("Pildenau", p["note"])
         self.assertIn("natione Noricus", p["note"])
 
-    def test_blank_birthplace_yields_null(self):
-        self.assertIsNone(self.by_id["rp:benedict-ix"]["birth_country"])
+    def test_remaining_nulls_are_exactly_the_documented_ones(self):
+        # every blank Birth cell is now filled by an enrichment; only the
+        # contested (Peter, Theodore I) and Conon's "Unknown" stay null
+        nulls = sorted(p["id"] for p in self.persons
+                       if p["birth_country"] is None)
+        self.assertEqual(nulls, ["rp:conon-i", "rp:peter", "rp:theodore-i"])
+        self.assertEqual(self.by_id["rp:conon-i"]["birthplace"], "Unknown")
+        # no record is left without a birthplace value at all
+        self.assertTrue(all(p["birthplace"] for p in self.persons))
 
 
 class RenderMarkdown(unittest.TestCase):
@@ -345,6 +381,10 @@ class RenderMarkdown(unittest.TestCase):
 
     def test_benedict_ix_id_repeats_per_pontificate(self):
         self.assertEqual(self.md.count("`rp:benedict-ix`"), 3)
+
+    def test_conjectural_rome_rows(self):
+        # Callistus I, Formosus, Benedict VIII, John XIX, Benedict IX x3
+        self.assertEqual(self.md.count("| Rome? | IT |"), 7)
 
     def test_dates_are_verbatim_raw_strings(self):
         self.assertIn("| 266 | `rp:francis-i` | Francis | 13,19.III.2013 "

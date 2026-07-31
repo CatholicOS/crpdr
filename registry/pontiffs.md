@@ -148,18 +148,18 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 140 | `rp:john-xvii` | John XVII | 16.V.1003 | 6.XI.1003 | Siccone | Rome | IT |
 | 141 | `rp:john-xviii` | John XVIII | 25.XII.1003 | ...VI or VII.1009 | Fasano | Rome | IT |
 | 142 | `rp:sergius-iv` | Sergius IV | 31.VII.1009 | 12.V.1012 | Pietro | Rome | IT |
-| 143 | `rp:benedict-viii` | Benedict VIII | 18.V.1012 | 9.IV.1024 | Teofilatto dei conti di Tuscolo |  |  |
-| 144 | `rp:john-xix` | John XIX | 19.IV.1024 | ...1032 | Romano dei conti di Tuscolo |  |  |
-| 145 | `rp:benedict-ix` | Benedict IX | ...VIII or IX.1032 | ...IX.1044 | Theophylactus of Tusculum |  |  |
+| 143 | `rp:benedict-viii` | Benedict VIII | 18.V.1012 | 9.IV.1024 | Teofilatto dei conti di Tuscolo | Rome? | IT |
+| 144 | `rp:john-xix` | John XIX | 19.IV.1024 | ...1032 | Romano dei conti di Tuscolo | Rome? | IT |
+| 145 | `rp:benedict-ix` | Benedict IX | ...VIII or IX.1032 | ...IX.1044 | Theophylactus of Tusculum | Rome? | IT |
 | 146 | `rp:sylvester-iii` | Sylvester III | 13 or 20.I.1045 | ...III.1045 | Giovanni | Rome | IT |
-| 147 | `rp:benedict-ix` | Benedict IX | 10.III.1045 | 1.V.1045 | Theophylactus of Tusculum |  |  |
+| 147 | `rp:benedict-ix` | Benedict IX | 10.III.1045 | 1.V.1045 | Theophylactus of Tusculum | Rome? | IT |
 | 148 | `rp:gregory-vi` | Gregory VI | 1.V.1045 | 20.XII.1046 | Giovanni Graziano | Rome | IT |
 | 149 | `rp:clement-ii` | Clement II | 24.XII.1046 | 9.X.1047 | Suidger, Graf von Morsleben und Hornburg | Saxony | DE |
-| 150 | `rp:benedict-ix` | Benedict IX | ...X.1047 | ... VIII.1048 | Theophylactus of Tusculum |  |  |
+| 150 | `rp:benedict-ix` | Benedict IX | ...X.1047 | ... VIII.1048 | Theophylactus of Tusculum | Rome? | IT |
 | 151 | `rp:damasus-ii` | Damasus II | 17.VII.1048 | 9.VIII.1048 | Poppo | Tyrol | DE |
 | 152 | `rp:leo-ix` | Leo IX | 2,12.II.1049 | 19.IV.1054 | Bruno of Eguisheim-Dagsburg | Alsace | FR |
 | 153 | `rp:victor-ii` | Victor II | 13.IV.1055 | 28.VII.1057 | Gebhard Of Dollnstein-hirschberg | Swabia | DE |
-| 154 | `rp:stephen-ix` | Stephen IX | 2,3.VIII.1057 | 29.III.1058 | Frédéric de Lorraine |  |  |
+| 154 | `rp:stephen-ix` | Stephen IX | 2,3.VIII.1057 | 29.III.1058 | Frédéric de Lorraine | Lorraine? | FR |
 | 155 | `rp:nicholas-ii` | Nicholas II | ...XII.1058, 24.I.1059 | 27.VII.1061 | Gérard | Bourgogne | FR |
 | 156 | `rp:alexander-ii` | Alexander II | 30.IX, 1.X.1061 | 21.IV.1073 | Anselmo | Baggio (Milano) | IT |
 | 157 | `rp:gregory-vii` | Gregory VII | 22.IV,30.VI.1073 | 25.V.1085 | Ildebrando | Tuscia | IT |
@@ -167,7 +167,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 159 | `rp:urban-ii` | Urban II | 12.III.1088 | 29.VII.1099 | Odo of Lagery | Châtillon-sur-Marne | FR |
 | 160 | `rp:paschal-ii` | Paschal II | 13,14.VIII.1099 | 21.I.1118 | Raniero | Bleda or Galeata | IT |
 | 161 | `rp:gelasius-ii` | Gelasius II | 24.I,10.III.1118 | 28.I.1119 | Giovanni Caetani | Gaeta | IT |
-| 162 | `rp:callixtus-ii` | Callixtus II | 2,9.II.1119 | 13 or 14.XII.1124 | Guy of Burgundy |  |  |
+| 162 | `rp:callixtus-ii` | Callixtus II | 2,9.II.1119 | 13 or 14.XII.1124 | Guy of Burgundy | Quingey | FR |
 | 163 | `rp:honorius-ii` | Honorius II | 15,21.XII.1124 | 13 or 14.II.1130 | Lamberto Scannabecchi | Fiagnano (Imola) | IT |
 | 164 | `rp:innocent-ii` | Innocent II | 14,23.II.1130 | 24.IX.1143 | Gregorio Papareschi | Rome | IT |
 | 165 | `rp:celestine-ii` | Celestine II | 26.IX,3.X.1143 | 8.III.1144 | Guido | Città di Castello | IT |
@@ -263,7 +263,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 255 | `rp:pius-ix` | Pius IX | 16,21.VI.1846 | 7.II.1878 | Giovanni Maria Mastai Ferretti | Senigallia | IT |
 | 256 | `rp:leo-xiii` | Leo XIII | 20.II, 3.III.1878 | 20.VII.1903 | Vincenzo Gioacchino Pecci | Carpineto Romano | IT |
 | 257 | `rp:pius-x` | Pius X | 4,9.VIII.1903 | 20.VIII.1914 | Giuseppe Melchiorre Sarto | Riese (Treviso) | IT |
-| 258 | `rp:benedict-xv` | Benedict XV | 3,6.IX.1914 | 22.I.1922 | Giacomo della Chiesa |  |  |
+| 258 | `rp:benedict-xv` | Benedict XV | 3,6.IX.1914 | 22.I.1922 | Giacomo della Chiesa | Genoa | IT |
 | 259 | `rp:pius-xi` | Pius XI | 6,12.II.1922 | 10.II.1939 | Achille Ratti | Desio (Milan) | IT |
 | 260 | `rp:pius-xii` | Pius XII | 2,12.III.1939 | 9.X.1958 | Eugenio Pacelli | Rome | IT |
 | 261 | `rp:john-xxiii` | John XXIII | 28.X, 4.XI.1958 | 3.VI.1963 | Angelo Giuseppe Roncalli | Sotto il Monte (Bergamo) | IT |

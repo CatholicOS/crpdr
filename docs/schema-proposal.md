@@ -196,42 +196,33 @@ exception proposed upstream is resolved.
    CRPDR as the maintained registry behind the spec's papal slugs).
 5. **Enrichments beyond the table.** Applied through the generator's explicit
    `ENRICHMENTS` override and always flagged in the record's `note` field;
-   records without a `note` are pure transcriptions. The seed carries six
-   value enrichments and one explanatory note:
-   - `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42). The source table
-     leaves that cell blank — presumably because Peter's renaming was
-     Christ's act, not a regnal-name choice at election — even though its own
-     convention elsewhere fills the cell precisely when the pre-election name
-     differs (first at John II, born Mercurio, 533; and notably John XIV and
-     Sergius IV, both born Pietro, who changed their names out of reverence
-     for the Apostle).
-   - `rp:damasus-ii.birth_country = "DE"`: the table's "Tyrol" reflects his
-     see of Brixen, but he was born Poppo at Pildenau in Bavaria — the Liber
-     Pontificalis styles him "natione Noricus, qui alio vocabulo Bayuuarius
-     dicitur".
-   - `rp:callistus-i.birthplace = "Rome?"` with `birth_country = "IT"`: the
-     table leaves the cell blank; Rome is a conjecture — marked "?" as
-     presumption, not attestation — since his recorded life unfolds there,
-     where he had been a slave before his ordination. The "?" convention is
-     itself proposed here for any future conjectural value.
-   - `rp:dionysius-i.birthplace = "Terranova da Sibari (Cosenza)?"` with
-     `birth_country = "IT"`: the table records "Unknown"; the conjecture
-     rests on local tradition, and the town lies in the old Sybaris
-     territory of Magna Graecia, consistent with his Greek origins.
-   - `rp:hormisdas-i.birthplace = "Frosinone"` with `birth_country = "IT"`:
-     the table leaves the cell blank, but the Liber Pontificalis attests
-     "Hormisda, natione Campanus, ex patre Iusto, de civitate Frusinone" —
-     Frusino (modern Frosinone) then lay in the late-antique province of
-     Campania. Attested rather than conjectured, hence no "?"; the table
-     itself gives Frosinone as the birthplace of his son Silverius (n. 58).
-   - `rp:formosus-i.birthplace = "Rome?"` with `birth_country = "IT"`: the
-     table's Birth cell records his episcopal see at election ("Bishop of
-     Portus"), not a birthplace; Rome is a conjecture — "probably a native
-     of Rome, and must have been born about 816" (Catholic Encyclopedia).
-   - A note without a value change on `rp:theodore-i` (Jerusalem: no covering
-     ISO code); `rp:peter`'s note also covers his null `birth_country`
-     (Bethsaida's modern attribution is contested).
-   Committee to confirm the enrichments and the mechanism.
+   records without a `note` are pure transcriptions. Two evidentiary grades:
+   **attested** values carry no marker; **conjectured** values carry a
+   trailing `?` (presumption, not attestation) — the `?` convention is
+   itself proposed here for any future conjectural value. The seed's
+   enrichments (each record's `note` carries the full rationale):
+
+   | Record | Enrichment | Grade | Basis |
+   |---|---|---|---|
+   | `rp:peter` | `secular_name: "Simon"` | attested | Mt 16:17; Jn 1:42 — renamed by Christ, not at election; the table elsewhere fills the cell precisely when the pre-election name differs (first at John II/Mercurio, 533; John XIV and Sergius IV, both born Pietro, renamed out of reverence for the Apostle) |
+   | `rp:callistus-i` | `birthplace: "Rome?"`, `IT` | conjectured | his recorded life unfolds in Rome, where he had been a slave |
+   | `rp:dionysius-i` | `birthplace: "Terranova da Sibari (Cosenza)?"`, `IT` | conjectured | local tradition; the town lies in the old Sybaris territory of Magna Graecia, consistent with his Greek origins (table: "Unknown") |
+   | `rp:hormisdas-i` | `birthplace: "Frosinone"`, `IT` | attested | Liber Pontificalis: "natione Campanus, ex patre Iusto, de civitate Frusinone"; the table gives Frosinone for his son Silverius (n. 58) |
+   | `rp:formosus-i` | `birthplace: "Rome?"`, `IT` | conjectured | table cell records his see at election ("Bishop of Portus"); "probably a native of Rome" (Catholic Encyclopedia) |
+   | `rp:benedict-viii` | `birthplace: "Rome?"`, `IT` | conjectured | "of Tusculum" is dynastic (Roman aristocracy), not natal; Tusculum a less attested alternative |
+   | `rp:john-xix` | `birthplace: "Rome?"`, `IT` | conjectured | brother of Benedict VIII; "dei conti di Tuscolo" is dynastic |
+   | `rp:benedict-ix` | `birthplace: "Rome?"`, `IT` | conjectured | reconstruction from the Tusculan family's Roman position (son of Alberic III); covers all three pontificates |
+   | `rp:stephen-ix` | `birthplace: "Lorraine?"`, `FR` | conjectured | region only, no town documented; core historical Lorraine lies in modern France (Grand Est) |
+   | `rp:callixtus-ii` | `birthplace: "Quingey"`, `FR` | attested | traditionally accepted, specific and consistently recorded; "Guy of Burgundy" = County of Burgundy (Franche-Comté) |
+   | `rp:damasus-ii` | `birth_country: "DE"` | attested | Liber Pontificalis: "natione Noricus, qui alio vocabulo Bayuuarius dicitur" — born Poppo at Pildenau in Bavaria (table: "Tyrol", his see of Brixen) |
+   | `rp:benedict-xv` | `birthplace: "Genoa"`, `IT` | attested | the Holy See's own biography gives Genoa — the blank table cell is evidently an oversight |
+
+   A note without a value change remains on `rp:theodore-i` (Jerusalem: no
+   covering ISO code); `rp:peter`'s note also covers his null
+   `birth_country` (Bethsaida's modern attribution is contested). With
+   these enrichments every record carries a birthplace value; the only
+   `birth_country` nulls are Peter, Theodore I, and Conon (table:
+   "Unknown"). Committee to confirm the enrichments and the mechanism.
 6. **The `birth_country` mapping.** The string-level mapping policy above —
    in particular `TN` for the Roman province of Africa, `SY` for "Syria" as
    printed, and the null-with-note treatment of Bethsaida and Jerusalem — is
