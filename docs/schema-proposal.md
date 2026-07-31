@@ -80,12 +80,12 @@ registry therefore holds 265 person records covering 267 pontificates.
   "birthplace": null,              // as given by the table
   "century": 11,                   // century of first accession, per the table
   "pontificates": [
-    { "number": 145, "start_raw": "1032", "start": "1032",
-      "end_raw": "1044", "end": "1044" },
-    { "number": 147, "start_raw": "10.III.1045", "start": "1045-03-10",
-      "end_raw": "1.V.1045", "end": "1045-05-01" },
-    { "number": 150, "start_raw": "8.XI.1047", "start": "1047-11-08",
-      "end_raw": "17.VII.1048", "end": "1048-07-17" }
+    { "number": 145, "start_raw": "...VIII or IX.1032",
+      "end_raw": "...IX.1044", "end": "1044-09" },
+    { "number": 147, "start_raw": "10.III.1045", "end_raw": "1.V.1045",
+      "start": "1045-03-10", "end": "1045-05-01" },
+    { "number": 150, "start_raw": "...X.1047", "end_raw": "... VIII.1048",
+      "start": "1047-10", "end": "1048-08" }
   ],
   "cdcf_person": "cdcf:person/pope-benedict-ix"
 }
@@ -99,9 +99,10 @@ The source table's dates are irregular and are never silently normalized:
 - Parsed fields exist only where parsing is mechanical and unambiguous:
   single dates (`21.VII.230` → `0230-07-21`), bare years (`68` → `0068`),
   year alternates (`64 or 67` → `["0064", "0067"]`), month partials
-  (`...VIII.827` → `0827-08`), and — in the beginning column only — the
-  election/inauguration double dates (`13,19.III.2013` →
-  `start_elected: 2013-03-13`, `start_inaugurated: 2013-03-19`).
+  (`...VIII.827` → `0827-08`), year partials (`... 236` → `0236`), and — in
+  the beginning column only — the election/inauguration double dates
+  (`13,19.III.2013` → `start_elected: 2013-03-13`,
+  `start_inaugurated: 2013-03-19`).
 - Everything else (Italian "o" alternates, month ranges, triple dates) stays
   raw-only, pending open question n. 3 below.
 - The reigning pope has `end_raw: null`.
@@ -136,7 +137,7 @@ exception proposed upstream is resolved.
    attribute. Committee to confirm.
 3. **Date-uncertainty representation.** Is raw-plus-parsed sufficient, or is
    a structured uncertainty type
-   ([EDTF](https://www.loc.gov/standards/datetime/)) warranted for the ~40
+   ([EDTF](https://www.loc.gov/standards/datetime/)) warranted for the 49
    irregular strings currently kept raw-only?
 4. **The Peter divergence** from cdcf-uri-scheme §3.6.1, pending the upstream
    issue.
