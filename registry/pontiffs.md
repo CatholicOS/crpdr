@@ -21,7 +21,7 @@ The `Secular name` column follows the source table's own logic: it is filled onl
 | 13 | `rp:eleutherius-i` | Eleutherius | 171 or 177 | 185 or 193 |  | Nicopolis (Epirus) | GR |
 | 14 | `rp:victor-i` | Victor I | 186 or 189 | 197 or 201 |  | Africa | TN |
 | 15 | `rp:zephyrinus-i` | Zephyrinus | 198 | 217 or 218 |  | Rome | IT |
-| 16 | `rp:callistus-i` | Callistus I | 218 | 222 |  |  |  |
+| 16 | `rp:callistus-i` | Callistus I | 218 | 222 |  | Rome? | IT |
 | 17 | `rp:urban-i` | Urban I | 222 | 230 |  | Rome | IT |
 | 18 | `rp:pontianus-i` | Pontianus | 21.VII.230 | 28.IX.235 |  | Rome | IT |
 | 19 | `rp:anterus-i` | Anterus | 21.XI.235 | 3.I.236 |  | Greece | GR |

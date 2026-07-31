@@ -193,7 +193,7 @@ exception proposed upstream is resolved.
    CRPDR as the maintained registry behind the spec's papal slugs).
 5. **Enrichments beyond the table.** Applied through the generator's explicit
    `ENRICHMENTS` override and always flagged in the record's `note` field;
-   records without a `note` are pure transcriptions. The seed carries two
+   records without a `note` are pure transcriptions. The seed carries three
    value enrichments and two explanatory notes:
    - `rp:peter.secular_name = "Simon"` (Mt 16:17; Jn 1:42). The source table
      leaves that cell blank — presumably because Peter's renaming was
@@ -206,6 +206,11 @@ exception proposed upstream is resolved.
      see of Brixen, but he was born Poppo at Pildenau in Bavaria — the Liber
      Pontificalis styles him "natione Noricus, qui alio vocabulo Bayuuarius
      dicitur".
+   - `rp:callistus-i.birthplace = "Rome?"` with `birth_country = "IT"`: the
+     table leaves the cell blank; Rome is a conjecture — marked "?" as
+     presumption, not attestation — since his recorded life unfolds there,
+     where he had been a slave before his ordination. The "?" convention is
+     itself proposed here for any future conjectural value.
    - Notes without a value change on `rp:theodore-i` (Jerusalem: no covering
      ISO code) and `rp:formosus-i` ("Bishop of Portus" is an office, not a
      birthplace); `rp:peter`'s note also covers his null `birth_country`

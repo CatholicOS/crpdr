@@ -177,8 +177,15 @@ class BuildPersons(unittest.TestCase):
 
     def test_notes_only_on_documented_enrichments(self):
         self.assertEqual(sorted(q["id"] for q in self.persons if "note" in q),
-                         ["rp:damasus-ii", "rp:formosus-i", "rp:peter",
-                          "rp:theodore-i"])
+                         ["rp:callistus-i", "rp:damasus-ii", "rp:formosus-i",
+                          "rp:peter", "rp:theodore-i"])
+
+    def test_callistus_i_conjectural_birthplace_enrichment(self):
+        p = self.by_id["rp:callistus-i"]
+        self.assertEqual(p["birthplace"], "Rome?")
+        self.assertEqual(p["birth_country"], "IT")
+        self.assertIn("slave", p["note"])
+        self.assertIn("conjecture", p["note"])
 
     def test_sole_holders_get_ordinal_i(self):
         for pid in ("rp:francis-i", "rp:lando-i", "rp:linus-i", "rp:mark-i"):

@@ -408,8 +408,8 @@
       "label_en": "Callistus I",
       "aliases": [],
       "secular_name": null,
-      "birthplace": null,
-      "birth_country": null,
+      "birthplace": "Rome?",
+      "birth_country": "IT",
       "century": 3,
       "pontificates": [
         {
@@ -420,7 +420,8 @@
           "end": "0222"
         }
       ],
-      "cdcf_person": "cdcf:person/pope-callistus-i"
+      "cdcf_person": "cdcf:person/pope-callistus-i",
+      "note": "birthplace and birth_country are an enrichment: the source table leaves the cell blank. Rome is a conjecture — marked '?' as presumption, not attestation — since his recorded life unfolds there, where he had been a slave (of Carpophorus) before his ordination."
     },
     {
       "id": "rp:urban-i",

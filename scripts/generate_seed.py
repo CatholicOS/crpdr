@@ -55,6 +55,15 @@ ENRICHMENTS = {
                  "the site of Bethsaida, northeast of the Sea of Galilee, "
                  "lies in territory whose modern attribution is contested."),
     },
+    "rp:callistus-i": {
+        "birthplace": "Rome?",
+        "birth_country": "IT",
+        "note": ("birthplace and birth_country are an enrichment: the source "
+                 "table leaves the cell blank. Rome is a conjecture — marked "
+                 "'?' as presumption, not attestation — since his recorded "
+                 "life unfolds there, where he had been a slave (of "
+                 "Carpophorus) before his ordination."),
+    },
     "rp:theodore-i": {
         "note": ("birth_country is null: ISO 3166-1 assigns no code covering "
                  "Jerusalem's internationally special status."),
@@ -281,8 +290,11 @@ def validate(persons, rows):
     assert not bad, f"IDs failing grammar: {bad}"
     total = sum(len(p["pontificates"]) for p in persons)
     assert total == len(rows), f"pontificate count {total} != row count {len(rows)}"
+    enriched = {e["birthplace"] for e in ENRICHMENTS.values()
+                if "birthplace" in e}
     unmapped = {p["birthplace"] for p in persons
-                if p["birthplace"] and p["birthplace"] not in BIRTH_COUNTRIES}
+                if p["birthplace"] and p["birthplace"] not in BIRTH_COUNTRIES
+                and p["birthplace"] not in enriched}
     assert not unmapped, f"birthplaces missing from BIRTH_COUNTRIES: {unmapped}"
 
 
