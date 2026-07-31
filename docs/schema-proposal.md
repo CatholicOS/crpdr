@@ -139,5 +139,8 @@ exception proposed upstream is resolved.
    a structured uncertainty type
    ([EDTF](https://www.loc.gov/standards/datetime/)) warranted for the 49
    irregular strings currently kept raw-only?
-4. **The Peter divergence** from cdcf-uri-scheme §3.6.1, pending the upstream
-   issue.
+4. **The Peter divergence** from cdcf-uri-scheme §3.6.1, pending
+   [xudonglab/cdcf-uri-scheme#3](https://github.com/xudonglab/cdcf-uri-scheme/issues/3)
+   (the proposed Peter exception; see also
+   [#4](https://github.com/xudonglab/cdcf-uri-scheme/issues/4), which proposes
+   CRPDR as the maintained registry behind the spec's papal slugs).
