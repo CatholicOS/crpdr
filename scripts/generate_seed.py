@@ -128,3 +128,97 @@ def parse_date(raw, role):
     if m:
         return {key(): f"{int(m.group(1)):04d}"}
     return {}
+
+
+def build_persons(rows):
+    """Fold the 267 pontificate rows into person records (one per pope).
+
+    Ordinal rule (docs/schema-proposal.md): every ID carries a Roman-numeral
+    ordinal, including sole holders of a name (forward stability) — except
+    Peter, who is never styled with one."""
+    persons = {}
+    order = []
+    for number, cells in enumerate(rows, 1):
+        label = cells[1]
+        name, roman, aliases = split_name(label)
+        if name == "Peter" and roman is None:
+            roman_final = None
+        else:
+            roman_final = roman or "i"
+        pid = make_id(name, roman_final)
+        pont = {"number": number,
+                "start_raw": cells[2] or None,
+                "end_raw": cells[3] or None}
+        if cells[2]:
+            pont.update(parse_date(cells[2], "start"))
+        if cells[3]:
+            pont.update(parse_date(cells[3], "end"))
+        if pid in persons:
+            persons[pid]["pontificates"].append(pont)
+        else:
+            persons[pid] = {
+                "id": pid,
+                "name": name,
+                "ordinal": roman_to_int(roman_final) if roman_final else None,
+                "roman": roman_final,
+                "label_en": label,
+                "aliases": aliases,
+                "secular_name": cells[4] or None,
+                "birthplace": cells[5] or None,
+                "century": int(cells[6]) if cells[6] else None,
+                "pontificates": [pont],
+                # provisional for Peter: cdcf-uri-scheme §3.6.1 mandates the
+                # ordinal; a Peter exception is proposed upstream
+                "cdcf_person": ("cdcf:person/pope-peter-i" if pid == "rp:peter"
+                                else "cdcf:person/pope-" + pid[len("rp:"):]),
+            }
+            order.append(pid)
+    return [persons[p] for p in order]
+
+
+def validate(persons, rows):
+    ids = [p["id"] for p in persons]
+    dupes = {i for i in ids if ids.count(i) > 1}
+    assert not dupes, f"duplicate IDs: {dupes}"
+    bad = [i for i in ids if not ID_RE.fullmatch(i)]
+    assert not bad, f"IDs failing grammar: {bad}"
+    total = sum(len(p["pontificates"]) for p in persons)
+    assert total == len(rows), f"pontificate count {total} != row count {len(rows)}"
+
+
+def main():
+    repo_root = (Path(sys.argv[1]) if len(sys.argv) > 1
+                 else Path(__file__).resolve().parent.parent)
+    html = (repo_root / "data" / "source" / "holy-father-table.html"
+            ).read_text(encoding="utf-8")
+    rows = extract_rows(html)
+    persons = build_persons(rows)
+    validate(persons, rows)
+
+    def has_parsed(pont, col):
+        return any(k == col or (k.startswith(col + "_") and k != col + "_raw")
+                   for k in pont)
+
+    raw_only = sum(1 for p in persons for pont in p["pontificates"]
+                   for col in ("start", "end")
+                   if pont[col + "_raw"] and not has_parsed(pont, col))
+    out = {
+        "$comment": ("CRPDR seed registry: draft canonical IDs for the Roman "
+                     "Pontiffs, generated from the Holy See's reference table "
+                     "(see data/source/README.md). All IDs are drafts pending "
+                     "committee review (docs/schema-proposal.md)."),
+        "id_scheme": "rp:<name>-<roman> (sole exception: rp:peter)",
+        "source": {"url": SOURCE_URL, "retrieved": SOURCE_RETRIEVED},
+        "person_count": len(persons),
+        "pontificate_count": len(rows),
+        "entries": persons,
+    }
+    dest = repo_root / "data" / "pontiffs.json"
+    dest.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8")
+    print(f"wrote {dest}: {len(persons)} persons, {len(rows)} pontificates; "
+          f"{raw_only} date strings kept raw-only")
+
+
+if __name__ == "__main__":
+    main()

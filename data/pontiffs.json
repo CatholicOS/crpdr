@@ -1,0 +1,5715 @@
+{
+  "$comment": "CRPDR seed registry: draft canonical IDs for the Roman Pontiffs, generated from the Holy See's reference table (see data/source/README.md). All IDs are drafts pending committee review (docs/schema-proposal.md).",
+  "id_scheme": "rp:<name>-<roman> (sole exception: rp:peter)",
+  "source": {
+    "url": "https://www.vatican.va/content/vatican/en/holy-father.html",
+    "retrieved": "2026-07-31"
+  },
+  "person_count": 265,
+  "pontificate_count": 267,
+  "entries": [
+    {
+      "id": "rp:peter",
+      "name": "Peter",
+      "ordinal": null,
+      "roman": null,
+      "label_en": "Peter",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Bethsaida of Galilee",
+      "century": 1,
+      "pontificates": [
+        {
+          "number": 1,
+          "start_raw": null,
+          "end_raw": "64 or 67",
+          "end_alternates": [
+            "0064",
+            "0067"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-peter-i"
+    },
+    {
+      "id": "rp:linus-i",
+      "name": "Linus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Linus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tuscia",
+      "century": 1,
+      "pontificates": [
+        {
+          "number": 2,
+          "start_raw": "68",
+          "end_raw": "79",
+          "start": "0068",
+          "end": "0079"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-linus-i"
+    },
+    {
+      "id": "rp:anacletus-i",
+      "name": "Anacletus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Anacletus or Cletus",
+      "aliases": [
+        "Cletus"
+      ],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 1,
+      "pontificates": [
+        {
+          "number": 3,
+          "start_raw": "80",
+          "end_raw": "92",
+          "start": "0080",
+          "end": "0092"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anacletus-i"
+    },
+    {
+      "id": "rp:clement-i",
+      "name": "Clement",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Clement",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 1,
+      "pontificates": [
+        {
+          "number": 4,
+          "start_raw": "92",
+          "end_raw": "99",
+          "start": "0092",
+          "end": "0099"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-i"
+    },
+    {
+      "id": "rp:evaristus-i",
+      "name": "Evaristus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Evaristus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 1,
+      "pontificates": [
+        {
+          "number": 5,
+          "start_raw": "99 or 96",
+          "end_raw": "108",
+          "start_alternates": [
+            "0099",
+            "0096"
+          ],
+          "end": "0108"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-evaristus-i"
+    },
+    {
+      "id": "rp:alexander-i",
+      "name": "Alexander",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Alexander I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 6,
+          "start_raw": "108 or 109",
+          "end_raw": "116 or 119",
+          "start_alternates": [
+            "0108",
+            "0109"
+          ],
+          "end_alternates": [
+            "0116",
+            "0119"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-i"
+    },
+    {
+      "id": "rp:sixtus-i",
+      "name": "Sixtus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Sixtus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 7,
+          "start_raw": "117 or 119",
+          "end_raw": "126 or 128",
+          "start_alternates": [
+            "0117",
+            "0119"
+          ],
+          "end_alternates": [
+            "0126",
+            "0128"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sixtus-i"
+    },
+    {
+      "id": "rp:telesphorus-i",
+      "name": "Telesphorus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Telesphorus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 8,
+          "start_raw": "127 or 128",
+          "end_raw": "137 or 138",
+          "start_alternates": [
+            "0127",
+            "0128"
+          ],
+          "end_alternates": [
+            "0137",
+            "0138"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-telesphorus-i"
+    },
+    {
+      "id": "rp:hyginus-i",
+      "name": "Hyginus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Hyginus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 9,
+          "start_raw": "138",
+          "end_raw": "142 or 149",
+          "start": "0138",
+          "end_alternates": [
+            "0142",
+            "0149"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-hyginus-i"
+    },
+    {
+      "id": "rp:pius-i",
+      "name": "Pius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Pius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Aquileia",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 10,
+          "start_raw": "142 or 146",
+          "end_raw": "157 or 161",
+          "start_alternates": [
+            "0142",
+            "0146"
+          ],
+          "end_alternates": [
+            "0157",
+            "0161"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-i"
+    },
+    {
+      "id": "rp:anicetus-i",
+      "name": "Anicetus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Anicetus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Emesa (Syria)",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 11,
+          "start_raw": "150 or 157",
+          "end_raw": "153 or 168",
+          "start_alternates": [
+            "0150",
+            "0157"
+          ],
+          "end_alternates": [
+            "0153",
+            "0168"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anicetus-i"
+    },
+    {
+      "id": "rp:soterus-i",
+      "name": "Soterus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Soterus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Fondi",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 12,
+          "start_raw": "162 or 168",
+          "end_raw": "170 or 177",
+          "start_alternates": [
+            "0162",
+            "0168"
+          ],
+          "end_alternates": [
+            "0170",
+            "0177"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-soterus-i"
+    },
+    {
+      "id": "rp:eleutherius-i",
+      "name": "Eleutherius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Eleutherius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Nicopolis (Epirus)",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 13,
+          "start_raw": "171 or 177",
+          "end_raw": "185 or 193",
+          "start_alternates": [
+            "0171",
+            "0177"
+          ],
+          "end_alternates": [
+            "0185",
+            "0193"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eleutherius-i"
+    },
+    {
+      "id": "rp:victor-i",
+      "name": "Victor",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Victor I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Africa",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 14,
+          "start_raw": "186 or 189",
+          "end_raw": "197 or 201",
+          "start_alternates": [
+            "0186",
+            "0189"
+          ],
+          "end_alternates": [
+            "0197",
+            "0201"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-victor-i"
+    },
+    {
+      "id": "rp:zephyrinus-i",
+      "name": "Zephyrinus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Zephyrinus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 2,
+      "pontificates": [
+        {
+          "number": 15,
+          "start_raw": "198",
+          "end_raw": "217 or 218",
+          "start": "0198",
+          "end_alternates": [
+            "0217",
+            "0218"
+          ]
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-zephyrinus-i"
+    },
+    {
+      "id": "rp:callistus-i",
+      "name": "Callistus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Callistus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": null,
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 16,
+          "start_raw": "218",
+          "end_raw": "222",
+          "start": "0218",
+          "end": "0222"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-callistus-i"
+    },
+    {
+      "id": "rp:urban-i",
+      "name": "Urban",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Urban I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 17,
+          "start_raw": "222",
+          "end_raw": "230",
+          "start": "0222",
+          "end": "0230"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-i"
+    },
+    {
+      "id": "rp:pontianus-i",
+      "name": "Pontianus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Pontianus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 18,
+          "start_raw": "21.VII.230",
+          "end_raw": "28.IX.235",
+          "start": "0230-07-21",
+          "end": "0235-09-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pontianus-i"
+    },
+    {
+      "id": "rp:anterus-i",
+      "name": "Anterus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Anterus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 19,
+          "start_raw": "21.XI.235",
+          "end_raw": "3.I.236",
+          "start": "0235-11-21",
+          "end": "0236-01-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anterus-i"
+    },
+    {
+      "id": "rp:fabian-i",
+      "name": "Fabian",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Fabian",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 20,
+          "start_raw": "... 236",
+          "end_raw": "20.I.250",
+          "start": "0236",
+          "end": "0250-01-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-fabian-i"
+    },
+    {
+      "id": "rp:cornelius-i",
+      "name": "Cornelius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Cornelius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 21,
+          "start_raw": "6 or 13.III.251",
+          "end_raw": "... VI.253",
+          "end": "0253-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-cornelius-i"
+    },
+    {
+      "id": "rp:lucius-i",
+      "name": "Lucius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Lucius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 22,
+          "start_raw": "... VI or VII.253",
+          "end_raw": "5.III.254",
+          "end": "0254-03-05"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-lucius-i"
+    },
+    {
+      "id": "rp:stephen-i",
+      "name": "Stephen",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Stephen I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 23,
+          "start_raw": "12.III.254",
+          "end_raw": "2.VIII.257",
+          "start": "0254-03-12",
+          "end": "0257-08-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-i"
+    },
+    {
+      "id": "rp:sixtus-ii",
+      "name": "Sixtus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Sixtus II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 24,
+          "start_raw": "30.VIII.257",
+          "end_raw": "6.VIII.258",
+          "start": "0257-08-30",
+          "end": "0258-08-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sixtus-ii"
+    },
+    {
+      "id": "rp:dionysius-i",
+      "name": "Dionysius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Dionysius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Unknown",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 25,
+          "start_raw": "22.VII.259",
+          "end_raw": "26.XII.268",
+          "start": "0259-07-22",
+          "end": "0268-12-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-dionysius-i"
+    },
+    {
+      "id": "rp:felix-i",
+      "name": "Felix",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Felix I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 26,
+          "start_raw": "5.I.269",
+          "end_raw": "30.XII.274",
+          "start": "0269-01-05",
+          "end": "0274-12-30"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-felix-i"
+    },
+    {
+      "id": "rp:eutichianus-i",
+      "name": "Eutichianus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Eutichianus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Luni",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 27,
+          "start_raw": "4.I.275",
+          "end_raw": "7.XII.283",
+          "start": "0275-01-04",
+          "end": "0283-12-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eutichianus-i"
+    },
+    {
+      "id": "rp:caius-i",
+      "name": "Caius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Caius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Dalmatia",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 28,
+          "start_raw": "17.XII.283",
+          "end_raw": "22.IV.296",
+          "start": "0283-12-17",
+          "end": "0296-04-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-caius-i"
+    },
+    {
+      "id": "rp:marcellinus-i",
+      "name": "Marcellinus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Marcellinus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 3,
+      "pontificates": [
+        {
+          "number": 29,
+          "start_raw": "30.VI.296",
+          "end_raw": "25.X.304",
+          "start": "0296-06-30",
+          "end": "0304-10-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-marcellinus-i"
+    },
+    {
+      "id": "rp:marcellus-i",
+      "name": "Marcellus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Marcellus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 30,
+          "start_raw": "306",
+          "end_raw": "16.I.309",
+          "start": "0306",
+          "end": "0309-01-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-marcellus-i"
+    },
+    {
+      "id": "rp:eusebius-i",
+      "name": "Eusebius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Eusebius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 31,
+          "start_raw": "18.IV.309",
+          "end_raw": "17.VIII.309",
+          "start": "0309-04-18",
+          "end": "0309-08-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eusebius-i"
+    },
+    {
+      "id": "rp:miltiades-i",
+      "name": "Miltiades",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Miltiades or Melchiades",
+      "aliases": [
+        "Melchiades"
+      ],
+      "secular_name": null,
+      "birthplace": "Africa",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 32,
+          "start_raw": "2.VII.311",
+          "end_raw": "10.I.314",
+          "start": "0311-07-02",
+          "end": "0314-01-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-miltiades-i"
+    },
+    {
+      "id": "rp:sylvester-i",
+      "name": "Sylvester",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Sylvester I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 33,
+          "start_raw": "31.I.314",
+          "end_raw": "31.XII.335",
+          "start": "0314-01-31",
+          "end": "0335-12-31"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sylvester-i"
+    },
+    {
+      "id": "rp:mark-i",
+      "name": "Mark",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Mark",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 34,
+          "start_raw": "18.I.336",
+          "end_raw": "7.X.336",
+          "start": "0336-01-18",
+          "end": "0336-10-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-mark-i"
+    },
+    {
+      "id": "rp:julius-i",
+      "name": "Julius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Julius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 35,
+          "start_raw": "6.II.337",
+          "end_raw": "12.IV.352",
+          "start": "0337-02-06",
+          "end": "0352-04-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-julius-i"
+    },
+    {
+      "id": "rp:liberius-i",
+      "name": "Liberius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Liberius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Romano",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 36,
+          "start_raw": "17.V.352",
+          "end_raw": "24.IX.366",
+          "start": "0352-05-17",
+          "end": "0366-09-24"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-liberius-i"
+    },
+    {
+      "id": "rp:damasus-i",
+      "name": "Damasus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Damasus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 37,
+          "start_raw": "1.X.366",
+          "end_raw": "11.XII.384",
+          "start": "0366-10-01",
+          "end": "0384-12-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-damasus-i"
+    },
+    {
+      "id": "rp:siricius-i",
+      "name": "Siricius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Siricius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 38,
+          "start_raw": "15 o 22 o 29.XII.384",
+          "end_raw": "26.XI.399",
+          "end": "0399-11-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-siricius-i"
+    },
+    {
+      "id": "rp:anastasius-i",
+      "name": "Anastasius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Anastasius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 4,
+      "pontificates": [
+        {
+          "number": 39,
+          "start_raw": "27.XI.399",
+          "end_raw": "19.XII.401",
+          "start": "0399-11-27",
+          "end": "0401-12-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anastasius-i"
+    },
+    {
+      "id": "rp:innocent-i",
+      "name": "Innocent",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Innocent I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Albano",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 40,
+          "start_raw": "22.XII.401",
+          "end_raw": "12.III.417",
+          "start": "0401-12-22",
+          "end": "0417-03-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-i"
+    },
+    {
+      "id": "rp:zosimus-i",
+      "name": "Zosimus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Zosimus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 41,
+          "start_raw": "18.III.417",
+          "end_raw": "26.XII.418",
+          "start": "0417-03-18",
+          "end": "0418-12-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-zosimus-i"
+    },
+    {
+      "id": "rp:boniface-i",
+      "name": "Boniface",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Boniface I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 42,
+          "start_raw": "28,29.XII.418",
+          "end_raw": "4.IX.422",
+          "start_elected": "0418-12-28",
+          "start_inaugurated": "0418-12-29",
+          "end": "0422-09-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-i"
+    },
+    {
+      "id": "rp:celestine-i",
+      "name": "Celestine",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Celestine I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Campania",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 43,
+          "start_raw": "10.IX.422",
+          "end_raw": "27.VII.432",
+          "start": "0422-09-10",
+          "end": "0432-07-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-celestine-i"
+    },
+    {
+      "id": "rp:sixtus-iii",
+      "name": "Sixtus",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Sixtus III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 44,
+          "start_raw": "31.VII.432",
+          "end_raw": "19.VIII.440",
+          "start": "0432-07-31",
+          "end": "0440-08-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sixtus-iii"
+    },
+    {
+      "id": "rp:leo-i",
+      "name": "Leo",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Leo I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tuscia",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 45,
+          "start_raw": "29.IX.440",
+          "end_raw": "10.XI.461",
+          "start": "0440-09-29",
+          "end": "0461-11-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-i"
+    },
+    {
+      "id": "rp:hilarius-i",
+      "name": "Hilarius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Hilarius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sardinia",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 46,
+          "start_raw": "19.XI.461",
+          "end_raw": "29.II.468",
+          "start": "0461-11-19",
+          "end": "0468-02-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-hilarius-i"
+    },
+    {
+      "id": "rp:simplicius-i",
+      "name": "Simplicius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Simplicius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tivoli",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 47,
+          "start_raw": "3.III.468",
+          "end_raw": "10.III.483",
+          "start": "0468-03-03",
+          "end": "0483-03-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-simplicius-i"
+    },
+    {
+      "id": "rp:felix-iii",
+      "name": "Felix",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Felix III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 48,
+          "start_raw": "13.III.483",
+          "end_raw": "25.II o 1.III.492",
+          "start": "0483-03-13"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-felix-iii"
+    },
+    {
+      "id": "rp:gelasius-i",
+      "name": "Gelasius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Gelasius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Africa",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 49,
+          "start_raw": "1.III.492",
+          "end_raw": "21.XI.496",
+          "start": "0492-03-01",
+          "end": "0496-11-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gelasius-i"
+    },
+    {
+      "id": "rp:anastasius-ii",
+      "name": "Anastasius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Anastasius II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 50,
+          "start_raw": "24.XI.496",
+          "end_raw": "19.XI.498",
+          "start": "0496-11-24",
+          "end": "0498-11-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anastasius-ii"
+    },
+    {
+      "id": "rp:symmachus-i",
+      "name": "Symmachus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Symmachus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sardinia",
+      "century": 5,
+      "pontificates": [
+        {
+          "number": 51,
+          "start_raw": "22.XI.498",
+          "end_raw": "19.VII.514",
+          "start": "0498-11-22",
+          "end": "0514-07-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-symmachus-i"
+    },
+    {
+      "id": "rp:hormisdas-i",
+      "name": "Hormisdas",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Hormisdas",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": null,
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 52,
+          "start_raw": "20.VII.514",
+          "end_raw": "6.VIII.523",
+          "start": "0514-07-20",
+          "end": "0523-08-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-hormisdas-i"
+    },
+    {
+      "id": "rp:john-i",
+      "name": "John",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "John I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tuscia",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 53,
+          "start_raw": "13.VIII.523",
+          "end_raw": "18.V.526",
+          "start": "0523-08-13",
+          "end": "0526-05-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-i"
+    },
+    {
+      "id": "rp:felix-iv",
+      "name": "Felix",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Felix IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Samnium",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 54,
+          "start_raw": "12.VII.526",
+          "end_raw": "20 or 22.IX.530",
+          "start": "0526-07-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-felix-iv"
+    },
+    {
+      "id": "rp:boniface-ii",
+      "name": "Boniface",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Boniface II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 55,
+          "start_raw": "20 o 22.IX.530",
+          "end_raw": "17.X.532",
+          "end": "0532-10-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-ii"
+    },
+    {
+      "id": "rp:john-ii",
+      "name": "John",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "John II",
+      "aliases": [],
+      "secular_name": "Mercurio",
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 56,
+          "start_raw": "31.XII.532, 2.I.533",
+          "end_raw": "8.V.535",
+          "start_elected": "0532-12-31",
+          "start_inaugurated": "0533-01-02",
+          "end": "0535-05-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-ii"
+    },
+    {
+      "id": "rp:agapetus-i",
+      "name": "Agapetus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Agapetus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 57,
+          "start_raw": "13.V.535",
+          "end_raw": "22.IV.536",
+          "start": "0535-05-13",
+          "end": "0536-04-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-agapetus-i"
+    },
+    {
+      "id": "rp:silverius-i",
+      "name": "Silverius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Silverius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Frosinone",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 58,
+          "start_raw": "8.VI.536",
+          "end_raw": "... 537",
+          "start": "0536-06-08",
+          "end": "0537"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-silverius-i"
+    },
+    {
+      "id": "rp:vigilius-i",
+      "name": "Vigilius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Vigilius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 59,
+          "start_raw": "29.III.537",
+          "end_raw": "7.VI.555",
+          "start": "0537-03-29",
+          "end": "0555-06-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-vigilius-i"
+    },
+    {
+      "id": "rp:pelagius-i",
+      "name": "Pelagius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Pelagius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 60,
+          "start_raw": "16.IV.556",
+          "end_raw": "4.III.561",
+          "start": "0556-04-16",
+          "end": "0561-03-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pelagius-i"
+    },
+    {
+      "id": "rp:john-iii",
+      "name": "John",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "John III",
+      "aliases": [],
+      "secular_name": "Catalino",
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 61,
+          "start_raw": "17.VII.561",
+          "end_raw": "13.VII.574",
+          "start": "0561-07-17",
+          "end": "0574-07-13"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-iii"
+    },
+    {
+      "id": "rp:benedict-i",
+      "name": "Benedict",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Benedict I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 62,
+          "start_raw": "2.VI.575",
+          "end_raw": "30.VII.579",
+          "start": "0575-06-02",
+          "end": "0579-07-30"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-i"
+    },
+    {
+      "id": "rp:pelagius-ii",
+      "name": "Pelagius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Pelagius II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 63,
+          "start_raw": "26.XI.579",
+          "end_raw": "7.II.590",
+          "start": "0579-11-26",
+          "end": "0590-02-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pelagius-ii"
+    },
+    {
+      "id": "rp:gregory-i",
+      "name": "Gregory",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Gregory I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 6,
+      "pontificates": [
+        {
+          "number": 64,
+          "start_raw": "3.IX.590",
+          "end_raw": "12.III.604",
+          "start": "0590-09-03",
+          "end": "0604-03-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-i"
+    },
+    {
+      "id": "rp:sabinian-i",
+      "name": "Sabinian",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Sabinian",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Blera, Tuscia",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 65,
+          "start_raw": "... III, 13.IX.604",
+          "end_raw": "22.II.606",
+          "end": "0606-02-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sabinian-i"
+    },
+    {
+      "id": "rp:boniface-iii",
+      "name": "Boniface",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Boniface III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 66,
+          "start_raw": "19.II.607",
+          "end_raw": "10.XI.607",
+          "start": "0607-02-19",
+          "end": "0607-11-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-iii"
+    },
+    {
+      "id": "rp:boniface-iv",
+      "name": "Boniface",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Boniface IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Marsican territory",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 67,
+          "start_raw": "25.VIII.608",
+          "end_raw": "8.V.615",
+          "start": "0608-08-25",
+          "end": "0615-05-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-iv"
+    },
+    {
+      "id": "rp:adeodatus-i",
+      "name": "Adeodatus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Deusdedit or Adeodatus I",
+      "aliases": [
+        "Deusdedit"
+      ],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 68,
+          "start_raw": "19.X.615",
+          "end_raw": "8.XI.618",
+          "start": "0615-10-19",
+          "end": "0618-11-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adeodatus-i"
+    },
+    {
+      "id": "rp:boniface-v",
+      "name": "Boniface",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Boniface V",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Naples",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 69,
+          "start_raw": "23.XII.619",
+          "end_raw": "23.X.625",
+          "start": "0619-12-23",
+          "end": "0625-10-23"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-v"
+    },
+    {
+      "id": "rp:honorius-i",
+      "name": "Honorius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Honorius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Campania",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 70,
+          "start_raw": "27.X.625",
+          "end_raw": "12.X.638",
+          "start": "0625-10-27",
+          "end": "0638-10-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-honorius-i"
+    },
+    {
+      "id": "rp:severinus-i",
+      "name": "Severinus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Severinus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 71,
+          "start_raw": "... X.638, 28.V.640",
+          "end_raw": "2.VIII.640",
+          "end": "0640-08-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-severinus-i"
+    },
+    {
+      "id": "rp:john-iv",
+      "name": "John",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "John IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Dalmatia",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 72,
+          "start_raw": "... VIII, 24.XII.640",
+          "end_raw": "12.X.642",
+          "end": "0642-10-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-iv"
+    },
+    {
+      "id": "rp:theodore-i",
+      "name": "Theodore",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Theodore I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Jerusalem",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 73,
+          "start_raw": "12.X, 24.XI.642",
+          "end_raw": "14.V.649",
+          "start_elected": "0642-10-12",
+          "start_inaugurated": "0642-11-24",
+          "end": "0649-05-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-theodore-i"
+    },
+    {
+      "id": "rp:martin-i",
+      "name": "Martin",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Martin I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Todi",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 74,
+          "start_raw": "5.VII.649",
+          "end_raw": "16.IX.655",
+          "start": "0649-07-05",
+          "end": "0655-09-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-martin-i"
+    },
+    {
+      "id": "rp:eugene-i",
+      "name": "Eugene",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Eugene I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 75,
+          "start_raw": "10.VIII.654",
+          "end_raw": "2.VI.657",
+          "start": "0654-08-10",
+          "end": "0657-06-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eugene-i"
+    },
+    {
+      "id": "rp:vitalian-i",
+      "name": "Vitalian",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Vitalian",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Segni",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 76,
+          "start_raw": "30.VII.657",
+          "end_raw": "27.I.672",
+          "start": "0657-07-30",
+          "end": "0672-01-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-vitalian-i"
+    },
+    {
+      "id": "rp:adeodatus-ii",
+      "name": "Adeodatus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Adeodatus II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 77,
+          "start_raw": "11.IV.672",
+          "end_raw": "16.VI.676",
+          "start": "0672-04-11",
+          "end": "0676-06-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adeodatus-ii"
+    },
+    {
+      "id": "rp:donus-i",
+      "name": "Donus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Donus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 78,
+          "start_raw": "2.XI.676",
+          "end_raw": "11.IV.678",
+          "start": "0676-11-02",
+          "end": "0678-04-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-donus-i"
+    },
+    {
+      "id": "rp:agatho-i",
+      "name": "Agatho",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Agatho",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sicily",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 79,
+          "start_raw": "27.VI.678",
+          "end_raw": "10.I.681",
+          "start": "0678-06-27",
+          "end": "0681-01-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-agatho-i"
+    },
+    {
+      "id": "rp:leo-ii",
+      "name": "Leo",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Leo II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sicily",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 80,
+          "start_raw": "... I.681, 17.VIII.682",
+          "end_raw": "3.VII.683",
+          "end": "0683-07-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-ii"
+    },
+    {
+      "id": "rp:benedict-ii",
+      "name": "Benedict",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Benedict II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 81,
+          "start_raw": "26.VI.684",
+          "end_raw": "8.V.685",
+          "start": "0684-06-26",
+          "end": "0685-05-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-ii"
+    },
+    {
+      "id": "rp:john-v",
+      "name": "John",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "John V",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Syria",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 82,
+          "start_raw": "23.VII.685",
+          "end_raw": "2.VIII.686",
+          "start": "0685-07-23",
+          "end": "0686-08-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-v"
+    },
+    {
+      "id": "rp:conon-i",
+      "name": "Conon",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Conon",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Unknown",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 83,
+          "start_raw": "23.X.686",
+          "end_raw": "21.IX.687",
+          "start": "0686-10-23",
+          "end": "0687-09-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-conon-i"
+    },
+    {
+      "id": "rp:sergius-i",
+      "name": "Sergius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Sergius I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Syria",
+      "century": 7,
+      "pontificates": [
+        {
+          "number": 84,
+          "start_raw": "15.XII.687",
+          "end_raw": "7.IX.701",
+          "start": "0687-12-15",
+          "end": "0701-09-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sergius-i"
+    },
+    {
+      "id": "rp:john-vi",
+      "name": "John",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "John VI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 85,
+          "start_raw": "30.X.701",
+          "end_raw": "11.I.705",
+          "start": "0701-10-30",
+          "end": "0705-01-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-vi"
+    },
+    {
+      "id": "rp:john-vii",
+      "name": "John",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "John VII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 86,
+          "start_raw": "1.III.705",
+          "end_raw": "18.X.707",
+          "start": "0705-03-01",
+          "end": "0707-10-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-vii"
+    },
+    {
+      "id": "rp:sisinnius-i",
+      "name": "Sisinnius",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Sisinnius",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Syria",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 87,
+          "start_raw": "15.I.708",
+          "end_raw": "4.II.708",
+          "start": "0708-01-15",
+          "end": "0708-02-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sisinnius-i"
+    },
+    {
+      "id": "rp:constantine-i",
+      "name": "Constantine",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Constantine",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Syria",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 88,
+          "start_raw": "25.III.708",
+          "end_raw": "9.IV.715",
+          "start": "0708-03-25",
+          "end": "0715-04-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-constantine-i"
+    },
+    {
+      "id": "rp:gregory-ii",
+      "name": "Gregory",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Gregory II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 89,
+          "start_raw": "19.V.715",
+          "end_raw": "11.II.731",
+          "start": "0715-05-19",
+          "end": "0731-02-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-ii"
+    },
+    {
+      "id": "rp:gregory-iii",
+      "name": "Gregory",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Gregory III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Syria",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 90,
+          "start_raw": "18.III.731",
+          "end_raw": "28.XI.741",
+          "start": "0731-03-18",
+          "end": "0741-11-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-iii"
+    },
+    {
+      "id": "rp:zachary-i",
+      "name": "Zachary",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Zachary",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Greece",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 91,
+          "start_raw": "3.XII.741",
+          "end_raw": "15.III.752",
+          "start": "0741-12-03",
+          "end": "0752-03-15"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-zachary-i"
+    },
+    {
+      "id": "rp:stephen-ii",
+      "name": "Stephen",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Stephen II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 92,
+          "start_raw": "26.III.752",
+          "end_raw": "26.IV.757",
+          "start": "0752-03-26",
+          "end": "0757-04-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-ii"
+    },
+    {
+      "id": "rp:paul-i",
+      "name": "Paul",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Paul I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 93,
+          "start_raw": "... IV, 29.V.757",
+          "end_raw": "28.VI.767",
+          "end": "0767-06-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-i"
+    },
+    {
+      "id": "rp:stephen-iii",
+      "name": "Stephen",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Stephen III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sicily",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 94,
+          "start_raw": "1,7.VIII.768",
+          "end_raw": "24.I.772",
+          "start_elected": "0768-08-01",
+          "start_inaugurated": "0768-08-07",
+          "end": "0772-01-24"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-iii"
+    },
+    {
+      "id": "rp:adrian-i",
+      "name": "Adrian",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Adrian I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 95,
+          "start_raw": "1,9.II.772",
+          "end_raw": "25.XII.795",
+          "start_elected": "0772-02-01",
+          "start_inaugurated": "0772-02-09",
+          "end": "0795-12-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-i"
+    },
+    {
+      "id": "rp:leo-iii",
+      "name": "Leo",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Leo III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 8,
+      "pontificates": [
+        {
+          "number": 96,
+          "start_raw": "26,27.XII.795",
+          "end_raw": "12.VI.816",
+          "start_elected": "0795-12-26",
+          "start_inaugurated": "0795-12-27",
+          "end": "0816-06-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-iii"
+    },
+    {
+      "id": "rp:stephen-iv",
+      "name": "Stephen",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Stephen IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 97,
+          "start_raw": "22.VI.816",
+          "end_raw": "24.I.817",
+          "start": "0816-06-22",
+          "end": "0817-01-24"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-iv"
+    },
+    {
+      "id": "rp:paschal-i",
+      "name": "Paschal",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Paschal I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 98,
+          "start_raw": "25.I.817",
+          "end_raw": "... II-V.824",
+          "start": "0817-01-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paschal-i"
+    },
+    {
+      "id": "rp:eugene-ii",
+      "name": "Eugene",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Eugene II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 99,
+          "start_raw": "... II-V.824",
+          "end_raw": "...VIII.827",
+          "end": "0827-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eugene-ii"
+    },
+    {
+      "id": "rp:valentine-i",
+      "name": "Valentine",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Valentine",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 100,
+          "start_raw": "... VIII.827",
+          "end_raw": "...IX.827",
+          "start": "0827-08",
+          "end": "0827-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-valentine-i"
+    },
+    {
+      "id": "rp:gregory-iv",
+      "name": "Gregory",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Gregory IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 101,
+          "start_raw": "... IX.827, 29.III.828",
+          "end_raw": "25.I.844",
+          "end": "0844-01-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-iv"
+    },
+    {
+      "id": "rp:sergius-ii",
+      "name": "Sergius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Sergius II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 102,
+          "start_raw": "25.I.844",
+          "end_raw": "27.I.847",
+          "start": "0844-01-25",
+          "end": "0847-01-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sergius-ii"
+    },
+    {
+      "id": "rp:leo-iv",
+      "name": "Leo",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Leo IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 103,
+          "start_raw": "...I,10.V.847",
+          "end_raw": "17.VII.855",
+          "end": "0855-07-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-iv"
+    },
+    {
+      "id": "rp:benedict-iii",
+      "name": "Benedict",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Benedict III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 104,
+          "start_raw": "...VII, 29.IX.855",
+          "end_raw": "17.IV.858",
+          "end": "0858-04-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-iii"
+    },
+    {
+      "id": "rp:nicholas-i",
+      "name": "Nicholas",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Nicholas I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 105,
+          "start_raw": "24.IV.858",
+          "end_raw": "13.XI.867",
+          "start": "0858-04-24",
+          "end": "0867-11-13"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-nicholas-i"
+    },
+    {
+      "id": "rp:adrian-ii",
+      "name": "Adrian",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Adrian II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 106,
+          "start_raw": "14.XII.867",
+          "end_raw": "...XI or XII.872",
+          "start": "0867-12-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-ii"
+    },
+    {
+      "id": "rp:john-viii",
+      "name": "John",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "John VIII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 107,
+          "start_raw": "14.XII.872",
+          "end_raw": "16.XII.882",
+          "start": "0872-12-14",
+          "end": "0882-12-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-viii"
+    },
+    {
+      "id": "rp:marinus-i",
+      "name": "Marinus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Marinus I",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Gallese",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 108,
+          "start_raw": "... XII.882",
+          "end_raw": "15.V.884",
+          "start": "0882-12",
+          "end": "0884-05-15"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-marinus-i"
+    },
+    {
+      "id": "rp:adrian-iii",
+      "name": "Adrian",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Adrian III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 109,
+          "start_raw": "17.V.884",
+          "end_raw": "...VIII or IX.885",
+          "start": "0884-05-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-iii"
+    },
+    {
+      "id": "rp:stephen-v",
+      "name": "Stephen",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Stephen V",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 110,
+          "start_raw": "...IX.885",
+          "end_raw": "14.IX.891",
+          "start": "0885-09",
+          "end": "0891-09-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-v"
+    },
+    {
+      "id": "rp:formosus-i",
+      "name": "Formosus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Formosus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Bishop of Portus",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 111,
+          "start_raw": "6.X.891",
+          "end_raw": "4.IV.896",
+          "start": "0891-10-06",
+          "end": "0896-04-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-formosus-i"
+    },
+    {
+      "id": "rp:boniface-vi",
+      "name": "Boniface",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Boniface VI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 112,
+          "start_raw": "11.IV.896",
+          "end_raw": "26.IV.896",
+          "start": "0896-04-11",
+          "end": "0896-04-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-vi"
+    },
+    {
+      "id": "rp:stephen-vi",
+      "name": "Stephen",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Stephen VI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 113,
+          "start_raw": "...V or VI.896",
+          "end_raw": "...VII or VIII.897"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-vi"
+    },
+    {
+      "id": "rp:romanus-i",
+      "name": "Romanus",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Romanus",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Gallese",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 114,
+          "start_raw": "...VII or VIII.897",
+          "end_raw": "...XI.897",
+          "end": "0897-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-romanus-i"
+    },
+    {
+      "id": "rp:theodore-ii",
+      "name": "Theodore",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Theodore II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 115,
+          "start_raw": "...XII.897",
+          "end_raw": "...XII.897 or I.898",
+          "start": "0897-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-theodore-ii"
+    },
+    {
+      "id": "rp:john-ix",
+      "name": "John",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "John IX",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tivoli",
+      "century": 9,
+      "pontificates": [
+        {
+          "number": 116,
+          "start_raw": "..XII.897 or I.898",
+          "end_raw": "...I-V.900"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-ix"
+    },
+    {
+      "id": "rp:benedict-iv",
+      "name": "Benedict",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Benedict IV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 117,
+          "start_raw": "...I-V.900",
+          "end_raw": "...VII.903",
+          "end": "0903-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-iv"
+    },
+    {
+      "id": "rp:leo-v",
+      "name": "Leo",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Leo V",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Ardea",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 118,
+          "start_raw": "... VII.903",
+          "end_raw": "... IX.903",
+          "start": "0903-07",
+          "end": "0903-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-v"
+    },
+    {
+      "id": "rp:sergius-iii",
+      "name": "Sergius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Sergius III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 119,
+          "start_raw": "29.I.904",
+          "end_raw": "14.IV.911",
+          "start": "0904-01-29",
+          "end": "0911-04-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sergius-iii"
+    },
+    {
+      "id": "rp:anastasius-iii",
+      "name": "Anastasius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Anastasius III",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 120,
+          "start_raw": "... VI or IX.911",
+          "end_raw": "... VI or VIII or X.913"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anastasius-iii"
+    },
+    {
+      "id": "rp:lando-i",
+      "name": "Lando",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Lando",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Sabina",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 121,
+          "start_raw": "... VII or XI.913",
+          "end_raw": "... III.914",
+          "end": "0914-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-lando-i"
+    },
+    {
+      "id": "rp:john-x",
+      "name": "John",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "John X",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Tossignano (Imola)",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 122,
+          "start_raw": "... III or IV.914",
+          "end_raw": "... V or VI.928"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-x"
+    },
+    {
+      "id": "rp:leo-vi",
+      "name": "Leo",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Leo VI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 123,
+          "start_raw": "... V or VI.928",
+          "end_raw": "... XII.928 or I.929"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-vi"
+    },
+    {
+      "id": "rp:stephen-vii",
+      "name": "Stephen",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Stephen VII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 124,
+          "start_raw": "...I.929",
+          "end_raw": "...II.931",
+          "start": "0929-01",
+          "end": "0931-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-vii"
+    },
+    {
+      "id": "rp:john-xi",
+      "name": "John",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "John XI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 125,
+          "start_raw": "...III.931",
+          "end_raw": "...I.936",
+          "start": "0931-03",
+          "end": "0936-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xi"
+    },
+    {
+      "id": "rp:leo-vii",
+      "name": "Leo",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Leo VII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 126,
+          "start_raw": "...I.936",
+          "end_raw": "13.VII.939",
+          "start": "0936-01",
+          "end": "0939-07-13"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-vii"
+    },
+    {
+      "id": "rp:stephen-viii",
+      "name": "Stephen",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Stephen VIII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 127,
+          "start_raw": "14.VII.939",
+          "end_raw": "... X.942",
+          "start": "0939-07-14",
+          "end": "0942-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-viii"
+    },
+    {
+      "id": "rp:marinus-ii",
+      "name": "Marinus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Marinus II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 128,
+          "start_raw": "30.X,...XI.942",
+          "end_raw": "...V.946",
+          "end": "0946-05"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-marinus-ii"
+    },
+    {
+      "id": "rp:agapetus-ii",
+      "name": "Agapetus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Agapetus II",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 129,
+          "start_raw": "10.V.946",
+          "end_raw": "...XII.955",
+          "start": "0946-05-10",
+          "end": "0955-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-agapetus-ii"
+    },
+    {
+      "id": "rp:john-xii",
+      "name": "John",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "John XII",
+      "aliases": [],
+      "secular_name": "Ottaviano",
+      "birthplace": "Counts of Tusculum",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 130,
+          "start_raw": "16.XII.955",
+          "end_raw": "14.V.964",
+          "start": "0955-12-16",
+          "end": "0964-05-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xii"
+    },
+    {
+      "id": "rp:leo-viii",
+      "name": "Leo",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Leo VIII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 131,
+          "start_raw": "4,6.XII.963",
+          "end_raw": "...III.965",
+          "start_elected": "0963-12-04",
+          "start_inaugurated": "0963-12-06",
+          "end": "0965-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-viii"
+    },
+    {
+      "id": "rp:benedict-v",
+      "name": "Benedict",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Benedict V",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 132,
+          "start_raw": "...V.964",
+          "end_raw": "4.VII.964 or 965",
+          "start": "0964-05"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-v"
+    },
+    {
+      "id": "rp:john-xiii",
+      "name": "John",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "John XIII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 133,
+          "start_raw": "1.X.965",
+          "end_raw": "6.IX.972",
+          "start": "0965-10-01",
+          "end": "0972-09-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xiii"
+    },
+    {
+      "id": "rp:benedict-vi",
+      "name": "Benedict",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Benedict VI",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 134,
+          "start_raw": "...XII.972, 19.I.973",
+          "end_raw": "...VII.974",
+          "end": "0974-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-vi"
+    },
+    {
+      "id": "rp:benedict-vii",
+      "name": "Benedict",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Benedict VII",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 135,
+          "start_raw": "...X.974",
+          "end_raw": "10.VII.983",
+          "start": "0974-10",
+          "end": "0983-07-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-vii"
+    },
+    {
+      "id": "rp:john-xiv",
+      "name": "John",
+      "ordinal": 14,
+      "roman": "xiv",
+      "label_en": "John XIV",
+      "aliases": [],
+      "secular_name": "Pietro",
+      "birthplace": "Pavia",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 136,
+          "start_raw": "...XI or XII.983",
+          "end_raw": "20.VIII.984",
+          "end": "0984-08-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xiv"
+    },
+    {
+      "id": "rp:john-xv",
+      "name": "John",
+      "ordinal": 15,
+      "roman": "xv",
+      "label_en": "John XV",
+      "aliases": [],
+      "secular_name": null,
+      "birthplace": "Rome",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 137,
+          "start_raw": "...VIII.985",
+          "end_raw": "...III.996",
+          "start": "0985-08",
+          "end": "0996-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xv"
+    },
+    {
+      "id": "rp:gregory-v",
+      "name": "Gregory",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Gregory V",
+      "aliases": [],
+      "secular_name": "Bruno of Carinthia",
+      "birthplace": "Saxony",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 138,
+          "start_raw": "3.V.996",
+          "end_raw": "...II or III.999",
+          "start": "0996-05-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-v"
+    },
+    {
+      "id": "rp:sylvester-ii",
+      "name": "Sylvester",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Sylvester II",
+      "aliases": [],
+      "secular_name": "Gerbert",
+      "birthplace": "Aquitaine",
+      "century": 10,
+      "pontificates": [
+        {
+          "number": 139,
+          "start_raw": "2.IV.999",
+          "end_raw": "12.V.1003",
+          "start": "0999-04-02",
+          "end": "1003-05-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sylvester-ii"
+    },
+    {
+      "id": "rp:john-xvii",
+      "name": "John",
+      "ordinal": 17,
+      "roman": "xvii",
+      "label_en": "John XVII",
+      "aliases": [],
+      "secular_name": "Siccone",
+      "birthplace": "Rome",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 140,
+          "start_raw": "16.V.1003",
+          "end_raw": "6.XI.1003",
+          "start": "1003-05-16",
+          "end": "1003-11-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xvii"
+    },
+    {
+      "id": "rp:john-xviii",
+      "name": "John",
+      "ordinal": 18,
+      "roman": "xviii",
+      "label_en": "John XVIII",
+      "aliases": [],
+      "secular_name": "Fasano",
+      "birthplace": "Rome",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 141,
+          "start_raw": "25.XII.1003",
+          "end_raw": "...VI or VII.1009",
+          "start": "1003-12-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xviii"
+    },
+    {
+      "id": "rp:sergius-iv",
+      "name": "Sergius",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Sergius IV",
+      "aliases": [],
+      "secular_name": "Pietro",
+      "birthplace": "Rome",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 142,
+          "start_raw": "31.VII.1009",
+          "end_raw": "12.V.1012",
+          "start": "1009-07-31",
+          "end": "1012-05-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sergius-iv"
+    },
+    {
+      "id": "rp:benedict-viii",
+      "name": "Benedict",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Benedict VIII",
+      "aliases": [],
+      "secular_name": "Teofilatto dei conti di Tuscolo",
+      "birthplace": null,
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 143,
+          "start_raw": "18.V.1012",
+          "end_raw": "9.IV.1024",
+          "start": "1012-05-18",
+          "end": "1024-04-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-viii"
+    },
+    {
+      "id": "rp:john-xix",
+      "name": "John",
+      "ordinal": 19,
+      "roman": "xix",
+      "label_en": "John XIX",
+      "aliases": [],
+      "secular_name": "Romano dei conti di Tuscolo",
+      "birthplace": null,
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 144,
+          "start_raw": "19.IV.1024",
+          "end_raw": "...1032",
+          "start": "1024-04-19",
+          "end": "1032"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xix"
+    },
+    {
+      "id": "rp:benedict-ix",
+      "name": "Benedict",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Benedict IX",
+      "aliases": [],
+      "secular_name": "Theophylactus of Tusculum",
+      "birthplace": null,
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 145,
+          "start_raw": "...VIII or IX.1032",
+          "end_raw": "...IX.1044",
+          "end": "1044-09"
+        },
+        {
+          "number": 147,
+          "start_raw": "10.III.1045",
+          "end_raw": "1.V.1045",
+          "start": "1045-03-10",
+          "end": "1045-05-01"
+        },
+        {
+          "number": 150,
+          "start_raw": "...X.1047",
+          "end_raw": "... VIII.1048",
+          "start": "1047-10",
+          "end": "1048-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-ix"
+    },
+    {
+      "id": "rp:sylvester-iii",
+      "name": "Sylvester",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Sylvester III",
+      "aliases": [],
+      "secular_name": "Giovanni",
+      "birthplace": "Rome",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 146,
+          "start_raw": "13 or 20.I.1045",
+          "end_raw": "...III.1045",
+          "end": "1045-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sylvester-iii"
+    },
+    {
+      "id": "rp:gregory-vi",
+      "name": "Gregory",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Gregory VI",
+      "aliases": [],
+      "secular_name": "Giovanni Graziano",
+      "birthplace": "Rome",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 148,
+          "start_raw": "1.V.1045",
+          "end_raw": "20.XII.1046",
+          "start": "1045-05-01",
+          "end": "1046-12-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-vi"
+    },
+    {
+      "id": "rp:clement-ii",
+      "name": "Clement",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Clement II",
+      "aliases": [],
+      "secular_name": "Suidger, Graf von Morsleben und Hornburg",
+      "birthplace": "Saxony",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 149,
+          "start_raw": "24.XII.1046",
+          "end_raw": "9.X.1047",
+          "start": "1046-12-24",
+          "end": "1047-10-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-ii"
+    },
+    {
+      "id": "rp:damasus-ii",
+      "name": "Damasus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Damasus II",
+      "aliases": [],
+      "secular_name": "Poppo",
+      "birthplace": "Tyrol",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 151,
+          "start_raw": "17.VII.1048",
+          "end_raw": "9.VIII.1048",
+          "start": "1048-07-17",
+          "end": "1048-08-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-damasus-ii"
+    },
+    {
+      "id": "rp:leo-ix",
+      "name": "Leo",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Leo IX",
+      "aliases": [],
+      "secular_name": "Bruno of Eguisheim-Dagsburg",
+      "birthplace": "Alsace",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 152,
+          "start_raw": "2,12.II.1049",
+          "end_raw": "19.IV.1054",
+          "start_elected": "1049-02-02",
+          "start_inaugurated": "1049-02-12",
+          "end": "1054-04-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-ix"
+    },
+    {
+      "id": "rp:victor-ii",
+      "name": "Victor",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Victor II",
+      "aliases": [],
+      "secular_name": "Gebhard Of Dollnstein-hirschberg",
+      "birthplace": "Swabia",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 153,
+          "start_raw": "13.IV.1055",
+          "end_raw": "28.VII.1057",
+          "start": "1055-04-13",
+          "end": "1057-07-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-victor-ii"
+    },
+    {
+      "id": "rp:stephen-ix",
+      "name": "Stephen",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Stephen IX",
+      "aliases": [],
+      "secular_name": "Frédéric de Lorraine",
+      "birthplace": null,
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 154,
+          "start_raw": "2,3.VIII.1057",
+          "end_raw": "29.III.1058",
+          "start_elected": "1057-08-02",
+          "start_inaugurated": "1057-08-03",
+          "end": "1058-03-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-stephen-ix"
+    },
+    {
+      "id": "rp:nicholas-ii",
+      "name": "Nicholas",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Nicholas II",
+      "aliases": [],
+      "secular_name": "Gérard",
+      "birthplace": "Bourgogne",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 155,
+          "start_raw": "...XII.1058, 24.I.1059",
+          "end_raw": "27.VII.1061",
+          "end": "1061-07-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-nicholas-ii"
+    },
+    {
+      "id": "rp:alexander-ii",
+      "name": "Alexander",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Alexander II",
+      "aliases": [],
+      "secular_name": "Anselmo",
+      "birthplace": "Baggio (Milano)",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 156,
+          "start_raw": "30.IX, 1.X.1061",
+          "end_raw": "21.IV.1073",
+          "start_elected": "1061-09-30",
+          "start_inaugurated": "1061-10-01",
+          "end": "1073-04-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-ii"
+    },
+    {
+      "id": "rp:gregory-vii",
+      "name": "Gregory",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Gregory VII",
+      "aliases": [],
+      "secular_name": "Ildebrando",
+      "birthplace": "Tuscia",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 157,
+          "start_raw": "22.IV,30.VI.1073",
+          "end_raw": "25.V.1085",
+          "start_elected": "1073-04-22",
+          "start_inaugurated": "1073-06-30",
+          "end": "1085-05-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-vii"
+    },
+    {
+      "id": "rp:victor-iii",
+      "name": "Victor",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Victor III",
+      "aliases": [],
+      "secular_name": "Dauferio (Desiderio)",
+      "birthplace": "Benevento",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 158,
+          "start_raw": "24.V.1086, 9.V.1087",
+          "end_raw": "16.IX.1087",
+          "start_elected": "1086-05-24",
+          "start_inaugurated": "1087-05-09",
+          "end": "1087-09-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-victor-iii"
+    },
+    {
+      "id": "rp:urban-ii",
+      "name": "Urban",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Urban II",
+      "aliases": [],
+      "secular_name": "Odo of Lagery",
+      "birthplace": "Châtillon-sur-Marne",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 159,
+          "start_raw": "12.III.1088",
+          "end_raw": "29.VII.1099",
+          "start": "1088-03-12",
+          "end": "1099-07-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-ii"
+    },
+    {
+      "id": "rp:paschal-ii",
+      "name": "Paschal",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Paschal II",
+      "aliases": [],
+      "secular_name": "Raniero",
+      "birthplace": "Bleda or Galeata",
+      "century": 11,
+      "pontificates": [
+        {
+          "number": 160,
+          "start_raw": "13,14.VIII.1099",
+          "end_raw": "21.I.1118",
+          "start_elected": "1099-08-13",
+          "start_inaugurated": "1099-08-14",
+          "end": "1118-01-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paschal-ii"
+    },
+    {
+      "id": "rp:gelasius-ii",
+      "name": "Gelasius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Gelasius II",
+      "aliases": [],
+      "secular_name": "Giovanni Caetani",
+      "birthplace": "Gaeta",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 161,
+          "start_raw": "24.I,10.III.1118",
+          "end_raw": "28.I.1119",
+          "start_elected": "1118-01-24",
+          "start_inaugurated": "1118-03-10",
+          "end": "1119-01-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gelasius-ii"
+    },
+    {
+      "id": "rp:callixtus-ii",
+      "name": "Callixtus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Callixtus II",
+      "aliases": [],
+      "secular_name": "Guy of Burgundy",
+      "birthplace": null,
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 162,
+          "start_raw": "2,9.II.1119",
+          "end_raw": "13 or 14.XII.1124",
+          "start_elected": "1119-02-02",
+          "start_inaugurated": "1119-02-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-callixtus-ii"
+    },
+    {
+      "id": "rp:honorius-ii",
+      "name": "Honorius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Honorius II",
+      "aliases": [],
+      "secular_name": "Lamberto Scannabecchi",
+      "birthplace": "Fiagnano (Imola)",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 163,
+          "start_raw": "15,21.XII.1124",
+          "end_raw": "13 or 14.II.1130",
+          "start_elected": "1124-12-15",
+          "start_inaugurated": "1124-12-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-honorius-ii"
+    },
+    {
+      "id": "rp:innocent-ii",
+      "name": "Innocent",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Innocent II",
+      "aliases": [],
+      "secular_name": "Gregorio Papareschi",
+      "birthplace": "Rome",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 164,
+          "start_raw": "14,23.II.1130",
+          "end_raw": "24.IX.1143",
+          "start_elected": "1130-02-14",
+          "start_inaugurated": "1130-02-23",
+          "end": "1143-09-24"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-ii"
+    },
+    {
+      "id": "rp:celestine-ii",
+      "name": "Celestine",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Celestine II",
+      "aliases": [],
+      "secular_name": "Guido",
+      "birthplace": "Città di Castello",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 165,
+          "start_raw": "26.IX,3.X.1143",
+          "end_raw": "8.III.1144",
+          "start_elected": "1143-09-26",
+          "start_inaugurated": "1143-10-03",
+          "end": "1144-03-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-celestine-ii"
+    },
+    {
+      "id": "rp:lucius-ii",
+      "name": "Lucius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Lucius II",
+      "aliases": [],
+      "secular_name": "Gerardo",
+      "birthplace": "Bologna",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 166,
+          "start_raw": "12.III.1144",
+          "end_raw": "15.II.1145",
+          "start": "1144-03-12",
+          "end": "1145-02-15"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-lucius-ii"
+    },
+    {
+      "id": "rp:eugene-iii",
+      "name": "Eugene",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Eugene III",
+      "aliases": [],
+      "secular_name": "Bernardo",
+      "birthplace": "Pisa",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 167,
+          "start_raw": "15,18.II.1145",
+          "end_raw": "8.VII.1153",
+          "start_elected": "1145-02-15",
+          "start_inaugurated": "1145-02-18",
+          "end": "1153-07-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eugene-iii"
+    },
+    {
+      "id": "rp:anastasius-iv",
+      "name": "Anastasius",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Anastasius IV",
+      "aliases": [],
+      "secular_name": "Corrado",
+      "birthplace": "Rome",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 168,
+          "start_raw": "12.VII.1153",
+          "end_raw": "3.XII.1154",
+          "start": "1153-07-12",
+          "end": "1154-12-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-anastasius-iv"
+    },
+    {
+      "id": "rp:adrian-iv",
+      "name": "Adrian",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Adrian IV",
+      "aliases": [],
+      "secular_name": "Nicholas Breakspear",
+      "birthplace": "Abbot's Lagnley (Hertfordshire)",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 169,
+          "start_raw": "4,5.XII.1154",
+          "end_raw": "1.IX.1159",
+          "start_elected": "1154-12-04",
+          "start_inaugurated": "1154-12-05",
+          "end": "1159-09-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-iv"
+    },
+    {
+      "id": "rp:alexander-iii",
+      "name": "Alexander",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Alexander III",
+      "aliases": [],
+      "secular_name": "Rolando Bandinelli",
+      "birthplace": "Siena",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 170,
+          "start_raw": "7,20.IX.1159",
+          "end_raw": "30.VIII.1181",
+          "start_elected": "1159-09-07",
+          "start_inaugurated": "1159-09-20",
+          "end": "1181-08-30"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-iii"
+    },
+    {
+      "id": "rp:lucius-iii",
+      "name": "Lucius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Lucius III",
+      "aliases": [],
+      "secular_name": "Ubaldo Allucingoli",
+      "birthplace": "Lucca",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 171,
+          "start_raw": "1. 6.IX.1181",
+          "end_raw": "25.IX.1185",
+          "end": "1185-09-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-lucius-iii"
+    },
+    {
+      "id": "rp:urban-iii",
+      "name": "Urban",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Urban III",
+      "aliases": [],
+      "secular_name": "Umberto Crivelli",
+      "birthplace": "Milan",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 172,
+          "start_raw": "25.XI,1.XII.1185",
+          "end_raw": "20.X.1187",
+          "start_elected": "1185-11-25",
+          "start_inaugurated": "1185-12-01",
+          "end": "1187-10-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-iii"
+    },
+    {
+      "id": "rp:gregory-viii",
+      "name": "Gregory",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Gregory VIII",
+      "aliases": [],
+      "secular_name": "Alberto di Morra",
+      "birthplace": "Benevento",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 173,
+          "start_raw": "21.25.X.1187",
+          "end_raw": "17.XII.1187",
+          "end": "1187-12-17"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-viii"
+    },
+    {
+      "id": "rp:clement-iii",
+      "name": "Clement",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Clement III",
+      "aliases": [],
+      "secular_name": "Paolo Scolari",
+      "birthplace": "Rome",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 174,
+          "start_raw": "19,20.XII.1187",
+          "end_raw": "...III.1191",
+          "start_elected": "1187-12-19",
+          "start_inaugurated": "1187-12-20",
+          "end": "1191-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-iii"
+    },
+    {
+      "id": "rp:celestine-iii",
+      "name": "Celestine",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Celestine III",
+      "aliases": [],
+      "secular_name": "Giacinto Bobone",
+      "birthplace": "Rome",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 175,
+          "start_raw": "10,14.IV.1191",
+          "end_raw": "8.I.1198",
+          "start_elected": "1191-04-10",
+          "start_inaugurated": "1191-04-14",
+          "end": "1198-01-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-celestine-iii"
+    },
+    {
+      "id": "rp:innocent-iii",
+      "name": "Innocent",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Innocent III",
+      "aliases": [],
+      "secular_name": "Lotario dei conti di Segni",
+      "birthplace": "Gavignano (Rome)",
+      "century": 12,
+      "pontificates": [
+        {
+          "number": 176,
+          "start_raw": "8.I,22.II.1198",
+          "end_raw": "16.VII.1216",
+          "start_elected": "1198-01-08",
+          "start_inaugurated": "1198-02-22",
+          "end": "1216-07-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-iii"
+    },
+    {
+      "id": "rp:honorius-iii",
+      "name": "Honorius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Honorius III",
+      "aliases": [],
+      "secular_name": "Cencio",
+      "birthplace": "Rome",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 177,
+          "start_raw": "18,24.VII.1216",
+          "end_raw": "18.III.1227",
+          "start_elected": "1216-07-18",
+          "start_inaugurated": "1216-07-24",
+          "end": "1227-03-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-honorius-iii"
+    },
+    {
+      "id": "rp:gregory-ix",
+      "name": "Gregory",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Gregory IX",
+      "aliases": [],
+      "secular_name": "Ugolino di Segni",
+      "birthplace": "Anagni",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 178,
+          "start_raw": "19,21.III.1227",
+          "end_raw": "22.VIII.1241",
+          "start_elected": "1227-03-19",
+          "start_inaugurated": "1227-03-21",
+          "end": "1241-08-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-ix"
+    },
+    {
+      "id": "rp:celestine-iv",
+      "name": "Celestine",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Celestine IV",
+      "aliases": [],
+      "secular_name": "Goffredo da Castiglione",
+      "birthplace": "Milan",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 179,
+          "start_raw": "25,28.X.1241",
+          "end_raw": "10.XI.1241",
+          "start_elected": "1241-10-25",
+          "start_inaugurated": "1241-10-28",
+          "end": "1241-11-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-celestine-iv"
+    },
+    {
+      "id": "rp:innocent-iv",
+      "name": "Innocent",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Innocent IV",
+      "aliases": [],
+      "secular_name": "Sinibaldo Fieschi",
+      "birthplace": "Lavagna (Genoa)",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 180,
+          "start_raw": "25,28.VI.1243",
+          "end_raw": "7.XII.1254",
+          "start_elected": "1243-06-25",
+          "start_inaugurated": "1243-06-28",
+          "end": "1254-12-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-iv"
+    },
+    {
+      "id": "rp:alexander-iv",
+      "name": "Alexander",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Alexander IV",
+      "aliases": [],
+      "secular_name": "Rinaldo di Jenne",
+      "birthplace": "Jenne (Rome)",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 181,
+          "start_raw": "12,20.XII.1254",
+          "end_raw": "25.V.1261",
+          "start_elected": "1254-12-12",
+          "start_inaugurated": "1254-12-20",
+          "end": "1261-05-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-iv"
+    },
+    {
+      "id": "rp:urban-iv",
+      "name": "Urban",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Urban IV",
+      "aliases": [],
+      "secular_name": "Jacques Pantaléon",
+      "birthplace": "Troyes",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 182,
+          "start_raw": "29.VIII,4.IX.1261",
+          "end_raw": "2.X.1264",
+          "start_elected": "1261-08-29",
+          "start_inaugurated": "1261-09-04",
+          "end": "1264-10-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-iv"
+    },
+    {
+      "id": "rp:clement-iv",
+      "name": "Clement",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Clement IV",
+      "aliases": [],
+      "secular_name": "Gui Foulques",
+      "birthplace": "Saint-Gilles (Southern French)",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 183,
+          "start_raw": "5,22.II.1265",
+          "end_raw": "29.XI.1268",
+          "start_elected": "1265-02-05",
+          "start_inaugurated": "1265-02-22",
+          "end": "1268-11-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-iv"
+    },
+    {
+      "id": "rp:gregory-x",
+      "name": "Gregory",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "Gregory X",
+      "aliases": [],
+      "secular_name": "Tebaldo Visconti",
+      "birthplace": "Piacenza",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 184,
+          "start_raw": "1.IX.1271,27.III.1272",
+          "end_raw": "10.I.1276",
+          "start_elected": "1271-09-01",
+          "start_inaugurated": "1272-03-27",
+          "end": "1276-01-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-x"
+    },
+    {
+      "id": "rp:innocent-v",
+      "name": "Innocent",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Innocent V",
+      "aliases": [],
+      "secular_name": "Pierre De Tarentaise",
+      "birthplace": "Savoy",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 185,
+          "start_raw": "21.I,22.II.1276",
+          "end_raw": "22.VI.1276",
+          "start_elected": "1276-01-21",
+          "start_inaugurated": "1276-02-22",
+          "end": "1276-06-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-v"
+    },
+    {
+      "id": "rp:adrian-v",
+      "name": "Adrian",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Adrian V",
+      "aliases": [],
+      "secular_name": "Ottobono Fieschi",
+      "birthplace": "Genoa",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 186,
+          "start_raw": "11.VII.1276",
+          "end_raw": "18.VIII.1276",
+          "start": "1276-07-11",
+          "end": "1276-08-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-v"
+    },
+    {
+      "id": "rp:john-xxi",
+      "name": "John",
+      "ordinal": 21,
+      "roman": "xxi",
+      "label_en": "John XXI",
+      "aliases": [],
+      "secular_name": "Pedro Julião or Pedro Hispano",
+      "birthplace": "Lisbon",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 187,
+          "start_raw": "16,20.IX.1276",
+          "end_raw": "20.V.1277",
+          "start_elected": "1276-09-16",
+          "start_inaugurated": "1276-09-20",
+          "end": "1277-05-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xxi"
+    },
+    {
+      "id": "rp:nicholas-iii",
+      "name": "Nicholas",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Nicholas III",
+      "aliases": [],
+      "secular_name": "Giovanni Gaetano Orsini",
+      "birthplace": "Rome",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 188,
+          "start_raw": "25.XI, 26.XII.1277",
+          "end_raw": "22.VIII.1280",
+          "start_elected": "1277-11-25",
+          "start_inaugurated": "1277-12-26",
+          "end": "1280-08-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-nicholas-iii"
+    },
+    {
+      "id": "rp:martin-iv",
+      "name": "Martin",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Martin IV",
+      "aliases": [],
+      "secular_name": "Simon de Brie or of Brion or of Mainpincien",
+      "birthplace": "France",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 189,
+          "start_raw": "22.II,23.III.1281",
+          "end_raw": "29.III.1285",
+          "start_elected": "1281-02-22",
+          "start_inaugurated": "1281-03-23",
+          "end": "1285-03-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-martin-iv"
+    },
+    {
+      "id": "rp:honorius-iv",
+      "name": "Honorius",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Honorius IV",
+      "aliases": [],
+      "secular_name": "Giacomo Savelli",
+      "birthplace": "Rome",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 190,
+          "start_raw": "2.IV, 20.V.1285",
+          "end_raw": "3.IV.1287",
+          "start_elected": "1285-04-02",
+          "start_inaugurated": "1285-05-20",
+          "end": "1287-04-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-honorius-iv"
+    },
+    {
+      "id": "rp:nicholas-iv",
+      "name": "Nicholas",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Nicholas IV",
+      "aliases": [],
+      "secular_name": "Girolamo",
+      "birthplace": "Lisciano (Ascoli PIceno)",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 191,
+          "start_raw": "22.II.1288",
+          "end_raw": "4.IV.1292",
+          "start": "1288-02-22",
+          "end": "1292-04-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-nicholas-iv"
+    },
+    {
+      "id": "rp:celestine-v",
+      "name": "Celestine",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Celestine V",
+      "aliases": [],
+      "secular_name": "Pietro del Morrone",
+      "birthplace": "Molise",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 192,
+          "start_raw": "5.VII, 29.VIII.1294",
+          "end_raw": "13.XII.1294",
+          "start_elected": "1294-07-05",
+          "start_inaugurated": "1294-08-29",
+          "end": "1294-12-13"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-celestine-v"
+    },
+    {
+      "id": "rp:boniface-viii",
+      "name": "Boniface",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Boniface VIII",
+      "aliases": [],
+      "secular_name": "Benedetto Caetani",
+      "birthplace": "Anagni",
+      "century": 13,
+      "pontificates": [
+        {
+          "number": 193,
+          "start_raw": "24.XII.1294, 23.I.1295",
+          "end_raw": "11.X.1303",
+          "start_elected": "1294-12-24",
+          "start_inaugurated": "1295-01-23",
+          "end": "1303-10-11"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-viii"
+    },
+    {
+      "id": "rp:benedict-xi",
+      "name": "Benedict",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Benedict XI",
+      "aliases": [],
+      "secular_name": "Niccolò di Boccasio",
+      "birthplace": "Treviso",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 194,
+          "start_raw": "22,27.X.1303",
+          "end_raw": "7.VII.1304",
+          "start_elected": "1303-10-22",
+          "start_inaugurated": "1303-10-27",
+          "end": "1304-07-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xi"
+    },
+    {
+      "id": "rp:clement-v",
+      "name": "Clement",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Clement V",
+      "aliases": [],
+      "secular_name": "Bertrand de Got",
+      "birthplace": "Villandraut (Gironde)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 195,
+          "start_raw": "5.VI, 14.XI.1305",
+          "end_raw": "20.IV.1314",
+          "start_elected": "1305-06-05",
+          "start_inaugurated": "1305-11-14",
+          "end": "1314-04-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-v"
+    },
+    {
+      "id": "rp:john-xxii",
+      "name": "John",
+      "ordinal": 22,
+      "roman": "xxii",
+      "label_en": "John XXII",
+      "aliases": [],
+      "secular_name": "Jacques Duèse",
+      "birthplace": "Cahors",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 196,
+          "start_raw": "7.VIII,5.IX.1316",
+          "end_raw": "4.XII.1334",
+          "start_elected": "1316-08-07",
+          "start_inaugurated": "1316-09-05",
+          "end": "1334-12-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xxii"
+    },
+    {
+      "id": "rp:benedict-xii",
+      "name": "Benedict",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Benedict XII",
+      "aliases": [],
+      "secular_name": "Jacques Fournier",
+      "birthplace": "Saverdun (Southern France)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 197,
+          "start_raw": "20.XII.1334, 8.I.1335",
+          "end_raw": "25.IV.1342",
+          "start_elected": "1334-12-20",
+          "start_inaugurated": "1335-01-08",
+          "end": "1342-04-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xii"
+    },
+    {
+      "id": "rp:clement-vi",
+      "name": "Clement",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Clement VI",
+      "aliases": [],
+      "secular_name": "Pierre Roger",
+      "birthplace": "Maumont (Limousin)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 198,
+          "start_raw": "7,19.V.1342",
+          "end_raw": "6.XII.1352",
+          "start_elected": "1342-05-07",
+          "start_inaugurated": "1342-05-19",
+          "end": "1352-12-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-vi"
+    },
+    {
+      "id": "rp:innocent-vi",
+      "name": "Innocent",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Innocent VI",
+      "aliases": [],
+      "secular_name": "Étienne Aubert",
+      "birthplace": "Monts (Limousin)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 199,
+          "start_raw": "18,30.XII.1352",
+          "end_raw": "12.IX.1362",
+          "start_elected": "1352-12-18",
+          "start_inaugurated": "1352-12-30",
+          "end": "1362-09-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-vi"
+    },
+    {
+      "id": "rp:urban-v",
+      "name": "Urban",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Urban V",
+      "aliases": [],
+      "secular_name": "Guillaume Grimoard",
+      "birthplace": "Grizac (Southern France)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 200,
+          "start_raw": "28.IX,6.XI.1362",
+          "end_raw": "19.XII.1370",
+          "start_elected": "1362-09-28",
+          "start_inaugurated": "1362-11-06",
+          "end": "1370-12-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-v"
+    },
+    {
+      "id": "rp:gregory-xi",
+      "name": "Gregory",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Gregory XI",
+      "aliases": [],
+      "secular_name": "Pierre Roger de Beaufort",
+      "birthplace": "Rosiers d'Egletons (Limousin)",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 201,
+          "start_raw": "30.XII.1370, 3.I.1371",
+          "end_raw": "26.III.1378",
+          "start_elected": "1370-12-30",
+          "start_inaugurated": "1371-01-03",
+          "end": "1378-03-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xi"
+    },
+    {
+      "id": "rp:urban-vi",
+      "name": "Urban",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Urban VI",
+      "aliases": [],
+      "secular_name": "Bartolomeo Prignano",
+      "birthplace": "Naples",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 202,
+          "start_raw": "8,18.IV.1378",
+          "end_raw": "15.X.1389",
+          "start_elected": "1378-04-08",
+          "start_inaugurated": "1378-04-18",
+          "end": "1389-10-15"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-vi"
+    },
+    {
+      "id": "rp:boniface-ix",
+      "name": "Boniface",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Boniface IX",
+      "aliases": [],
+      "secular_name": "Pietro Tomacelli",
+      "birthplace": "Naples",
+      "century": 14,
+      "pontificates": [
+        {
+          "number": 203,
+          "start_raw": "2,9.XI.1389",
+          "end_raw": "1.X.1404",
+          "start_elected": "1389-11-02",
+          "start_inaugurated": "1389-11-09",
+          "end": "1404-10-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-boniface-ix"
+    },
+    {
+      "id": "rp:innocent-vii",
+      "name": "Innocent",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Innocent VII",
+      "aliases": [],
+      "secular_name": "Cosma Migliorati",
+      "birthplace": "Sulmona",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 204,
+          "start_raw": "17.X,11.XI.1404",
+          "end_raw": "6.XI.1406",
+          "start_elected": "1404-10-17",
+          "start_inaugurated": "1404-11-11",
+          "end": "1406-11-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-vii"
+    },
+    {
+      "id": "rp:gregory-xii",
+      "name": "Gregory",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Gregory XII",
+      "aliases": [],
+      "secular_name": "Angelo Correr",
+      "birthplace": "Venice",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 205,
+          "start_raw": "30.XI,19.XII.1406",
+          "end_raw": "4.VII.1415",
+          "start_elected": "1406-11-30",
+          "start_inaugurated": "1406-12-19",
+          "end": "1415-07-04"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xii"
+    },
+    {
+      "id": "rp:martin-v",
+      "name": "Martin",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Martin V",
+      "aliases": [],
+      "secular_name": "Oddone Colonna",
+      "birthplace": "Genazzano",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 206,
+          "start_raw": "11,21.XI.1417",
+          "end_raw": "20.II.1431",
+          "start_elected": "1417-11-11",
+          "start_inaugurated": "1417-11-21",
+          "end": "1431-02-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-martin-v"
+    },
+    {
+      "id": "rp:eugene-iv",
+      "name": "Eugene",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Eugene IV",
+      "aliases": [],
+      "secular_name": "Gabriele Condulmer",
+      "birthplace": "Venice",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 207,
+          "start_raw": "3,11.III.1431",
+          "end_raw": "23.II.1447",
+          "start_elected": "1431-03-03",
+          "start_inaugurated": "1431-03-11",
+          "end": "1447-02-23"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-eugene-iv"
+    },
+    {
+      "id": "rp:nicholas-v",
+      "name": "Nicholas",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Nicholas V",
+      "aliases": [],
+      "secular_name": "Tommaso Parentucelli",
+      "birthplace": "Sarzana",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 208,
+          "start_raw": "6,19.III.1447",
+          "end_raw": "24.III.1455",
+          "start_elected": "1447-03-06",
+          "start_inaugurated": "1447-03-19",
+          "end": "1455-03-24"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-nicholas-v"
+    },
+    {
+      "id": "rp:callixtus-iii",
+      "name": "Callixtus",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Callixtus III",
+      "aliases": [],
+      "secular_name": "Alonso Borja",
+      "birthplace": "Torre de Canals, Játiva (Valencia)",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 209,
+          "start_raw": "8,20.IV.1455",
+          "end_raw": "6.VIII.1458",
+          "start_elected": "1455-04-08",
+          "start_inaugurated": "1455-04-20",
+          "end": "1458-08-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-callixtus-iii"
+    },
+    {
+      "id": "rp:pius-ii",
+      "name": "Pius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Pius II",
+      "aliases": [],
+      "secular_name": "Enea Silvio Piccolomini",
+      "birthplace": "Corsignano (Siena)",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 210,
+          "start_raw": "19.VIII, 3.IX.1458",
+          "end_raw": "14.VIII.1464",
+          "start_elected": "1458-08-19",
+          "start_inaugurated": "1458-09-03",
+          "end": "1464-08-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-ii"
+    },
+    {
+      "id": "rp:paul-ii",
+      "name": "Paul",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Paul II",
+      "aliases": [],
+      "secular_name": "Pietro Barbo",
+      "birthplace": "Venice",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 211,
+          "start_raw": "30.VIII, 16.IX.1464",
+          "end_raw": "26.VII.1471",
+          "start_elected": "1464-08-30",
+          "start_inaugurated": "1464-09-16",
+          "end": "1471-07-26"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-ii"
+    },
+    {
+      "id": "rp:sixtus-iv",
+      "name": "Sixtus",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Sixtus IV",
+      "aliases": [],
+      "secular_name": "Francesco della Rovere",
+      "birthplace": "Celle (Savona)",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 212,
+          "start_raw": "1,9,25.VIII.1471",
+          "end_raw": "12.VIII.1484",
+          "end": "1484-08-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sixtus-iv"
+    },
+    {
+      "id": "rp:innocent-viii",
+      "name": "Innocent",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Innocent VIII",
+      "aliases": [],
+      "secular_name": "Giovanni Battista Cibo",
+      "birthplace": "Genoa",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 213,
+          "start_raw": "29.VIII, 12.IX.1484",
+          "end_raw": "25.VII.1492",
+          "start_elected": "1484-08-29",
+          "start_inaugurated": "1484-09-12",
+          "end": "1492-07-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-viii"
+    },
+    {
+      "id": "rp:alexander-vi",
+      "name": "Alexander",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Alexander VI",
+      "aliases": [],
+      "secular_name": "Rodrigo de Borja",
+      "birthplace": "Játiva (Valencia)",
+      "century": 15,
+      "pontificates": [
+        {
+          "number": 214,
+          "start_raw": "11,26.VIII.1492",
+          "end_raw": "18.VIII.1503",
+          "start_elected": "1492-08-11",
+          "start_inaugurated": "1492-08-26",
+          "end": "1503-08-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-vi"
+    },
+    {
+      "id": "rp:pius-iii",
+      "name": "Pius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Pius III",
+      "aliases": [],
+      "secular_name": "Francesco Todeschini-Piccolomini",
+      "birthplace": "Siena",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 215,
+          "start_raw": "22.IX, 1,8.X.1503",
+          "end_raw": "18.X.1503",
+          "end": "1503-10-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-iii"
+    },
+    {
+      "id": "rp:julius-ii",
+      "name": "Julius",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Julius II",
+      "aliases": [],
+      "secular_name": "Giuliano della Rovere",
+      "birthplace": "Albisola (Savona)",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 216,
+          "start_raw": "1,26.XI.1503",
+          "end_raw": "21.II.1513",
+          "start_elected": "1503-11-01",
+          "start_inaugurated": "1503-11-26",
+          "end": "1513-02-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-julius-ii"
+    },
+    {
+      "id": "rp:leo-x",
+      "name": "Leo",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "Leo X",
+      "aliases": [],
+      "secular_name": "Giovanni de' Medici",
+      "birthplace": "Florence",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 217,
+          "start_raw": "11,19.III.1513",
+          "end_raw": "1.XII.1521",
+          "start_elected": "1513-03-11",
+          "start_inaugurated": "1513-03-19",
+          "end": "1521-12-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-x"
+    },
+    {
+      "id": "rp:adrian-vi",
+      "name": "Adrian",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Adrian VI",
+      "aliases": [],
+      "secular_name": "Adriaan Florensz",
+      "birthplace": "Utrecht",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 218,
+          "start_raw": "9.I,31.VIII.1522",
+          "end_raw": "14.IX.1523",
+          "start_elected": "1522-01-09",
+          "start_inaugurated": "1522-08-31",
+          "end": "1523-09-14"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-adrian-vi"
+    },
+    {
+      "id": "rp:clement-vii",
+      "name": "Clement",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Clement VII",
+      "aliases": [],
+      "secular_name": "Giulio de' Medici",
+      "birthplace": "Florence",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 219,
+          "start_raw": "19,26.XI.1523",
+          "end_raw": "25.IX.1534",
+          "start_elected": "1523-11-19",
+          "start_inaugurated": "1523-11-26",
+          "end": "1534-09-25"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-vii"
+    },
+    {
+      "id": "rp:paul-iii",
+      "name": "Paul",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Paul III",
+      "aliases": [],
+      "secular_name": "Alessandro Farnese",
+      "birthplace": "Canino (Viterbo)",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 220,
+          "start_raw": "13.X, 3.XI.1534",
+          "end_raw": "10.XI.1549",
+          "start_elected": "1534-10-13",
+          "start_inaugurated": "1534-11-03",
+          "end": "1549-11-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-iii"
+    },
+    {
+      "id": "rp:julius-iii",
+      "name": "Julius",
+      "ordinal": 3,
+      "roman": "iii",
+      "label_en": "Julius III",
+      "aliases": [],
+      "secular_name": "Giovanni Maria Ciocchi del Monte",
+      "birthplace": "Rome",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 221,
+          "start_raw": "7,22.II.1550",
+          "end_raw": "23.III.1555",
+          "start_elected": "1550-02-07",
+          "start_inaugurated": "1550-02-22",
+          "end": "1555-03-23"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-julius-iii"
+    },
+    {
+      "id": "rp:marcellus-ii",
+      "name": "Marcellus",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "Marcellus II",
+      "aliases": [],
+      "secular_name": "Marcello Cervini",
+      "birthplace": "Montefano",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 222,
+          "start_raw": "9,10.IV.1555",
+          "end_raw": "1.V.1555",
+          "start_elected": "1555-04-09",
+          "start_inaugurated": "1555-04-10",
+          "end": "1555-05-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-marcellus-ii"
+    },
+    {
+      "id": "rp:paul-iv",
+      "name": "Paul",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Paul IV",
+      "aliases": [],
+      "secular_name": "Gian Pietro Carafa",
+      "birthplace": "Capriglia (Avellino)",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 223,
+          "start_raw": "23,26.V.1555",
+          "end_raw": "18.VIII.1559",
+          "start_elected": "1555-05-23",
+          "start_inaugurated": "1555-05-26",
+          "end": "1559-08-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-iv"
+    },
+    {
+      "id": "rp:pius-iv",
+      "name": "Pius",
+      "ordinal": 4,
+      "roman": "iv",
+      "label_en": "Pius IV",
+      "aliases": [],
+      "secular_name": "Giovan Angelo Medici",
+      "birthplace": "Milan",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 224,
+          "start_raw": "26.XII.1559, 6.I.1560",
+          "end_raw": "9.XII.1565",
+          "start_elected": "1559-12-26",
+          "start_inaugurated": "1560-01-06",
+          "end": "1565-12-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-iv"
+    },
+    {
+      "id": "rp:pius-v",
+      "name": "Pius",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Pius V",
+      "aliases": [],
+      "secular_name": "Antonio (Michele) Ghisleri",
+      "birthplace": "Bosco (Alessandria)",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 225,
+          "start_raw": "7,17.I.1566",
+          "end_raw": "1.V.1572",
+          "start_elected": "1566-01-07",
+          "start_inaugurated": "1566-01-17",
+          "end": "1572-05-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-v"
+    },
+    {
+      "id": "rp:gregory-xiii",
+      "name": "Gregory",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "Gregory XIII",
+      "aliases": [],
+      "secular_name": "Ugo Boncompagni",
+      "birthplace": "Bologna",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 226,
+          "start_raw": "13,25.V.1572",
+          "end_raw": "10.IV.1585",
+          "start_elected": "1572-05-13",
+          "start_inaugurated": "1572-05-25",
+          "end": "1585-04-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xiii"
+    },
+    {
+      "id": "rp:sixtus-v",
+      "name": "Sixtus",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Sixtus V",
+      "aliases": [],
+      "secular_name": "Felice Peretti",
+      "birthplace": "Grottammare (Ascoli Piceno)",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 227,
+          "start_raw": "24.IV, 1.V.1585",
+          "end_raw": "27.VIII.1590",
+          "start_elected": "1585-04-24",
+          "start_inaugurated": "1585-05-01",
+          "end": "1590-08-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-sixtus-v"
+    },
+    {
+      "id": "rp:urban-vii",
+      "name": "Urban",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Urban VII",
+      "aliases": [],
+      "secular_name": "Giambattista Castagna",
+      "birthplace": "Rome",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 228,
+          "start_raw": "15.IX.1590",
+          "end_raw": "27.IX.1590",
+          "start": "1590-09-15",
+          "end": "1590-09-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-vii"
+    },
+    {
+      "id": "rp:gregory-xiv",
+      "name": "Gregory",
+      "ordinal": 14,
+      "roman": "xiv",
+      "label_en": "Gregory XIV",
+      "aliases": [],
+      "secular_name": "Niccolò Sfondrati",
+      "birthplace": "Somma Lombarda",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 229,
+          "start_raw": "5,8.XII.1590",
+          "end_raw": "16.X.1591",
+          "start_elected": "1590-12-05",
+          "start_inaugurated": "1590-12-08",
+          "end": "1591-10-16"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xiv"
+    },
+    {
+      "id": "rp:innocent-ix",
+      "name": "Innocent",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Innocent IX",
+      "aliases": [],
+      "secular_name": "Giovan Antonio Facchinetti",
+      "birthplace": "Bologna",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 230,
+          "start_raw": "29.X,3.XI.1591",
+          "end_raw": "30.XII.1591",
+          "start_elected": "1591-10-29",
+          "start_inaugurated": "1591-11-03",
+          "end": "1591-12-30"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-ix"
+    },
+    {
+      "id": "rp:clement-viii",
+      "name": "Clement",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Clement VIII",
+      "aliases": [],
+      "secular_name": "Ippolito Aldobrandini",
+      "birthplace": "Fano",
+      "century": 16,
+      "pontificates": [
+        {
+          "number": 231,
+          "start_raw": "30.I,9.II.1592",
+          "end_raw": "3.III.1605",
+          "start_elected": "1592-01-30",
+          "start_inaugurated": "1592-02-09",
+          "end": "1605-03-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-viii"
+    },
+    {
+      "id": "rp:leo-xi",
+      "name": "Leo",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Leo XI",
+      "aliases": [],
+      "secular_name": "Alessandro de' Medici",
+      "birthplace": "Florence",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 232,
+          "start_raw": "1,10.IV.1605",
+          "end_raw": "27.IV.1605",
+          "start_elected": "1605-04-01",
+          "start_inaugurated": "1605-04-10",
+          "end": "1605-04-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-xi"
+    },
+    {
+      "id": "rp:paul-v",
+      "name": "Paul",
+      "ordinal": 5,
+      "roman": "v",
+      "label_en": "Paul V",
+      "aliases": [],
+      "secular_name": "Camillo Borghese",
+      "birthplace": "Rome",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 233,
+          "start_raw": "16,29.V.1605",
+          "end_raw": "28.I.1621",
+          "start_elected": "1605-05-16",
+          "start_inaugurated": "1605-05-29",
+          "end": "1621-01-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-v"
+    },
+    {
+      "id": "rp:gregory-xv",
+      "name": "Gregory",
+      "ordinal": 15,
+      "roman": "xv",
+      "label_en": "Gregory XV",
+      "aliases": [],
+      "secular_name": "Alessandro Ludovisi",
+      "birthplace": "Bologna",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 234,
+          "start_raw": "9,14.II.1621",
+          "end_raw": "8.VII.1623",
+          "start_elected": "1621-02-09",
+          "start_inaugurated": "1621-02-14",
+          "end": "1623-07-08"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xv"
+    },
+    {
+      "id": "rp:urban-viii",
+      "name": "Urban",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Urban VIII",
+      "aliases": [],
+      "secular_name": "Maffeo Barberini",
+      "birthplace": "Florence",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 235,
+          "start_raw": "6.VIII, 29.IX.1623",
+          "end_raw": "29.VII.1644",
+          "start_elected": "1623-08-06",
+          "start_inaugurated": "1623-09-29",
+          "end": "1644-07-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-urban-viii"
+    },
+    {
+      "id": "rp:innocent-x",
+      "name": "Innocent",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "Innocent X",
+      "aliases": [],
+      "secular_name": "Giovanni Battista Pamphilj",
+      "birthplace": "Rome",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 236,
+          "start_raw": "15.IX,4.X.1644",
+          "end_raw": "7.I.1655",
+          "start_elected": "1644-09-15",
+          "start_inaugurated": "1644-10-04",
+          "end": "1655-01-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-x"
+    },
+    {
+      "id": "rp:alexander-vii",
+      "name": "Alexander",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Alexander VII",
+      "aliases": [],
+      "secular_name": "Fabio Chigi",
+      "birthplace": "Siena",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 237,
+          "start_raw": "7,18.IV.1655",
+          "end_raw": "22.V.1667",
+          "start_elected": "1655-04-07",
+          "start_inaugurated": "1655-04-18",
+          "end": "1667-05-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-vii"
+    },
+    {
+      "id": "rp:clement-ix",
+      "name": "Clement",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Clement IX",
+      "aliases": [],
+      "secular_name": "Giulio Rospigliosi",
+      "birthplace": "Pistoia",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 238,
+          "start_raw": "20,26.VI.1667",
+          "end_raw": "9.XII.1669",
+          "start_elected": "1667-06-20",
+          "start_inaugurated": "1667-06-26",
+          "end": "1669-12-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-ix"
+    },
+    {
+      "id": "rp:clement-x",
+      "name": "Clement",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "Clement X",
+      "aliases": [],
+      "secular_name": "Emilio Altieri",
+      "birthplace": "Rome",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 239,
+          "start_raw": "29.IV,11.V.1670",
+          "end_raw": "22.VII.1676",
+          "start_elected": "1670-04-29",
+          "start_inaugurated": "1670-05-11",
+          "end": "1676-07-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-x"
+    },
+    {
+      "id": "rp:innocent-xi",
+      "name": "Innocent",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Innocent XI",
+      "aliases": [],
+      "secular_name": "Benedetto Odescalchi",
+      "birthplace": "Como",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 240,
+          "start_raw": "21.IX, 4.X.1676",
+          "end_raw": "12.VIII.1689",
+          "start_elected": "1676-09-21",
+          "start_inaugurated": "1676-10-04",
+          "end": "1689-08-12"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-xi"
+    },
+    {
+      "id": "rp:alexander-viii",
+      "name": "Alexander",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Alexander VIII",
+      "aliases": [],
+      "secular_name": "Pietro Ottoboni",
+      "birthplace": "Venice",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 241,
+          "start_raw": "6,16.X.1689",
+          "end_raw": "1.II.1691",
+          "start_elected": "1689-10-06",
+          "start_inaugurated": "1689-10-16",
+          "end": "1691-02-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-alexander-viii"
+    },
+    {
+      "id": "rp:innocent-xii",
+      "name": "Innocent",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Innocent XII",
+      "aliases": [],
+      "secular_name": "Antonio Pignatelli",
+      "birthplace": "Spinazzola",
+      "century": 17,
+      "pontificates": [
+        {
+          "number": 242,
+          "start_raw": "12,15.VII.1691",
+          "end_raw": "27.IX.1700",
+          "start_elected": "1691-07-12",
+          "start_inaugurated": "1691-07-15",
+          "end": "1700-09-27"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-xii"
+    },
+    {
+      "id": "rp:clement-xi",
+      "name": "Clement",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Clement XI",
+      "aliases": [],
+      "secular_name": "Giovanni Francesco Albani",
+      "birthplace": "Urbino",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 243,
+          "start_raw": "23,30.XI, 8.XII.1700",
+          "end_raw": "19.III.1721",
+          "end": "1721-03-19"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-xi"
+    },
+    {
+      "id": "rp:innocent-xiii",
+      "name": "Innocent",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "Innocent XIII",
+      "aliases": [],
+      "secular_name": "Michelangelo Conti",
+      "birthplace": "Poli",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 244,
+          "start_raw": "8,18.V.1721",
+          "end_raw": "7.III.1724",
+          "start_elected": "1721-05-08",
+          "start_inaugurated": "1721-05-18",
+          "end": "1724-03-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-innocent-xiii"
+    },
+    {
+      "id": "rp:benedict-xiii",
+      "name": "Benedict",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "Benedict XIII",
+      "aliases": [],
+      "secular_name": "Pietro Francesco (Vincenzo Maria) Orsini",
+      "birthplace": "Gravina",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 245,
+          "start_raw": "29.V, 4.VI.1724",
+          "end_raw": "21.II.1730",
+          "start_elected": "1724-05-29",
+          "start_inaugurated": "1724-06-04",
+          "end": "1730-02-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xiii"
+    },
+    {
+      "id": "rp:clement-xii",
+      "name": "Clement",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Clement XII",
+      "aliases": [],
+      "secular_name": "Lorenzo Corsini",
+      "birthplace": "Florence",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 246,
+          "start_raw": "12,16.VII.1730",
+          "end_raw": "6.II.1740",
+          "start_elected": "1730-07-12",
+          "start_inaugurated": "1730-07-16",
+          "end": "1740-02-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-xii"
+    },
+    {
+      "id": "rp:benedict-xiv",
+      "name": "Benedict",
+      "ordinal": 14,
+      "roman": "xiv",
+      "label_en": "Benedict XIV",
+      "aliases": [],
+      "secular_name": "Prospero Lambertini",
+      "birthplace": "Bologna",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 247,
+          "start_raw": "17,22.VIII.1740",
+          "end_raw": "3.V.1758",
+          "start_elected": "1740-08-17",
+          "start_inaugurated": "1740-08-22",
+          "end": "1758-05-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xiv"
+    },
+    {
+      "id": "rp:clement-xiii",
+      "name": "Clement",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "Clement XIII",
+      "aliases": [],
+      "secular_name": "Carlo Rezzonico",
+      "birthplace": "Venice",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 248,
+          "start_raw": "6,16.VII.1758",
+          "end_raw": "2.II.1769",
+          "start_elected": "1758-07-06",
+          "start_inaugurated": "1758-07-16",
+          "end": "1769-02-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-xiii"
+    },
+    {
+      "id": "rp:clement-xiv",
+      "name": "Clement",
+      "ordinal": 14,
+      "roman": "xiv",
+      "label_en": "Clement XIV",
+      "aliases": [],
+      "secular_name": "Giovanni Vincenzo Antonio (Lorenzo) Ganganelli",
+      "birthplace": "Sant'Arcangelo di Romagna",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 249,
+          "start_raw": "19,28.V, 4.VI.1769",
+          "end_raw": "22.IX.1774",
+          "end": "1774-09-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-clement-xiv"
+    },
+    {
+      "id": "rp:pius-vi",
+      "name": "Pius",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Pius VI",
+      "aliases": [],
+      "secular_name": "Giannangelo Braschi",
+      "birthplace": "Cesena",
+      "century": 18,
+      "pontificates": [
+        {
+          "number": 250,
+          "start_raw": "15,22.II.1775",
+          "end_raw": "29.VIII.1799",
+          "start_elected": "1775-02-15",
+          "start_inaugurated": "1775-02-22",
+          "end": "1799-08-29"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-vi"
+    },
+    {
+      "id": "rp:pius-vii",
+      "name": "Pius",
+      "ordinal": 7,
+      "roman": "vii",
+      "label_en": "Pius VII",
+      "aliases": [],
+      "secular_name": "Barnaba (Gregorio) Chiaramonti",
+      "birthplace": "Cesena",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 251,
+          "start_raw": "14,21.III.1800",
+          "end_raw": "20.VIII.1823",
+          "start_elected": "1800-03-14",
+          "start_inaugurated": "1800-03-21",
+          "end": "1823-08-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-vii"
+    },
+    {
+      "id": "rp:leo-xii",
+      "name": "Leo",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Leo XII",
+      "aliases": [],
+      "secular_name": "Annibale della Genga",
+      "birthplace": "Monticelli di Genga (Fabriano)",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 252,
+          "start_raw": "28.IX, 5.X.1823",
+          "end_raw": "10.II.1829",
+          "start_elected": "1823-09-28",
+          "start_inaugurated": "1823-10-05",
+          "end": "1829-02-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-xii"
+    },
+    {
+      "id": "rp:pius-viii",
+      "name": "Pius",
+      "ordinal": 8,
+      "roman": "viii",
+      "label_en": "Pius VIII",
+      "aliases": [],
+      "secular_name": "Francesco Saverio Castiglioni",
+      "birthplace": "Cingoli",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 253,
+          "start_raw": "31.III, 5.IV.1829",
+          "end_raw": "30.XI.1830",
+          "start_elected": "1829-03-31",
+          "start_inaugurated": "1829-04-05",
+          "end": "1830-11-30"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-viii"
+    },
+    {
+      "id": "rp:gregory-xvi",
+      "name": "Gregory",
+      "ordinal": 16,
+      "roman": "xvi",
+      "label_en": "Gregory XVI",
+      "aliases": [],
+      "secular_name": "Bartolomeo Alberto (Mauro) Cappellari",
+      "birthplace": "Belluno",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 254,
+          "start_raw": "2,6.II.1831",
+          "end_raw": "1.VI.1846",
+          "start_elected": "1831-02-02",
+          "start_inaugurated": "1831-02-06",
+          "end": "1846-06-01"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-gregory-xvi"
+    },
+    {
+      "id": "rp:pius-ix",
+      "name": "Pius",
+      "ordinal": 9,
+      "roman": "ix",
+      "label_en": "Pius IX",
+      "aliases": [],
+      "secular_name": "Giovanni Maria Mastai Ferretti",
+      "birthplace": "Senigallia",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 255,
+          "start_raw": "16,21.VI.1846",
+          "end_raw": "7.II.1878",
+          "start_elected": "1846-06-16",
+          "start_inaugurated": "1846-06-21",
+          "end": "1878-02-07"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-ix"
+    },
+    {
+      "id": "rp:leo-xiii",
+      "name": "Leo",
+      "ordinal": 13,
+      "roman": "xiii",
+      "label_en": "Leo XIII",
+      "aliases": [],
+      "secular_name": "Vincenzo Gioacchino Pecci",
+      "birthplace": "Carpineto Romano",
+      "century": 19,
+      "pontificates": [
+        {
+          "number": 256,
+          "start_raw": "20.II, 3.III.1878",
+          "end_raw": "20.VII.1903",
+          "start_elected": "1878-02-20",
+          "start_inaugurated": "1878-03-03",
+          "end": "1903-07-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-xiii"
+    },
+    {
+      "id": "rp:pius-x",
+      "name": "Pius",
+      "ordinal": 10,
+      "roman": "x",
+      "label_en": "Pius X",
+      "aliases": [],
+      "secular_name": "Giuseppe Melchiorre Sarto",
+      "birthplace": "Riese (Treviso)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 257,
+          "start_raw": "4,9.VIII.1903",
+          "end_raw": "20.VIII.1914",
+          "start_elected": "1903-08-04",
+          "start_inaugurated": "1903-08-09",
+          "end": "1914-08-20"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-x"
+    },
+    {
+      "id": "rp:benedict-xv",
+      "name": "Benedict",
+      "ordinal": 15,
+      "roman": "xv",
+      "label_en": "Benedict XV",
+      "aliases": [],
+      "secular_name": "Giacomo della Chiesa",
+      "birthplace": null,
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 258,
+          "start_raw": "3,6.IX.1914",
+          "end_raw": "22.I.1922",
+          "start_elected": "1914-09-03",
+          "start_inaugurated": "1914-09-06",
+          "end": "1922-01-22"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xv"
+    },
+    {
+      "id": "rp:pius-xi",
+      "name": "Pius",
+      "ordinal": 11,
+      "roman": "xi",
+      "label_en": "Pius XI",
+      "aliases": [],
+      "secular_name": "Achille Ratti",
+      "birthplace": "Desio (Milan)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 259,
+          "start_raw": "6,12.II.1922",
+          "end_raw": "10.II.1939",
+          "start_elected": "1922-02-06",
+          "start_inaugurated": "1922-02-12",
+          "end": "1939-02-10"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-xi"
+    },
+    {
+      "id": "rp:pius-xii",
+      "name": "Pius",
+      "ordinal": 12,
+      "roman": "xii",
+      "label_en": "Pius XII",
+      "aliases": [],
+      "secular_name": "Eugenio Pacelli",
+      "birthplace": "Rome",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 260,
+          "start_raw": "2,12.III.1939",
+          "end_raw": "9.X.1958",
+          "start_elected": "1939-03-02",
+          "start_inaugurated": "1939-03-12",
+          "end": "1958-10-09"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-pius-xii"
+    },
+    {
+      "id": "rp:john-xxiii",
+      "name": "John",
+      "ordinal": 23,
+      "roman": "xxiii",
+      "label_en": "John XXIII",
+      "aliases": [],
+      "secular_name": "Angelo Giuseppe Roncalli",
+      "birthplace": "Sotto il Monte (Bergamo)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 261,
+          "start_raw": "28.X, 4.XI.1958",
+          "end_raw": "3.VI.1963",
+          "start_elected": "1958-10-28",
+          "start_inaugurated": "1958-11-04",
+          "end": "1963-06-03"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-xxiii"
+    },
+    {
+      "id": "rp:paul-vi",
+      "name": "Paul",
+      "ordinal": 6,
+      "roman": "vi",
+      "label_en": "Paul VI",
+      "aliases": [],
+      "secular_name": "Giovanni Battista Montini",
+      "birthplace": "Concesio (Brescia)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 262,
+          "start_raw": "21,30.VI.1963",
+          "end_raw": "6.VIII.1978",
+          "start_elected": "1963-06-21",
+          "start_inaugurated": "1963-06-30",
+          "end": "1978-08-06"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-paul-vi"
+    },
+    {
+      "id": "rp:john-paul-i",
+      "name": "John Paul",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "John Paul I",
+      "aliases": [],
+      "secular_name": "Albino Luciani",
+      "birthplace": "Forno di Canale (Belluno)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 263,
+          "start_raw": "26.VIII, 3.IX.1978",
+          "end_raw": "28.IX.1978",
+          "start_elected": "1978-08-26",
+          "start_inaugurated": "1978-09-03",
+          "end": "1978-09-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-paul-i"
+    },
+    {
+      "id": "rp:john-paul-ii",
+      "name": "John Paul",
+      "ordinal": 2,
+      "roman": "ii",
+      "label_en": "John Paul II",
+      "aliases": [],
+      "secular_name": "Karol Wojtyła",
+      "birthplace": "Wadowice (Kraków)",
+      "century": 20,
+      "pontificates": [
+        {
+          "number": 264,
+          "start_raw": "16,22.X.1978",
+          "end_raw": "2.IV.2005",
+          "start_elected": "1978-10-16",
+          "start_inaugurated": "1978-10-22",
+          "end": "2005-04-02"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-john-paul-ii"
+    },
+    {
+      "id": "rp:benedict-xvi",
+      "name": "Benedict",
+      "ordinal": 16,
+      "roman": "xvi",
+      "label_en": "Benedict XVI",
+      "aliases": [],
+      "secular_name": "Joseph Ratzinger",
+      "birthplace": "Marktl am Inn (Bavaria)",
+      "century": 21,
+      "pontificates": [
+        {
+          "number": 265,
+          "start_raw": "19,24.IV.2005",
+          "end_raw": "28.II.2013",
+          "start_elected": "2005-04-19",
+          "start_inaugurated": "2005-04-24",
+          "end": "2013-02-28"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-benedict-xvi"
+    },
+    {
+      "id": "rp:francis-i",
+      "name": "Francis",
+      "ordinal": 1,
+      "roman": "i",
+      "label_en": "Francis",
+      "aliases": [],
+      "secular_name": "Jorge Mario Bergoglio",
+      "birthplace": "Buenos Aires (Argentina)",
+      "century": 21,
+      "pontificates": [
+        {
+          "number": 266,
+          "start_raw": "13,19.III.2013",
+          "end_raw": "21.IV.2025",
+          "start_elected": "2013-03-13",
+          "start_inaugurated": "2013-03-19",
+          "end": "2025-04-21"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-francis-i"
+    },
+    {
+      "id": "rp:leo-xiv",
+      "name": "Leo",
+      "ordinal": 14,
+      "roman": "xiv",
+      "label_en": "Leo XIV",
+      "aliases": [],
+      "secular_name": "Robert Francis Prevost",
+      "birthplace": "Chicago",
+      "century": 21,
+      "pontificates": [
+        {
+          "number": 267,
+          "start_raw": "8,18.V.2025",
+          "end_raw": null,
+          "start_elected": "2025-05-08",
+          "start_inaugurated": "2025-05-18"
+        }
+      ],
+      "cdcf_person": "cdcf:person/pope-leo-xiv"
+    }
+  ]
+}

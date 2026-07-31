@@ -145,5 +145,73 @@ class ParseDate(unittest.TestCase):
         self.assertEqual(gs.parse_date("28,29.XII.418", "end"), {})
 
 
+class BuildPersons(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.persons = gs.build_persons(gs.extract_rows(HTML))
+        cls.by_id = {p["id"]: p for p in cls.persons}
+
+    def test_person_and_pontificate_counts(self):
+        self.assertEqual(len(self.persons), 265)
+        self.assertEqual(sum(len(p["pontificates"]) for p in self.persons), 267)
+
+    def test_all_ids_unique_and_grammatical(self):
+        ids = [p["id"] for p in self.persons]
+        self.assertEqual(len(ids), len(set(ids)))
+        for i in ids:
+            self.assertTrue(gs.ID_RE.fullmatch(i), i)
+
+    def test_peter(self):
+        p = self.by_id["rp:peter"]
+        self.assertIsNone(p["ordinal"])
+        self.assertIsNone(p["roman"])
+        self.assertEqual(p["cdcf_person"], "cdcf:person/pope-peter-i")
+        self.assertIsNone(p["pontificates"][0]["start_raw"])
+        self.assertEqual(p["pontificates"][0]["end_alternates"], ["0064", "0067"])
+
+    def test_sole_holders_get_ordinal_i(self):
+        for pid in ("rp:francis-i", "rp:lando-i", "rp:linus-i", "rp:mark-i"):
+            self.assertIn(pid, self.by_id)
+        self.assertNotIn("rp:francis", self.by_id)
+
+    def test_benedict_ix_one_person_three_pontificates(self):
+        p = self.by_id["rp:benedict-ix"]
+        self.assertEqual([q["number"] for q in p["pontificates"]], [145, 147, 150])
+        self.assertEqual(p["ordinal"], 9)
+
+    def test_aliases_carried(self):
+        self.assertEqual(self.by_id["rp:anacletus-i"]["aliases"], ["Cletus"])
+        self.assertEqual(self.by_id["rp:adeodatus-i"]["aliases"], ["Deusdedit"])
+        self.assertIn("rp:adeodatus-ii", self.by_id)
+
+    def test_numbering_skips_preserved(self):
+        # there is no legitimate John XX: xix and xxi exist, xx must not
+        self.assertIn("rp:john-xix", self.by_id)
+        self.assertIn("rp:john-xxi", self.by_id)
+        self.assertNotIn("rp:john-xx", self.by_id)
+
+    def test_reigning_pope_open_ended(self):
+        p = self.by_id["rp:leo-xiv"]
+        self.assertEqual(p["ordinal"], 14)
+        self.assertEqual(p["pontificates"][0]["number"], 267)
+        self.assertIsNone(p["pontificates"][0]["end_raw"])
+        self.assertEqual(p["pontificates"][0]["start_elected"], "2025-05-08")
+        self.assertEqual(p["pontificates"][0]["start_inaugurated"], "2025-05-18")
+
+    def test_modern_double_date(self):
+        p = self.by_id["rp:francis-i"]
+        pont = p["pontificates"][0]
+        self.assertEqual(pont["start_raw"], "13,19.III.2013")
+        self.assertEqual(pont["start_elected"], "2013-03-13")
+        self.assertEqual(pont["start_inaugurated"], "2013-03-19")
+        self.assertEqual(pont["end"], "2025-04-21")
+
+    def test_cdcf_cross_reference(self):
+        self.assertEqual(self.by_id["rp:leo-xiv"]["cdcf_person"],
+                         "cdcf:person/pope-leo-xiv")
+        self.assertEqual(self.by_id["rp:john-paul-ii"]["cdcf_person"],
+                         "cdcf:person/pope-john-paul-ii")
+
+
 if __name__ == "__main__":
     unittest.main()
