@@ -90,5 +90,60 @@ class RomanToInt(unittest.TestCase):
             self.assertEqual(gs.roman_to_int(roman), value)
 
 
+class ParseDate(unittest.TestCase):
+    # every example string below occurs verbatim in the source table
+    def test_full_date(self):
+        self.assertEqual(gs.parse_date("21.VII.230", "start"),
+                         {"start": "0230-07-21"})
+
+    def test_double_date_same_month(self):
+        self.assertEqual(gs.parse_date("28,29.XII.418", "start"),
+                         {"start_elected": "0418-12-28",
+                          "start_inaugurated": "0418-12-29"})
+
+    def test_double_date_cross_month(self):
+        self.assertEqual(gs.parse_date("12.X, 24.XI.642", "start"),
+                         {"start_elected": "0642-10-12",
+                          "start_inaugurated": "0642-11-24"})
+        self.assertEqual(gs.parse_date("22.IV,30.VI.1073", "start"),
+                         {"start_elected": "1073-04-22",
+                          "start_inaugurated": "1073-06-30"})
+
+    def test_double_date_cross_year(self):
+        self.assertEqual(gs.parse_date("31.XII.532, 2.I.533", "start"),
+                         {"start_elected": "0532-12-31",
+                          "start_inaugurated": "0533-01-02"})
+
+    def test_bare_year(self):
+        self.assertEqual(gs.parse_date("68", "start"), {"start": "0068"})
+
+    def test_year_alternates(self):
+        self.assertEqual(gs.parse_date("64 or 67", "end"),
+                         {"end_alternates": ["0064", "0067"]})
+
+    def test_partial_year_month(self):
+        self.assertEqual(gs.parse_date("...VIII.827", "start"),
+                         {"start": "0827-08"})
+        self.assertEqual(gs.parse_date("... VI.253", "start"),
+                         {"start": "0253-06"})
+
+    def test_partial_year_only(self):
+        self.assertEqual(gs.parse_date("... 236", "start"), {"start": "0236"})
+        self.assertEqual(gs.parse_date("...1032", "start"), {"start": "1032"})
+
+    def test_irregular_forms_stay_raw_only(self):
+        for raw in ("15 o 22 o 29.XII.384",   # Italian 'o'
+                    "...XI or XII.872",        # month alternates
+                    "... II-V.824",            # month range
+                    "1,9,25.VIII.1471",        # triple date
+                    "6 or 13.III.251",         # day alternates
+                    "4.VII.964 or 965"):       # year alternates w/ full date
+            self.assertEqual(gs.parse_date(raw, "start"), {}, raw)
+
+    def test_double_dates_not_parsed_for_end_role(self):
+        # elected/inaugurated semantics only apply to the beginning column
+        self.assertEqual(gs.parse_date("28,29.XII.418", "end"), {})
+
+
 if __name__ == "__main__":
     unittest.main()

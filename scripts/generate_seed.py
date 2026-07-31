@@ -81,3 +81,50 @@ def split_name(label):
 def make_id(name, roman):
     slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
     return f"rp:{slug}" if roman is None else f"rp:{slug}-{roman}"
+
+
+def parse_date_iso(day, month, year):
+    return f"{int(year):04d}-{ROMAN_MONTHS[month]:02d}-{int(day):02d}"
+
+
+def parse_date(raw, role):
+    """Parse one table date string into fields prefixed by `role` ('start' or
+    'end'). Returns {} for any format that is not mechanically unambiguous —
+    the caller always keeps the verbatim string in {role}_raw, so nothing is
+    lost (schema rule: parsed fields only where parsing is trivial).
+
+    Double dates ('13,19.III.2013') are election and inauguration; that
+    semantic belongs to the BEGINNING column only, so they parse only when
+    role == 'start'."""
+    def key(suffix=""):
+        return f"{role}_{suffix}" if suffix else role
+
+    m = re.fullmatch(r"(\d+)\.([IVX]+)\.(\d+)", raw)
+    if m:
+        return {key(): parse_date_iso(m.group(1), m.group(2), m.group(3))}
+    if role == "start":
+        m = re.fullmatch(r"(\d+),(\d+)\.([IVX]+)\.(\d+)", raw)
+        if m:
+            return {key("elected"): parse_date_iso(m.group(1), m.group(3), m.group(4)),
+                    key("inaugurated"): parse_date_iso(m.group(2), m.group(3), m.group(4))}
+        m = re.fullmatch(r"(\d+)\.([IVX]+), ?(\d+)\.([IVX]+)\.(\d+)", raw)
+        if m:
+            return {key("elected"): parse_date_iso(m.group(1), m.group(2), m.group(5)),
+                    key("inaugurated"): parse_date_iso(m.group(3), m.group(4), m.group(5))}
+        m = re.fullmatch(r"(\d+)\.([IVX]+)\.(\d+), ?(\d+)\.([IVX]+)\.(\d+)", raw)
+        if m:
+            return {key("elected"): parse_date_iso(m.group(1), m.group(2), m.group(3)),
+                    key("inaugurated"): parse_date_iso(m.group(4), m.group(5), m.group(6))}
+    m = re.fullmatch(r"(\d+)", raw)
+    if m:
+        return {key(): f"{int(raw):04d}"}
+    m = re.fullmatch(r"(\d+) or (\d+)", raw)
+    if m:
+        return {key("alternates"): [f"{int(m.group(1)):04d}", f"{int(m.group(2)):04d}"]}
+    m = re.fullmatch(r"\.\.\. ?([IVX]+)\.(\d+)", raw)
+    if m:
+        return {key(): f"{int(m.group(2)):04d}-{ROMAN_MONTHS[m.group(1)]:02d}"}
+    m = re.fullmatch(r"\.\.\. ?(\d+)", raw)
+    if m:
+        return {key(): f"{int(m.group(1)):04d}"}
+    return {}
