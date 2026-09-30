@@ -76,3 +76,5 @@ it takes no position on disputed historical questions.
 The data and documentation in this repository are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). See [`LICENSE`](LICENSE) for the full legal code.
 
 The source code in [`scripts/`](scripts/) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [`scripts/LICENSE`](scripts/LICENSE).
+
+The source snapshot [`data/source/holy-father-table.html`](data/source/holy-father-table.html) is an excerpt of the Holy See's website ([vatican.va](https://www.vatican.va/content/vatican/en/holy-father.html)), retained for provenance and reproducible generation. It is not covered by either license above; its reuse is governed by the [Vatican Legal Notes](https://www.vatican.va/content/vatican/en/legal-notes.html).
