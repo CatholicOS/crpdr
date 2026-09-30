@@ -70,3 +70,7 @@ pending committee review.**
 The seed derives from the Holy See's reference table of Roman Pontiffs
 (vatican.va). The registry records the succession as the Holy See presents it;
 it takes no position on disputed historical questions.
+
+## License
+
+The data and documentation in this repository are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). See [`LICENSE`](LICENSE) for the full legal code.
